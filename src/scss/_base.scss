@@ -1,0 +1,20 @@
+@import './fonts';
+
+$color-light:#fff;
+$color-light-2:#faf6fb;
+$color-gray:#6c757d;
+$color-gray-2:#1b1b1b;
+$color-pink-light:#ff9797;
+$color-pink :rgb(234, 139, 119);
+$color-pink-2:#fe6666;
+
+body {
+    font-family: 'IRANSans';
+    background-color: $color-light-2;
+    font-size: 100%;
+    direction: rtl;
+
+    ::selection {
+        background-color: $color-pink-light;
+    }
+}

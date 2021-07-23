@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "Nastaliq";
+  font-style: normal;
+  src: url(../fonts/IranNastaliq/IranNastaliq.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  src: url(../fonts/IRANSansWeb/IRANSansWeb.eot);
+  src: url(../fonts/IRANSansWeb/IRANSansWeb.eot) format("embedded-opentype"), url(../fonts/IRANSansWeb/IRANSansWeb.woff2) format("woff2"), url(../fonts/IRANSansWeb/IRANSansWeb.woff) format("woff"), url(../fonts/IRANSansWeb/IRANSansWeb.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Sahel;
+  font-style: normal;
+  src: url(../fonts/sahel/Sahel.eot);
+  src: url(../fonts/sahel/Sahel.eot) format("embedded-opentype"), url(../fonts/sahel/Sahel.woff2) format("woff2"), url(../fonts/sahel/Sahel.woff) format("woff"), url(../fonts/sahel/Sahel.ttf) format("truetype");
+  src: url(../fonts/sahel/Farsi-Digits/Sahel-FD.eot);
+  src: url(../fonts/sahel/Farsi-Digits/Sahel-FD.eot) format("embedded-opentype"), url(../fonts/sahel/Farsi-Digits/Sahel-FD.woff2) format("woff2"), url(../fonts/sahel/Farsi-Digits/Sahel-FD.woff) format("woff"), url(../fonts/sahel/Farsi-Digits/Sahel-FD.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Samim;
+  font-style: normal;
+  src: url(../fonts/samim/Samim.eot);
+  src: url(../fonts/samim/Samim.eot) format("embedded-opentype"), url(../fonts/samim/Samim.woff2) format("woff2"), url(../fonts/samim/Samim.woff) format("woff"), url(../fonts/samim/Samim.ttf) format("truetype");
+  src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot);
+  src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot) format("embedded-opentype"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff2) format("woff2"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff) format("woff"), url(../fonts/samim/Farsi-Digits/Samim-FD.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  src: url(../fonts/Vazir/Vazir.eot);
+  src: url(../fonts/Vazir/Vazir.eot) format("embedded-opentype"), url(../fonts/Vazir/Vazir.woff2) format("woff2"), url(../fonts/Vazir/Vazir.woff) format("woff");
+}
+
+body {
+  font-family: 'IRANSans';
+  background-color: #faf6fb;
+  font-size: 100%;
+  direction: rtl;
+}
+
+body ::selection {
+  background-color: #ff9797;
+}
+
+header {
+  width: 100%;
+}
+
+header div.main-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url("./../images/ava.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+header div.main-banner h1.main-banner__main-title {
+  color: #faf6fb;
+  text-align: center;
+  width: 320px;
+  animation: typing 2.5s steps(18), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+header div.main-banner span.main-banner__description {
+  color: #faf6fb;
+  margin-top: .5rem;
+}
+
+header div.main-banner i {
+  color: #faf6fb;
+  font-size: 36px;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  bottom: 2rem;
+  animation: bounce-fade 1.3s ease-in-out infinite;
+}
+
+@keyframes bounce-fade {
+  0% {
+    bottom: 5rem;
+  }
+  100% {
+    bottom: 2rem;
+  }
+}
+
+header div.main-banner nav.main-navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: auto 1rem;
+}
+
+header div.main-banner nav.main-navbar div.main-navbar__hamburger-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header div.main-banner nav.main-navbar div.main-navbar__hamburger-menu span.ti-menu {
+  color: rgba(250, 246, 251, 0.75);
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  height: 45px;
+  width: 45px;
+  font-size: 30px;
+  z-index: 10;
+}
+
+header div.main-banner nav.main-navbar div.main-navbar__hamburger-menu span.ti-menu:hover {
+  color: #faf6fb;
+}
+
+header div.main-banner nav.main-navbar img.main-navbar__logo {
+  height: 40px;
+  width: 45px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+header div.main-banner div.collapse#coll-navbar {
+  position: fixed;
+}
+
+header div.main-banner div.collapse.show#coll-navbar {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  padding-right: 1rem;
+  background-color: #1b1b1b;
+  width: 15%;
+  transform: translate(0, 0);
+  transition: transform .4s ease-in-out;
+  overflow-y: auto;
+}
+
+header div.main-banner div.collapse.show#coll-navbar ul.navbar-nav {
+  padding-top: 4rem;
+}
+
+header div.main-banner div.collapse.show#coll-navbar ul.navbar-nav li.nav-item {
+  padding: 1rem 1rem;
+}
+
+header div.main-banner div.collapse.show#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  color: rgba(250, 246, 251, 0.75);
+}
+
+header div.main-banner div.collapse.show#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu:hover {
+  color: #faf6fb;
+}
+
+header div.main-banner div.collapse.show#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu:focus {
+  outline: 0;
+}
+
+header div.main-banner div.collapsing#coll-navbar {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  padding-right: 1rem;
+  background-color: #1b1b1b;
+  width: 15%;
+  transform: translate(100%, 0);
+  transition: transform .4s ease-in-out;
+  overflow-y: auto;
+}
+
+header div.main-banner div.collapsing#coll-navbar ul.navbar-nav {
+  padding-top: 4rem;
+}
+
+header div.main-banner div.collapsing#coll-navbar ul.navbar-nav li.nav-item {
+  padding: 1rem 1rem;
+}
+
+header div.main-banner div.collapsing#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  color: rgba(250, 246, 251, 0.75);
+}
+
+header div.main-banner div.collapsing#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu:hover {
+  color: #faf6fb;
+}
+
+header div.main-banner div.collapsing#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu:focus {
+  outline: 0;
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+  background-color: rgba(27, 27, 27, 0.75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer section.footer-medias {
+  height: 40%;
+  width: 100%;
+  background-color: rgba(250, 246, 251, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer section.footer-medias a.footer-medias__icon-link {
+  width: 25%;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+footer section.footer-medias a.footer-medias__icon-link i.footer-medias__icon {
+  color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer section.footer-medias a.footer-medias__icon-link i.footer-medias__icon:hover {
+  color: rgba(108, 117, 125, 0.9);
+}
+
+footer section.footer-privacy {
+  height: 30px;
+  width: 100%;
+  background-color: rgba(27, 27, 27, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer section.footer-privacy span.footer-privacy__description {
+  font-size: 14px;
+  color: rgba(250, 246, 251, 0.75);
+}
+/*# sourceMappingURL=home.css.map */
