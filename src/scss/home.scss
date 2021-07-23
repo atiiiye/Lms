@@ -74,7 +74,7 @@ header {
                 justify-content: center;
 
                 span.ti-menu {
-                    color: rgba($color: $color-light-2, $alpha: .75);
+                    color: rgba($color: $color-gray, $alpha: .75);
                     position: fixed;
                     top: 1rem;
                     right: 2rem;
@@ -109,7 +109,7 @@ header {
             padding-right: 1rem;
             // top: 55px;
             background-color: rgba($color: $color-gray-2, $alpha: 1.0);
-            width: 200px;
+            width: 250px;
             transform: translate(0, 0);
             transition: transform .4s ease-in-out;
             overflow-y: auto;
@@ -141,7 +141,7 @@ header {
             right: 0;
             padding-right: 1rem;
             background-color: rgba($color: $color-gray-2, $alpha: 1.0);
-            width: 200px;
+            width: 250px;
             transform: translate(100%, 0);
             transition: transform .4s ease-in-out;
 
@@ -190,13 +190,16 @@ main {
             align-items: center;
             flex-direction: column;
 
-            img.library-content__image {}
+            img.library-content__image {
+                width: 180px;
+            }
 
             span.library-content__description {
                 font-size: 14px;
                 text-align: center;
                 color: rgba($color: $color-gray-2, $alpha: .85);
                 line-height: 22px;
+                max-width: 100%;
             }
         }
     }
