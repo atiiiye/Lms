@@ -2,6 +2,7 @@
 
 header {
     width: 100%;
+    // z-index: 10001;
 
     div.main-banner {
         display: flex;
@@ -13,6 +14,7 @@ header {
         background: url('./../images/ava.jpg') no-repeat center center;
         background-size: cover;
         position: relative;
+        z-index: 9000000;
 
         h1.main-banner__main-title {
             color: $color-light-2;

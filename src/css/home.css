@@ -90,6 +90,7 @@ header div.main-banner {
   background: url("./../images/ava.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
+  z-index: 9000000;
 }
 
 header div.main-banner h1.main-banner__main-title {
