@@ -2,8 +2,9 @@
 
 $color-light:#fff;
 $color-light-2:#faf6fb;
-$color-gray:#6c757d;
+$color-gray:#898989;
 $color-gray-2:#1b1b1b;
+$color-dark:#000000;
 $color-pink-light:#ff9797;
 $color-pink :rgb(234, 139, 119);
 $color-pink-2:#fe6666;
@@ -13,8 +14,39 @@ body {
     background-color: $color-light-2;
     font-size: 100%;
     direction: rtl;
+    box-sizing: border-box;
+
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 4px rgba($color: $color-gray, $alpha: .85);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba($color: $color-gray-2, $alpha: .3);
+        border-radius: 10px;
+
+        &:hover {
+            background: rgba($color: $color-gray-2, $alpha: .75);
+        }
+    }
 
     ::selection {
         background-color: $color-pink-light;
     }
+
+    a:focus {
+        outline: 0;
+    }
+
+    .container-fluid {
+        padding: 0;
+        margin: 0;
+    }
+
+
 }

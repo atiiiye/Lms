@@ -100,7 +100,6 @@ header {
 
         div.collapse#coll-navbar {
             position: fixed;
-            // height: 100%;
         }
 
         div.collapse.show#coll-navbar {
@@ -110,7 +109,7 @@ header {
             padding-right: 1rem;
             // top: 55px;
             background-color: rgba($color: $color-gray-2, $alpha: 1.0);
-            width: 15%;
+            width: 200px;
             transform: translate(0, 0);
             transition: transform .4s ease-in-out;
             overflow-y: auto;
@@ -130,10 +129,6 @@ header {
                         &:hover {
                             color: rgba($color: $color-light-2, $alpha: 1.0);
                         }
-
-                        &:focus {
-                            outline: 0;
-                        }
                     }
                 }
             }
@@ -146,12 +141,12 @@ header {
             right: 0;
             padding-right: 1rem;
             background-color: rgba($color: $color-gray-2, $alpha: 1.0);
-            width: 15%;
+            width: 200px;
             transform: translate(100%, 0);
             transition: transform .4s ease-in-out;
-            overflow-y: auto;
 
             ul.navbar-nav {
+                overflow-y: auto;
                 padding-top: 4rem;
 
                 li.nav-item {
@@ -166,10 +161,6 @@ header {
                         &:hover {
                             color: rgba($color: $color-light-2, $alpha: 1.0);
                         }
-
-                        &:focus {
-                            outline: 0;
-                        }
                     }
                 }
             }
@@ -177,9 +168,42 @@ header {
     }
 }
 
+main {
+    section.library-content {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba($color: $color-light-2, $alpha: 1.0);
+
+        h3.library-content__title {
+            color: rgba($color: $color-gray, $alpha: .75);
+            margin-bottom: 3rem;
+        }
+
+        div.library-content__box {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            img.library-content__image {}
+
+            span.library-content__description {
+                font-size: 14px;
+                text-align: center;
+                color: rgba($color: $color-gray-2, $alpha: .85);
+                line-height: 22px;
+            }
+        }
+    }
+}
+
 footer {
     width: 100%;
-    height: 400px;
     background-color: rgba($color: $color-gray-2, $alpha: .75);
     display: flex;
     justify-content: space-between;
@@ -187,21 +211,20 @@ footer {
     flex-direction: column;
 
     section.footer-medias {
-        height: 40%;
+        height: 300px;
         width: 100%;
-        background-color: rgba($color: $color-light-2, $alpha: .85);
+        background-color: rgba($color: $color-gray-2, $alpha: .85);
         display: flex;
         justify-content: center;
         align-items: center;
 
         a.footer-medias__icon-link {
             width: 25%;
-            font-size: 24px;
+            font-size: 30px;
             text-decoration: none;
 
-
             i.footer-medias__icon {
-                color: rgba($color: $color-gray-2, $alpha: 1.0);
+                color: rgba($color: $color-light-2, $alpha: 1.0);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -213,10 +236,47 @@ footer {
         }
     }
 
-    section.footer-privacy {
-        height: 30px;
+    section.footer-middle {
         width: 100%;
-        background-color: rgba($color: $color-gray-2, $alpha: .95);
+        height: 100vh;
+        background: url('./../images/back.jpg')no-repeat center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div.footer-middle__contact-box {
+            width: calc(100% /3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            i.footer-middle__icon {
+                color: rgba($color: $color-light-2, $alpha: 1.0);
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    color: rgba($color: $color-light-2, $alpha: .85);
+                }
+            }
+
+            span.footer-middle__title {
+                color: rgba($color: $color-light-2, $alpha: 1.0);
+                text-align: center;
+                margin-top: 1rem;
+                font-size: 18px;
+            }
+        }
+    }
+
+    section.footer-privacy {
+        height: 100px;
+        width: 100%;
+        background-color: rgba($color: $color-dark, $alpha: .95);
         display: flex;
         justify-content: center;
         align-items: center;

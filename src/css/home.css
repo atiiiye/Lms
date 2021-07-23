@@ -41,10 +41,39 @@ body {
   background-color: #faf6fb;
   font-size: 100%;
   direction: rtl;
+  box-sizing: border-box;
+}
+
+body ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+body ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgba(137, 137, 137, 0.85);
+  border-radius: 10px;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background: rgba(27, 27, 27, 0.3);
+  border-radius: 10px;
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: rgba(27, 27, 27, 0.75);
 }
 
 body ::selection {
   background-color: #ff9797;
+}
+
+body a:focus {
+  outline: 0;
+}
+
+body .container-fluid {
+  padding: 0;
+  margin: 0;
 }
 
 header {
@@ -155,7 +184,7 @@ header div.main-banner div.collapse.show#coll-navbar {
   right: 0;
   padding-right: 1rem;
   background-color: #1b1b1b;
-  width: 15%;
+  width: 200px;
   transform: translate(0, 0);
   transition: transform .4s ease-in-out;
   overflow-y: auto;
@@ -180,23 +209,19 @@ header div.main-banner div.collapse.show#coll-navbar ul.navbar-nav li.nav-item a
   color: #faf6fb;
 }
 
-header div.main-banner div.collapse.show#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu:focus {
-  outline: 0;
-}
-
 header div.main-banner div.collapsing#coll-navbar {
   position: fixed;
   height: 100%;
   right: 0;
   padding-right: 1rem;
   background-color: #1b1b1b;
-  width: 15%;
+  width: 200px;
   transform: translate(100%, 0);
   transition: transform .4s ease-in-out;
-  overflow-y: auto;
 }
 
 header div.main-banner div.collapsing#coll-navbar ul.navbar-nav {
+  overflow-y: auto;
   padding-top: 4rem;
 }
 
@@ -215,13 +240,38 @@ header div.main-banner div.collapsing#coll-navbar ul.navbar-nav li.nav-item a.na
   color: #faf6fb;
 }
 
-header div.main-banner div.collapsing#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu:focus {
-  outline: 0;
+main section.library-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #faf6fb;
+}
+
+main section.library-content h3.library-content__title {
+  color: rgba(137, 137, 137, 0.75);
+  margin-bottom: 3rem;
+}
+
+main section.library-content div.library-content__box {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main section.library-content div.library-content__box span.library-content__description {
+  font-size: 14px;
+  text-align: center;
+  color: rgba(27, 27, 27, 0.85);
+  line-height: 22px;
 }
 
 footer {
   width: 100%;
-  height: 400px;
   background-color: rgba(27, 27, 27, 0.75);
   display: flex;
   justify-content: space-between;
@@ -230,9 +280,9 @@ footer {
 }
 
 footer section.footer-medias {
-  height: 40%;
+  height: 300px;
   width: 100%;
-  background-color: rgba(250, 246, 251, 0.85);
+  background-color: rgba(27, 27, 27, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,25 +290,62 @@ footer section.footer-medias {
 
 footer section.footer-medias a.footer-medias__icon-link {
   width: 25%;
-  font-size: 24px;
+  font-size: 30px;
   text-decoration: none;
 }
 
 footer section.footer-medias a.footer-medias__icon-link i.footer-medias__icon {
-  color: #1b1b1b;
+  color: #faf6fb;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 footer section.footer-medias a.footer-medias__icon-link i.footer-medias__icon:hover {
-  color: rgba(108, 117, 125, 0.9);
+  color: rgba(137, 137, 137, 0.9);
+}
+
+footer section.footer-middle {
+  width: 100%;
+  height: 100vh;
+  background: url("./../images/back.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer section.footer-middle div.footer-middle__contact-box {
+  width: calc(100% /3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer section.footer-middle div.footer-middle__contact-box i.footer-middle__icon {
+  color: #faf6fb;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer section.footer-middle div.footer-middle__contact-box i.footer-middle__icon:hover {
+  color: rgba(250, 246, 251, 0.85);
+}
+
+footer section.footer-middle div.footer-middle__contact-box span.footer-middle__title {
+  color: #faf6fb;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 18px;
 }
 
 footer section.footer-privacy {
-  height: 30px;
+  height: 100px;
   width: 100%;
-  background-color: rgba(27, 27, 27, 0.95);
+  background-color: rgba(0, 0, 0, 0.95);
   display: flex;
   justify-content: center;
   align-items: center;
