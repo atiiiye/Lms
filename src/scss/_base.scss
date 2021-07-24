@@ -37,6 +37,7 @@ body {
 
     ::selection {
         background-color: $color-pink-light;
+        text-shadow: 1px 1px 5px rgba($color: $color-dark, $alpha: .5);
     }
 
     a:focus {
@@ -47,6 +48,4 @@ body {
         padding: 0;
         margin: 0;
     }
-
-
 }
