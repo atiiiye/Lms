@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "Nastaliq";
+  font-style: normal;
+  src: url(../fonts/IranNastaliq/IranNastaliq.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  src: url(../fonts/IRANSansWeb/IRANSansWeb.eot);
+  src: url(../fonts/IRANSansWeb/IRANSansWeb.eot) format("embedded-opentype"), url(../fonts/IRANSansWeb/IRANSansWeb.woff2) format("woff2"), url(../fonts/IRANSansWeb/IRANSansWeb.woff) format("woff"), url(../fonts/IRANSansWeb/IRANSansWeb.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Sahel;
+  font-style: normal;
+  src: url(../fonts/sahel/Sahel.eot);
+  src: url(../fonts/sahel/Sahel.eot) format("embedded-opentype"), url(../fonts/sahel/Sahel.woff2) format("woff2"), url(../fonts/sahel/Sahel.woff) format("woff"), url(../fonts/sahel/Sahel.ttf) format("truetype");
+  src: url(../fonts/sahel/Farsi-Digits/Sahel-FD.eot);
+  src: url(../fonts/sahel/Farsi-Digits/Sahel-FD.eot) format("embedded-opentype"), url(../fonts/sahel/Farsi-Digits/Sahel-FD.woff2) format("woff2"), url(../fonts/sahel/Farsi-Digits/Sahel-FD.woff) format("woff"), url(../fonts/sahel/Farsi-Digits/Sahel-FD.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Samim;
+  font-style: normal;
+  src: url(../fonts/samim/Samim.eot);
+  src: url(../fonts/samim/Samim.eot) format("embedded-opentype"), url(../fonts/samim/Samim.woff2) format("woff2"), url(../fonts/samim/Samim.woff) format("woff"), url(../fonts/samim/Samim.ttf) format("truetype");
+  src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot);
+  src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot) format("embedded-opentype"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff2) format("woff2"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff) format("woff"), url(../fonts/samim/Farsi-Digits/Samim-FD.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  src: url(../fonts/Vazir/Vazir.eot);
+  src: url(../fonts/Vazir/Vazir.eot) format("embedded-opentype"), url(../fonts/Vazir/Vazir.woff2) format("woff2"), url(../fonts/Vazir/Vazir.woff) format("woff");
+}
+
+body {
+  font-family: 'IRANSans';
+  background-color: #faf6fb;
+  font-size: 100%;
+  direction: rtl;
+  box-sizing: border-box;
+}
+
+body ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+body ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgba(137, 137, 137, 0.85);
+  border-radius: 10px;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background: rgba(27, 27, 27, 0.3);
+  border-radius: 10px;
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: rgba(27, 27, 27, 0.75);
+}
+
+body ::selection {
+  background-color: #ff9797;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+body a:focus {
+  outline: 0;
+}
+
+body .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  main section.slider-section {
+    height: 100vh;
+  }
+  main section.slider-section div.image-gallery.owl-carousel.owl-theme {
+    width: 80%;
+    height: 70%;
+  }
+  main section.slider-section div.image-gallery.owl-carousel.owl-theme div.owl-nav button.owl-prev i.fa.fa-angle-left {
+    font-size: 32px;
+  }
+  main section.slider-section div.image-gallery.owl-carousel.owl-theme div.item-slide {
+    height: 60vh;
+    max-height: 60vh;
+  }
+  main section.slider-section div.image-gallery.owl-carousel.owl-theme div.item-slide span.item-slide__text {
+    width: 40%;
+  }
+  main section.slider-section div.image-gallery.owl-carousel.owl-theme div.item-slide div.image-gallery__box {
+    width: 45%;
+  }
+  main section.slider-courses {
+    height: 100vh;
+  }
+  main section.slider-courses div.swiper-container.mySwiper img.swiper-slide {
+    width: calc(100% / 6);
+    height: calc((100% - 30px) / 2);
+  }
+  main section.library-content {
+    height: max-content;
+  }
+  main section.library-content h3.library-content__title {
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  main section.library-content div.library-content__parent {
+    flex-direction: column;
+  }
+  main section.library-content div.library-content__parent div.library-content__box {
+    width: 100%;
+    height: 50vh;
+  }
+  main section.library-content div.library-content__parent div.library-content__box img.library-content__image {
+    width: 180px;
+  }
+  main section.library-content div.library-content__parent div.library-content__box span.library-content__description {
+    font-size: 14px;
+  }
+  footer section.footer-medias {
+    height: 400px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer section.footer-medias a.footer-medias__icon-link {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  footer section.footer-middle {
+    flex-direction: column;
+  }
+  footer section.footer-middle div.footer-middle__contact-box {
+    width: 100%;
+    height: calc(100% / 3);
+  }
+}
+/*# sourceMappingURL=mediaHome.css.map */
