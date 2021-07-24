@@ -410,19 +410,25 @@ main section.library-content h3.library-content__title {
   margin-bottom: 3rem;
 }
 
-main section.library-content div.library-content__box {
-  width: 25%;
+main section.library-content div.library-content__parent {
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+
+main section.library-content div.library-content__parent div.library-content__box {
+  width: 23%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
 
-main section.library-content div.library-content__box img.library-content__image {
+main section.library-content div.library-content__parent div.library-content__box img.library-content__image {
   width: 180px;
 }
 
-main section.library-content div.library-content__box span.library-content__description {
+main section.library-content div.library-content__parent div.library-content__box span.library-content__description {
   font-size: 14px;
   text-align: center;
   color: rgba(27, 27, 27, 0.85);

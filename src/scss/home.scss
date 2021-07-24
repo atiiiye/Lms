@@ -342,32 +342,31 @@ main {
         }
 
 
-            div.library-content__parent {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+        div.library-content__parent {
+            width: 100%;
+            display: flex;
+            justify-content: center;
 
-                div.library-content__box {
-                    width: 25%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-        
-                    img.library-content__image {
-                        width: 180px;
-                    }
-        
-                    span.library-content__description {
-                        font-size: 14px;
-                        text-align: center;
-                        color: rgba($color: $color-gray-2, $alpha: .85);
-                        line-height: 22px;
-                        max-width: 100%;
-                    }
+            div.library-content__box {
+                width: 23%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+
+                img.library-content__image {
+                    width: 180px;
+                }
+
+                span.library-content__description {
+                    font-size: 14px;
+                    text-align: center;
+                    color: rgba($color: $color-gray-2, $alpha: .85);
+                    line-height: 22px;
+                    max-width: 100%;
                 }
             }
+        }
     }
 }
 
