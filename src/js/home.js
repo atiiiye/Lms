@@ -20,4 +20,14 @@ $(document).ready(function () {
     $('.stop').on('click', function () {
         owl.trigger('stop.owl.autoplay')
     })
+
+    let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        slidesPerColumn: 2,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
 });
