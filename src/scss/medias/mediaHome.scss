@@ -50,12 +50,14 @@
         }
 
         section.slider-courses {
-            height: 100vh;
+            height: 450px;
+            max-height: 500px;
 
             div.swiper-container.mySwiper {
                 img.swiper-slide {
                     width: calc(100% / 6);
                     height: calc((100% - 30px) / 2);
+                    max-height: 150px;
 
                 }
             }
@@ -120,6 +122,86 @@
 }
 
 @media (max-width : 576px) {
+
+    main {
+        section.slider-section {
+            height: 100vh;
+
+            div.image-gallery.owl-carousel.owl-theme {
+                width: 80%;
+                height: 70%;
+
+                div.owl-stage-outer {
+                    div.owl-stage {
+                        div.owl-item {
+                            img.image-gallery__slide {}
+                        }
+                    }
+                }
+
+                div.owl-nav {
+                    button.owl-prev {
+                        i.fa.fa-angle-left {
+                            font-size: 32px;
+                        }
+                    }
+
+                    button.owl-next {}
+
+                    button.owl-next.disabled,
+                    button.owl-prev.disabled {}
+                }
+
+                div.item-slide {
+                    height: 60vh;
+                    max-height: 60vh;
+
+                    span.item-slide__text {
+                        width: 40%;
+                    }
+
+                    div.image-gallery__box {
+                        width: 45%;
+
+                        img.image-gallery__slide {}
+                    }
+                }
+            }
+        }
+
+        section.slider-courses {
+            height: 320px;
+            max-height: 340px;
+            padding: 2rem;
+
+            div.swiper-container.mySwiper {
+                margin-right: 0;
+
+                img.swiper-slide {
+                    width: calc(100% / 6);
+                    height: calc((100% - 30px) / 2);
+                    max-height: 105px;
+                    margin: auto 0 !important;
+
+                }
+            }
+        }
+
+        section.library-content {
+            h3.library-content__title {
+                margin-top: 2rem;
+            }
+
+            div.library-content__parent {
+                div.library-content__box {
+                    img.library-content__image {}
+
+                    span.library-content__description {}
+                }
+            }
+        }
+    }
+
     footer {
         section.footer-medias {
             a.footer-medias__icon-link {

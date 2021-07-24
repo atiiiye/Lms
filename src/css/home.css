@@ -171,7 +171,7 @@ header div.main-banner nav.main-navbar div.main-navbar__hamburger-menu span.ti-m
 header div.main-banner nav.main-navbar img.main-navbar__logo {
   height: 40px;
   width: 45px;
-  position: absolute;
+  position: fixed;
   top: 1rem;
   left: 1rem;
 }
@@ -372,14 +372,13 @@ main section.slider-courses {
   align-items: center;
   justify-content: center;
   background-color: #1b1b1b;
-  padding: 2rem;
+  padding: 2rem 3rem;
 }
 
 main section.slider-courses div.swiper-container.mySwiper {
   width: 100%;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-right: 2rem;
 }
 
 main section.slider-courses div.swiper-container.mySwiper img.swiper-slide {
@@ -469,6 +468,8 @@ footer section.footer-medias a.footer-medias__icon-link i.footer-medias__icon {
 
 footer section.footer-medias a.footer-medias__icon-link i.footer-medias__icon:hover {
   color: rgba(137, 137, 137, 0.9);
+  transform: scale(1.5);
+  transition: all .3s ease-in;
 }
 
 footer section.footer-middle {

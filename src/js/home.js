@@ -29,5 +29,8 @@ $(document).ready(function () {
             el: ".swiper-pagination",
             clickable: true,
         },
+        // responsive: {
+        //     slidesPerView: 1,
+        // }
     });
 });

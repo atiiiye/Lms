@@ -99,11 +99,13 @@ body .container-fluid {
     width: 45%;
   }
   main section.slider-courses {
-    height: 100vh;
+    height: 450px;
+    max-height: 500px;
   }
   main section.slider-courses div.swiper-container.mySwiper img.swiper-slide {
     width: calc(100% / 6);
     height: calc((100% - 30px) / 2);
+    max-height: 150px;
   }
   main section.library-content {
     height: max-content;
@@ -140,6 +142,43 @@ body .container-fluid {
 }
 
 @media (max-width: 576px) {
+  main section.slider-section {
+    height: 100vh;
+  }
+  main section.slider-section div.image-gallery.owl-carousel.owl-theme {
+    width: 80%;
+    height: 70%;
+  }
+  main section.slider-section div.image-gallery.owl-carousel.owl-theme div.owl-nav button.owl-prev i.fa.fa-angle-left {
+    font-size: 32px;
+  }
+  main section.slider-section div.image-gallery.owl-carousel.owl-theme div.item-slide {
+    height: 60vh;
+    max-height: 60vh;
+  }
+  main section.slider-section div.image-gallery.owl-carousel.owl-theme div.item-slide span.item-slide__text {
+    width: 40%;
+  }
+  main section.slider-section div.image-gallery.owl-carousel.owl-theme div.item-slide div.image-gallery__box {
+    width: 45%;
+  }
+  main section.slider-courses {
+    height: 320px;
+    max-height: 340px;
+    padding: 2rem;
+  }
+  main section.slider-courses div.swiper-container.mySwiper {
+    margin-right: 0;
+  }
+  main section.slider-courses div.swiper-container.mySwiper img.swiper-slide {
+    width: calc(100% / 6);
+    height: calc((100% - 30px) / 2);
+    max-height: 105px;
+    margin: auto 0 !important;
+  }
+  main section.library-content h3.library-content__title {
+    margin-top: 2rem;
+  }
   footer section.footer-middle {
     flex-direction: column;
   }
