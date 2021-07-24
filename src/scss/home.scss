@@ -63,11 +63,15 @@ header {
 
         nav.main-navbar {
             width: 100%;
-            // height: 55px;
+            height: 55px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: auto 1rem;
+            // position: fixed;
+            // top: 0;
+            // background-color: rgba($color: $color-gray-2, $alpha: 1.0);
+
 
             div.main-navbar__hamburger-menu {
                 display: flex;
@@ -174,6 +178,8 @@ header {
 }
 
 main {
+    background-color: rgba($color: $color-gray-2, $alpha: 1.0);
+
     section.slider-section {
         width: 100%;
         height: 100vh;
@@ -181,7 +187,7 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba($color: $color-gray, $alpha: .075);
+        background-color: rgba($color: $color-light-2, $alpha: .95);
 
         div.image-gallery.owl-carousel.owl-theme {
             display: flex;
@@ -338,6 +344,7 @@ main {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        background-color: $color-light-2;
 
         h3.library-content__title {
             color: rgba($color: $color-gray, $alpha: .75);

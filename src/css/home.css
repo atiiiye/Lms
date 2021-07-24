@@ -141,6 +141,7 @@ header div.main-banner i {
 
 header div.main-banner nav.main-navbar {
   width: 100%;
+  height: 55px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -246,13 +247,17 @@ header div.main-banner div.collapsing#coll-navbar ul.navbar-nav li.nav-item a.na
   color: #faf6fb;
 }
 
+main {
+  background-color: #1b1b1b;
+}
+
 main section.slider-section {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(137, 137, 137, 0.075);
+  background-color: rgba(250, 246, 251, 0.95);
 }
 
 main section.slider-section div.image-gallery.owl-carousel.owl-theme {
@@ -404,6 +409,7 @@ main section.library-content {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #faf6fb;
 }
 
 main section.library-content h3.library-content__title {
