@@ -1,3 +1,95 @@
 @import './base';
 
-main.courses-content {}
+main.courses-content {
+    width: 100%;
+
+    h1.courses-title {
+        color: rgba($color:$color-gray-2, $alpha: .85);
+        font-weight: 600;
+        text-align: center;
+        padding: 2rem;
+        // border-bottom: 1px solid rgba($color:$color-gray-2, $alpha: .8);
+    }
+
+    section.courses-part {
+        background-color: rgba($color: $color-gray, $alpha: .08);
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 260px;
+        margin-bottom: 2rem;
+        padding: 0;
+
+        div.courses-part__image-side {
+            width: 350px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img.courses-part__image {
+                width: 90%;
+                height: 85%;
+            }
+        }
+
+        div.course-part__detailes-courses {
+            height: 100%;
+            width: calc(100% - 350px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            h4.course-part__title-courses {
+                color: rgba($color:$color-gray-2, $alpha: .8);
+                font-weight: 600;
+                text-align: center;
+                padding: 2rem;
+                padding-bottom: 0;
+            }
+
+            span.course-part__description-courses {
+                font-size: 95%;
+                color: rgba($color: $color-gray, $alpha: .95);
+                line-height: 24px;
+                width: 100%;
+                max-width: 80%;
+                text-align: justify;
+                margin-top: 1rem;
+                max-height: 90%;
+                overflow-y: hidden;
+            }
+
+            div.course-part__button-box {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                position: absolute;
+                bottom: 1rem;
+                left: 4rem;
+
+                button.course-part__button {
+                    font-weight: 500;
+                    border: 2px solid rgba($color: $color-pink-light, $alpha: .9);
+                    background-color: rgba($color: $color-pink-light, $alpha: 1.0);
+                    border-radius: 4px;
+                    padding: 0;
+                    width: 100px;
+
+                    &:hover>a.course-part__link,
+                    &:focus>a.course-part__link {
+                        color: rgba($color: $color-light-2, $alpha: 1.0);
+                        border: 2px solid rgba($color: $color-pink-light, $alpha: 1.0);
+                    }
+
+                    a.course-part__link {
+                        text-decoration: none;
+                        color: rgba($color: $color-light-2, $alpha: .8);
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
