@@ -6,7 +6,6 @@ $color-gray:#898989;
 $color-gray-2:#1b1b1b;
 $color-dark:#000000;
 $color-pink-light:#ff9797;
-$color-pink :rgb(234, 139, 119);
 $color-pink-2:#fe6666;
 
 body {
@@ -37,7 +36,7 @@ body {
 
     ::selection {
         background-color: $color-pink-light;
-        text-shadow: 1px 1px 5px rgba($color: $color-dark, $alpha: .5);
+        text-shadow: 1px 1px 3px rgba($color: $color-dark, $alpha: .5);
     }
 
     a:focus {

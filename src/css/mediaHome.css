@@ -65,7 +65,7 @@ body ::-webkit-scrollbar-thumb:hover {
 
 body ::selection {
   background-color: #ff9797;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 body a:focus {
@@ -156,13 +156,6 @@ body .container-fluid {
   }
   main section.library-content h3.library-content__title {
     margin-top: 2rem;
-  }
-  footer section.footer-middle {
-    flex-direction: column;
-  }
-  footer section.footer-middle div.footer-middle__contact-box {
-    width: 100%;
-    height: calc(100% / 3);
   }
 }
 /*# sourceMappingURL=mediaHome.css.map */

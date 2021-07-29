@@ -1,5 +1,231 @@
 @import './base';
 
 main.course-content {
-    
+    width: 100%;
+
+    section.single-course {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: rgba($color: $color-gray, $alpha: .08);
+        padding: 2rem 3rem;
+        box-sizing: border-box;
+
+        div.single-course__image-video-course {
+            width: 400px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba($color: $color-light-2, $alpha: .8);
+
+
+            img.single-course__image-course {
+                height: 250px;
+                width: 80%;
+                margin: 2rem 2rem 1rem 1rem;
+            }
+
+            video.single-video-course {
+                // height: 50%;
+                width: 80%;
+                margin: 1rem 2rem 1rem 1rem;
+            }
+
+
+        }
+
+        div.single-course__details-course {
+            width: calc(100% - 400px);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: rgba($color: $color-light-2, $alpha: .8);
+
+            div.single-course__title-butoon-part {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                h1.single-course__title-course {
+                    // width: 70%;
+                    text-align: right;
+                    font-weight: 600;
+                    color: rgba($color: $color-gray-2, $alpha: 1.0);
+                    padding: 2rem 0;
+                    margin-bottom: 0;
+                }
+
+                div.single-course__price-signup {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-left: 5rem;
+
+                    span.single-course__price {
+                        color: rgba($color: $color-gray, $alpha: .9);
+                        font-size: 90%;
+                        margin-bottom: .75rem;
+                    }
+
+                    button.single-course__signup-button {
+                        font-weight: 500;
+                        border: 2px solid rgba($color: $color-pink-light, $alpha: .9);
+                        background-color: rgba($color: $color-pink-light, $alpha: 1.0);
+                        border-radius: 4px;
+                        padding: 0;
+                        width: 100px;
+
+                        &:hover>a.single-course__signup-link,
+                        &:focus>a.single-course__signup-link {
+                            color: rgba($color: $color-light-2, $alpha: 1.0);
+                            border: 2px solid rgba($color: $color-pink-light, $alpha: 1.0);
+                        }
+
+                        a.single-course__signup-link {
+                            text-decoration: none;
+                            color: rgba($color: $color-light-2, $alpha: .8);
+                            width: 100%;
+
+                        }
+                    }
+                }
+            }
+
+
+            span.single-description-course {
+                font-size: 88%;
+                color: rgba($color: $color-gray, $alpha: .85);
+                line-height: 28px;
+                max-width: 80%;
+                text-align: justify;
+                margin-top: 1rem;
+                max-height: 90%;
+            }
+
+        }
+
+    }
+
+    section.owl-carousel.owl-theme#courses-slider {
+        width: 100%;
+        padding: 1rem;
+
+
+        div.owl-stage-outer {
+            width: 100%;
+            height: 100%;
+
+            div.owl-stage {
+                width: 50%;
+                height: 250px;
+
+                div.owl-item {
+                    transform: scale(.8);
+                    transition: all 0.3s ease-in;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    height: 100%;
+
+                    img.course-image {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        div.owl-nav {
+            height: 100%;
+
+            button.owl-prev {
+                color: $color-gray;
+                position: absolute;
+                top: calc(50% - 16px);
+                left: 0;
+                border: none;
+                border-color: transparent;
+
+                &:focus,
+                &:active {
+                    border: none;
+                    outline: none;
+                    border-color: transparent !important;
+                }
+
+                i.fa.fa-angle-left {
+                    font-size: 32px;
+                }
+            }
+
+            button.owl-next {
+                color: $color-gray;
+                position: absolute;
+                top: calc(50% - 16px);
+                right: 0;
+                border: none;
+                border-color: transparent;
+
+                &:focus,
+                &:active {
+                    border: none;
+                    outline: none;
+                    border-color: transparent !important;
+                }
+
+                i.fa.fa-angle-right {
+                    font-size: 32px;
+                }
+            }
+
+            button.owl-next.disabled,
+            button.owl-prev.disabled {
+                opacity: .3;
+            }
+        }
+
+        div.item-slide {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 60vh;
+            max-height: 60vh;
+            width: 100%;
+            padding: 1rem;
+
+            span.item-slide__text {
+                width: 40%;
+                justify-content: center;
+                overflow-y: hidden;
+                display: flex;
+                align-items: center;
+                text-align: justify;
+                font-size: 14px;
+                color: rgba($color: $color-gray, $alpha: .85);
+            }
+
+            div.image-gallery__box {
+                position: relative;
+                display: flex;
+                direction: ltr;
+                transition: .2s all;
+                width: 45%;
+                height: 100%;
+                background: rgba($color: $color-gray-2, $alpha: 1.0);
+                border: 1px solid rgba($color: $color-gray-2, $alpha: .25);
+
+                img.image-gallery__slide {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+    }
 }
