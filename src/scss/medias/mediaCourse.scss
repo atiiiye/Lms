@@ -1,0 +1,221 @@
+@import './../base';
+
+@media(max-width : 991px) {
+    main.course-content {
+        height: max-content;
+
+        section.single-course {
+            height: max-content;
+            padding: 2rem;
+            flex-direction: column;
+
+            div.single-course__image-video-course {
+                width: 100%;
+                height: 100%;
+
+                img.single-course__image-course {
+                    height: 250px;
+                    width: 400px;
+                    margin: 2rem 2rem 1rem 1rem;
+                }
+
+                video.single-video-course {
+                    width: 400px;
+                    margin: 1rem 2rem 1rem 1rem;
+                }
+
+
+            }
+
+            div.single-course__details-course {
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                padding-bottom: 1rem;
+
+                div.single-course__title-buton-part {
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h1.single-course__title-course {
+                        padding: 2rem 0;
+                        margin-bottom: 0;
+                        // width: 100%;
+                    }
+
+                    div.single-course__price-signup {
+                        padding-left: 0;
+
+                        span.single-course__price {
+                            font-size: 90%;
+                            margin-bottom: .85rem;
+                        }
+
+                        button.single-course__signup-button {
+                            padding: .25rem .375rem;
+                            width: 120px;
+
+                            a.single-course__signup-link {
+                                font-size: 1.15rem;
+                            }
+                        }
+                    }
+                }
+
+                span.single-description-course {
+                    padding-left: .5rem;
+                    padding-bottom: 1rem;
+                    max-height: 300px;
+                    overflow-y: auto;
+                    box-sizing: border-box;
+                }
+            }
+        }
+
+        section.owl-carousel.owl-theme#courses-slider {
+            padding: 1rem;
+
+            div.owl-stage-outer {
+                div.owl-stage {
+                    width: 250 !important;
+                    height: 250px;
+
+                    div.owl-item {
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        height: 100%;
+
+                        img.course-image {}
+                    }
+                }
+            }
+
+            div.owl-nav {
+                height: 100%;
+
+                button.owl-prev {
+                    i.fa.fa-angle-left {
+                        font-size: 30px;
+                    }
+                }
+
+                button.owl-next {
+                    i.fa.fa-angle-right {
+                        font-size: 30px;
+                    }
+                }
+
+                button.owl-next.disabled,
+                button.owl-prev.disabled {}
+            }
+
+            div.item-slide {
+                height: 50vh;
+                max-height: 50vh;
+                padding: 1rem;
+
+                div.image-gallery__box {
+                    width: 45%;
+
+                    img.image-gallery__slide {}
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width : 576px) {
+    main.course-content {
+        height: max-content;
+
+        section.single-course {
+            height: max-content;
+            padding: 1.5rem;
+
+            div.single-course__image-video-course {
+                img.single-course__image-course {
+                    width: 230px;
+                    height: 200px;
+                    margin: 2rem 1rem 1rem 1rem;
+                }
+
+                video.single-video-course {
+                    width: 230px;
+                    margin: 1rem;
+                }
+            }
+
+            div.single-course__details-course {
+                div.single-course__title-buton-part {
+                    h1.single-course__title-course {}
+
+                    div.single-course__price-signup {
+                        span.single-course__price {}
+
+                        button.single-course__signup-button {
+                            a.single-course__signup-link {}
+                        }
+                    }
+                }
+
+                span.single-description-course {
+                    padding-left: .5rem;
+                    max-height: 300px;
+                    overflow-y: auto;
+                }
+            }
+        }
+
+        section.owl-carousel.owl-theme#courses-slider {
+            div.owl-stage-outer {
+                div.owl-stage {
+                    width: 250 !important;
+                    height: 250px;
+
+                    div.owl-item {
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        height: 100%;
+
+                        img.course-image {}
+                    }
+                }
+            }
+
+            div.owl-nav {
+                button.owl-prev {
+                    left: 1rem;
+
+                    i.fa.fa-angle-left {
+                        font-size: 32px;
+                    }
+                }
+
+                button.owl-next {
+                    right: 1rem;
+
+                    i.fa.fa-angle-right {
+                        font-size: 32px;
+                    }
+                }
+
+                button.owl-next.disabled,
+                button.owl-prev.disabled {}
+            }
+
+            div.item-slide {
+                height: 40vh;
+                max-height: 40vh;
+                padding: 1rem;
+
+                div.image-gallery__box {
+                    width: 45%;
+
+                    img.image-gallery__slide {}
+                }
+            }
+        }
+    }
+}
