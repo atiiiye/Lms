@@ -50,7 +50,7 @@ body ::-webkit-scrollbar {
 }
 
 body ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 4px rgba(137, 137, 137, 0.7);
+  box-shadow: inset 0 0 2px rgba(137, 137, 137, 0.25);
   border-radius: 10px;
 }
 
@@ -65,7 +65,7 @@ body ::-webkit-scrollbar-thumb:hover {
 
 body ::selection {
   background-color: #ff9797;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 body a:focus {
@@ -143,7 +143,6 @@ main.course-content section.single-course div.single-course__details-course div.
   flex-direction: column;
   align-items: center;
   padding-left: 4rem;
-  padding-bottom: 1rem;
 }
 
 main.course-content section.single-course div.single-course__details-course div.single-course__title-buton-part div.single-course__price-signup span.single-course__price {
@@ -189,8 +188,8 @@ main.course-content section.single-course div.single-course__details-course span
 }
 
 main.course-content section.single-course div.single-course__details-course span.single-description-course ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
 }
 
 main.course-content section.owl-carousel.owl-theme#courses-slider {

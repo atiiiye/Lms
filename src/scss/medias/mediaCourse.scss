@@ -11,7 +11,6 @@
 
             div.single-course__image-video-course {
                 width: 100%;
-                height: 100%;
 
                 img.single-course__image-course {
                     height: 250px;
@@ -23,42 +22,26 @@
                     width: 400px;
                     margin: 1rem 2rem 1rem 1rem;
                 }
-
-
             }
 
             div.single-course__details-course {
                 width: 100%;
-                height: 100%;
                 align-items: center;
                 padding-bottom: 1rem;
 
                 div.single-course__title-buton-part {
-                    width: 100%;
                     flex-direction: column;
                     align-items: center;
 
-                    h1.single-course__title-course {
-                        padding: 2rem 0;
-                        margin-bottom: 0;
-                        // width: 100%;
-                    }
+                    h1.single-course__title-course {}
 
                     div.single-course__price-signup {
                         padding-left: 0;
 
-                        span.single-course__price {
-                            font-size: 90%;
-                            margin-bottom: .85rem;
-                        }
+                        span.single-course__price {}
 
                         button.single-course__signup-button {
-                            padding: .25rem .375rem;
-                            width: 120px;
-
-                            a.single-course__signup-link {
-                                font-size: 1.15rem;
-                            }
+                            a.single-course__signup-link {}
                         }
                     }
                 }
@@ -74,26 +57,17 @@
         }
 
         section.owl-carousel.owl-theme#courses-slider {
-            padding: 1rem;
-
             div.owl-stage-outer {
                 div.owl-stage {
                     width: 250 !important;
-                    height: 250px;
 
                     div.owl-item {
-                        margin-top: 1rem;
-                        margin-bottom: 1rem;
-                        height: 100%;
-
                         img.course-image {}
                     }
                 }
             }
 
             div.owl-nav {
-                height: 100%;
-
                 button.owl-prev {
                     i.fa.fa-angle-left {
                         font-size: 30px;
@@ -113,7 +87,6 @@
             div.item-slide {
                 height: 50vh;
                 max-height: 50vh;
-                padding: 1rem;
 
                 div.image-gallery__box {
                     width: 45%;
@@ -128,10 +101,7 @@
 
 @media(max-width : 576px) {
     main.course-content {
-        height: max-content;
-
         section.single-course {
-            height: max-content;
             padding: 1.5rem;
 
             div.single-course__image-video-course {
@@ -171,14 +141,7 @@
         section.owl-carousel.owl-theme#courses-slider {
             div.owl-stage-outer {
                 div.owl-stage {
-                    width: 250 !important;
-                    height: 250px;
-
                     div.owl-item {
-                        margin-top: 1rem;
-                        margin-bottom: 1rem;
-                        height: 100%;
-
                         img.course-image {}
                     }
                 }
@@ -189,7 +152,6 @@
                     left: 1rem;
 
                     i.fa.fa-angle-left {
-                        font-size: 32px;
                     }
                 }
 
@@ -197,7 +159,6 @@
                     right: 1rem;
 
                     i.fa.fa-angle-right {
-                        font-size: 32px;
                     }
                 }
 
@@ -208,11 +169,8 @@
             div.item-slide {
                 height: 40vh;
                 max-height: 40vh;
-                padding: 1rem;
 
                 div.image-gallery__box {
-                    width: 45%;
-
                     img.image-gallery__slide {}
                 }
             }

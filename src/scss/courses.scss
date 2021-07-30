@@ -17,6 +17,7 @@ main.courses-content {
         align-items: flex-start;
         justify-content: center;
         height: 260px;
+        // max-height: 300px;
         margin-bottom: 2rem;
         padding: 0;
 
@@ -29,7 +30,7 @@ main.courses-content {
 
             img.courses-part__image {
                 width: 90%;
-                height: 85%;
+                height: 200px;
             }
         }
 
@@ -57,7 +58,7 @@ main.courses-content {
                 max-width: 80%;
                 text-align: justify;
                 margin-top: 1rem;
-                max-height: 90%;
+                max-height: 45%;
                 overflow-y: hidden;
             }
 
@@ -66,7 +67,7 @@ main.courses-content {
                 justify-content: flex-end;
                 align-items: flex-end;
                 position: absolute;
-                bottom: 1rem;
+                bottom: .75rem;
                 left: 4rem;
 
                 button.course-part__button {
