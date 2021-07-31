@@ -38,11 +38,6 @@
                     padding-bottom: 1rem;
                     padding-left: 1rem;
                     overflow-y: auto;
-
-                    &::-webkit-scrollbar {
-                        width: 4px;
-                        height: 4px;
-                    }
                 }
 
                 div.course-part__button-box {
