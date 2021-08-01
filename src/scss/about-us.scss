@@ -1,0 +1,58 @@
+@import './base';
+
+main.about-us {
+    width: 100%;
+
+    section.about-us-content {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($color: $color-gray, $alpha: .08);
+
+        h1.h3.about-us-content__title {
+            color: rgba($color:$color-gray-2, $alpha: .85);
+            font-weight: 600;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        div.about-us-content__main-box {
+            width: calc(100% - 6rem);
+            height: 75%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba($color: $color-light-2, $alpha: 1.0);
+            margin: 0 3rem 4rem;
+
+            div.about-us-content__image-placeholder {
+                width: 250px;
+                height: 250px;
+                background-color: rgba($color: $color-gray, $alpha: .08);
+
+                img.about-us-content__image {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            span.about-us-content__description {
+                font-size: 95%;
+                padding: 0 2rem;
+                margin: 2rem 0;
+                box-sizing: border-box;
+                color: rgba($color: $color-gray, $alpha: .95);
+                line-height: 24px;
+                width: calc(100% - 300px);
+                max-width: calc(100% - 250px);
+                text-align: justify;
+                max-height: 80%;
+                overflow-y: auto;
+            }
+        }
+    }
+}

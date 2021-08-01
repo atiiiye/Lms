@@ -36,6 +36,20 @@
   src: url(../fonts/Vazir/Vazir.eot) format("embedded-opentype"), url(../fonts/Vazir/Vazir.woff2) format("woff2"), url(../fonts/Vazir/Vazir.woff) format("woff");
 }
 
+html ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: rgba(27, 27, 27, 0.3);
+  border-radius: 10px;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background: rgba(27, 27, 27, 0.75);
+}
+
 body {
   font-family: 'IRANSans';
   background-color: #faf6fb;

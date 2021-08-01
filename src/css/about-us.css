@@ -86,65 +86,60 @@ body .container-fluid {
   margin: 0;
 }
 
-@media (max-width: 991px) {
-  main.courses-content section.courses-part {
-    height: max-content;
-    margin-bottom: 2rem;
-    padding: 0;
-    flex-direction: column;
-    align-items: center;
-  }
-  main.courses-content section.courses-part div.courses-part__image-side {
-    width: 380px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-  }
-  main.courses-content section.courses-part div.courses-part__image-side img.courses-part__image {
-    width: 100%;
-    height: 90%;
-  }
-  main.courses-content section.courses-part div.course-part__detailes-courses {
-    height: 350px;
-    width: 90%;
-    padding-bottom: 1rem;
-  }
-  main.courses-content section.courses-part div.course-part__detailes-courses h4.course-part__title-courses {
-    padding: 1rem;
-  }
-  main.courses-content section.courses-part div.course-part__detailes-courses span.course-part__description-courses {
-    margin-top: 1rem;
-    max-height: 215px;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    overflow-y: auto;
-  }
-  main.courses-content section.courses-part div.course-part__detailes-courses div.course-part__button-box {
-    left: 3rem;
-    height: 30px;
-  }
+main.about-us {
+  width: 100%;
 }
 
-@media (max-width: 576px) {
-  main.courses-content h1.courses-title {
-    margin-bottom: 0;
-  }
-  main.courses-content section.courses-part {
-    max-width: 350px;
-  }
-  main.courses-content section.courses-part div.courses-part__image-side {
-    width: 250px;
-    height: 250px;
-  }
+main.about-us section.about-us-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(137, 137, 137, 0.08);
 }
 
-@media (max-width: 425px) {
-  main.courses-content section.courses-part {
-    max-width: 300px;
-  }
-  main.courses-content section.courses-part div.courses-part__image-side {
-    width: 250px;
-    height: 250px;
-  }
+main.about-us section.about-us-content h1.h3.about-us-content__title {
+  color: rgba(27, 27, 27, 0.85);
+  font-weight: 600;
+  text-align: center;
+  padding: 2rem;
 }
-/*# sourceMappingURL=mediaCourses.css.map */
+
+main.about-us section.about-us-content div.about-us-content__main-box {
+  width: calc(100% - 6rem);
+  height: 75%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #faf6fb;
+  margin: 0 3rem 4rem;
+}
+
+main.about-us section.about-us-content div.about-us-content__main-box div.about-us-content__image-placeholder {
+  width: 250px;
+  height: 250px;
+  background-color: rgba(137, 137, 137, 0.08);
+}
+
+main.about-us section.about-us-content div.about-us-content__main-box div.about-us-content__image-placeholder img.about-us-content__image {
+  width: 100%;
+  height: 100%;
+}
+
+main.about-us section.about-us-content div.about-us-content__main-box span.about-us-content__description {
+  font-size: 95%;
+  padding: 0 2rem;
+  margin: 2rem 0;
+  box-sizing: border-box;
+  color: rgba(137, 137, 137, 0.95);
+  line-height: 24px;
+  width: calc(100% - 300px);
+  max-width: calc(100% - 250px);
+  text-align: justify;
+  max-height: 80%;
+  overflow-y: auto;
+}
+/*# sourceMappingURL=about-us.css.map */

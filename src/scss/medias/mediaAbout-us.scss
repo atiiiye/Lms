@@ -1,0 +1,63 @@
+@import './../base';
+
+@media(max-width:991px) {
+    main.about-us {
+        section.about-us-content {
+            height: 800px;
+
+            h1.h3.about-us-content__title {}
+
+            div.about-us-content__main-box {
+                flex-direction: column;
+
+                div.about-us-content__image-placeholder {
+                    width: 250px;
+                    height: 200px;
+                    margin: 1.5rem 0;
+
+                    img.about-us-content__image {}
+                }
+
+                span.about-us-content__description {
+
+                    width: 90%;
+                    max-width: 90%;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:576px) {
+    main.about-us {
+        section.about-us-content {
+            height: 600px;
+
+            h1.h3.about-us-content__title {
+                margin-bottom: 0;
+            }
+
+            div.about-us-content__main-box {
+                flex-direction: column;
+                margin: 0 3rem 2rem;
+
+
+                div.about-us-content__image-placeholder {
+                    width: 200px;
+                    height: 180px;
+
+                    img.about-us-content__image {}
+                }
+
+                span.about-us-content__description {
+                    padding: 0 1rem;
+                    margin: 1rem 0;
+                    width: 95%;
+                    max-width: 95%;
+                    font-size: 85%;
+                }
+            }
+        }
+    }
+}
