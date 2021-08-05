@@ -119,7 +119,7 @@ main.consultation-request section.consultation-request__content div.consultation
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder {
-  width: calc(100% - 350px);
+  width: 65%;
   background-color: rgba(137, 137, 137, 0.08);
 }
 

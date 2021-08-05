@@ -95,7 +95,7 @@ body .container-fluid {
     margin: 0 1rem 2rem;
   }
   main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder {
-    width: 90%;
+    width: 70%;
   }
   main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form {
     width: 90%;
@@ -106,6 +106,9 @@ body .container-fluid {
   main.consultation-request section.consultation-request__content div.consultation-request__image-placeholder {
     width: 220px;
     height: 220px;
+  }
+  main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder {
+    width: 85%;
   }
 }
 /*# sourceMappingURL=mediaConsultation-request.css.map */
