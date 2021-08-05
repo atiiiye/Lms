@@ -28,7 +28,7 @@ footer {
                 align-items: center;
 
                 &:hover {
-                    color: rgba($color: $color-gray, $alpha: .9);
+                    color: rgba($color: $color-light-2, $alpha: .5);
                     transform: scale(1.5);
                     transition: all .3s ease-in;
                 }

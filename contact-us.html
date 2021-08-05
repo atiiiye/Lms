@@ -113,23 +113,27 @@
 
                 <form class="contact-us-content__form">
                     <div class="form__group field">
-                        <input type="text" class="form__field" placeholder="نام و نام خانوادگی" name="name" id='name'
-                            required />
+                        <input type="text" class="form__field name" placeholder="نام و نام خانوادگی" name="name"
+                            id='name' required />
                         <label for="name" class="form__label">نام و نام خانوادگی</label>
+                        <span class="form__field__error name"></span>
+
                     </div>
                     <div class="form__group field">
-                        <input type="phone" class="form__field" placeholder="شماره تماس" name="phonenumber"
+                        <input type="phone" class="form__field phonenumber" placeholder="شماره تماس" name="phonenumber"
                             id='phonenumber' required />
                         <label for="phonenumber" class="form__label">شماره تماس</label>
-                        <span class="form__field__error"></span>
+                        <span class="form__field__error phonenumber"></span>
 
                     </div>
                     <div class="form__group field">
-                        <textarea class="form__field" placeholder="پیام" rows="4" required></textarea>
+                        <textarea class="form__field" placeholder="پیام" rows="4" id="message" required></textarea>
                         <label for="message" class="form__label">پیام</label>
+                        <span class="form__field__error message"></span>
+
                     </div>
 
-                    <button class="contact-us-content__form__button" id="submit">ارسال</button>
+                    <button class="contact-us-content__form__button" type="submit" id="submit">ارسال</button>
                 </form>
 
             </div>

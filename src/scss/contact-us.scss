@@ -102,6 +102,7 @@ main.container-fluid.contact-us {
                     background: transparent;
                     transition: border-color 0.2s;
                     margin-bottom: .5rem;
+                    font-weight: 500;
 
                     &::placeholder {
                         color: transparent;
@@ -128,7 +129,7 @@ main.container-fluid.contact-us {
                         top: 0;
                         display: block;
                         transition: 0.2s;
-                        color: rgba($color: $color-gray-2, $alpha: .85);
+                        color: rgba($color: $color-gray-2, $alpha: .8);
                         font-weight: 600;
                     }
 

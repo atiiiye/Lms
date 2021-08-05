@@ -190,6 +190,7 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
   background: transparent;
   transition: border-color 0.2s;
   margin-bottom: .5rem;
+  font-weight: 500;
 }
 
 main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field::placeholder {
@@ -223,7 +224,7 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
   top: 0;
   display: block;
   transition: 0.2s;
-  color: rgba(27, 27, 27, 0.85);
+  color: rgba(27, 27, 27, 0.8);
   font-weight: 600;
 }
 
