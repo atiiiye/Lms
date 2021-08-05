@@ -80,90 +80,92 @@ main.container-fluid.contact-us {
             form.contact-us-content__form {
                 width: 75%;
                 display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
 
                 div.form__group {
                     width: 100%;
                     position: relative;
                     padding: 1rem 1rem 0;
                     margin-top: 1rem;
-                }
+                    flex-direction: column;
+                    display: flex;
 
-                .form__field {
-                    width: 100%;
-                    border: 0;
-                    border-bottom: 2px solid rgba($color: $color-gray, $alpha: .75);
-                    outline: 0;
-                    font-size: 90%;
-                    color: rgba($color: $color-gray-2, $alpha: .75);
-                    padding: 8px 0;
-                    background: transparent;
-                    transition: border-color 0.2s;
-                    margin: .5rem 0;
-                    font-weight: 500;
+                    .form__field {
+                        width: 95%;
+                        border: 0;
+                        border-bottom: 2px solid rgba($color: $color-gray, $alpha: .75);
+                        outline: 0;
+                        font-size: 90%;
+                        color: rgba($color: $color-gray-2, $alpha: .75);
+                        padding: 8px 0;
+                        background: transparent;
+                        transition: border-color 0.2s;
+                        margin: .5rem 0;
+                        font-weight: 500;
 
-                    &::placeholder {
-                        color: transparent;
+                        &::placeholder {
+                            color: transparent;
+                        }
+
+                        &:placeholder-shown~.form__label {
+                            cursor: text;
+                            top: 2rem;
+                        }
                     }
 
-                    &:placeholder-shown~.form__label {
-                        cursor: text;
-                        top: 2rem;
-                    }
-                }
-
-                label.form__label {
-                    position: absolute;
-                    top: 0;
-                    display: block;
-                    transition: 0.2s;
-                    font-size: 95%;
-                    color: rgba($color: $color-gray, $alpha: .75);
-                }
-
-                .form__field:focus {
-                    ~label.form__label {
+                    label.form__label {
                         position: absolute;
                         top: 0;
                         display: block;
                         transition: 0.2s;
-                        color: rgba($color: $color-gray-2, $alpha: .8);
+                        font-size: 95%;
+                        color: rgba($color: $color-gray, $alpha: .75);
+                    }
+
+                    .form__field:focus {
+                        ~label.form__label {
+                            position: absolute;
+                            top: 0;
+                            display: block;
+                            transition: 0.2s;
+                            color: rgba($color: $color-gray-2, $alpha: .8);
+                            font-weight: 600;
+                        }
+
+                        padding-bottom: 6px;
+                        font-weight: 600;
+                        border-width: 3px;
+                        border-image: linear-gradient(to left, rgba($color: $color-gray-2, $alpha: .85), rgba($color: $color-gray-2, $alpha: .5));
+                        border-image-slice: 1;
+                    }
+
+                    .form__field {
+
+                        &:required,
+                        &:invalid {
+                            box-shadow: none;
+                        }
+
+                        &:required {
+                            // border-color: rgba($color: red, $alpha: .85);
+                            // padding-bottom: 6px;
+                            // font-weight: 700;
+                            // border-width: 3px;
+                            // border-image-slice: 1;
+                        }
+                    }
+
+                    textarea#message {
+                        width: 50%;
+                    }
+
+                    span.form__field__error {
+                        color: rgba($color: red, $alpha: 1.0);
+                        font-size: 12px;
                         font-weight: 600;
                     }
-
-                    padding-bottom: 6px;
-                    font-weight: 600;
-                    border-width: 3px;
-                    border-image: linear-gradient(to left, rgba($color: $color-gray-2, $alpha: .85), rgba($color: $color-gray-2, $alpha: .5));
-                    border-image-slice: 1;
-                }
-
-                .form__field {
-
-                    &:required,
-                    &:invalid {
-                        box-shadow: none;
-                    }
-
-                    &:required {
-                        // border-color: rgba($color: red, $alpha: .85);
-                        // padding-bottom: 6px;
-                        // font-weight: 700;
-                        // border-width: 3px;
-                        // border-image-slice: 1;
-                    }
-                }
-
-                textarea#message {
-                    width: 50%;
-                }
-
-                span.form__field__error {
-                    color: rgba($color: red, $alpha: 1.0);
-                    font-size: 12px;
-                    font-weight: 600;
                 }
 
                 button.contact-us-content__form__button {

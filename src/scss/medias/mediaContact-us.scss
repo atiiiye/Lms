@@ -49,46 +49,47 @@
                     div.form__group {
                         padding: 1rem 1rem 0;
                         margin-top: 1rem;
+
+                        .form__field {
+                            width: 100%;
+                            border: 0;
+                            border-bottom: 2px solid rgba($color: $color-gray, $alpha: .75);
+                            outline: 0;
+                            font-size: 90%;
+                            color: rgba($color: $color-gray-2, $alpha: .75);
+                            padding: 8px 0;
+                            background: transparent;
+                            transition: border-color 0.2s;
+                            margin-bottom: .5rem;
+
+                        }
+
+                        label.form__label {
+                            position: absolute;
+                            top: 0;
+                            display: block;
+                            transition: 0.2s;
+                            font-size: 95%;
+                            color: rgba($color: $color-gray, $alpha: .75);
+                        }
+
+                        .form__field:focus {
+                            ~label.form__label {}
+
+                            padding-bottom: 6px;
+                            border-width: 3px;
+                            border-image: linear-gradient(to left, rgba($color: $color-gray-2, $alpha: .85), rgba($color: $color-gray-2, $alpha: .5));
+                            border-image-slice: 1;
+                        }
+
+
+                        textarea#message {
+                            width: 65%;
+                        }
+
+                        span.form__field__error {}
                     }
 
-                    .form__field {
-                        width: 100%;
-                        border: 0;
-                        border-bottom: 2px solid rgba($color: $color-gray, $alpha: .75);
-                        outline: 0;
-                        font-size: 90%;
-                        color: rgba($color: $color-gray-2, $alpha: .75);
-                        padding: 8px 0;
-                        background: transparent;
-                        transition: border-color 0.2s;
-                        margin-bottom: .5rem;
-
-                    }
-
-                    label.form__label {
-                        position: absolute;
-                        top: 0;
-                        display: block;
-                        transition: 0.2s;
-                        font-size: 95%;
-                        color: rgba($color: $color-gray, $alpha: .75);
-                    }
-
-                    .form__field:focus {
-                        ~label.form__label {}
-
-                        padding-bottom: 6px;
-                        border-width: 3px;
-                        border-image: linear-gradient(to left, rgba($color: $color-gray-2, $alpha: .85), rgba($color: $color-gray-2, $alpha: .5));
-                        border-image-slice: 1;
-                    }
-
-
-                    textarea#message {
-                        width: 65%;
-                    }
-
-                    span.form__field__error {}
 
                     button.contact-us-content__form__button {
                         padding: 0;
@@ -132,21 +133,22 @@
                 form.contact-us-content__form {
                     width: 100%;
 
-                    div.form__group {}
+                    div.form__group {
 
-                    .form__field {}
+                        .form__field {}
 
-                    label.form__label {}
+                        label.form__label {}
 
-                    .form__field:focus {
-                        ~label.form__label {}
+                        .form__field:focus {
+                            ~label.form__label {}
+                        }
+
+                        textarea#message {
+                            width: 75%;
+                        }
+
+                        span.form__field__error {}
                     }
-
-                    textarea#message {
-                        width: 75%;
-                    }
-
-                    span.form__field__error {}
 
                     button.contact-us-content__form__button {}
                 }
@@ -179,20 +181,21 @@
                 }
 
                 form.contact-us-content__form {
-                    div.form__group {}
+                    div.form__group {
 
-                    .form__field {}
+                        .form__field {}
 
-                    label.form__label {}
+                        label.form__label {}
 
-                    .form__field:focus {
-                        ~label.form__label {}
-                    }
+                        .form__field:focus {
+                            ~label.form__label {}
+                        }
 
-                    span.form__field__error {}
+                        span.form__field__error {}
 
-                    textarea#message {
-                        width: 80%;
+                        textarea#message {
+                            width: 80%;
+                        }
                     }
 
                     button.contact-us-content__form__button {}

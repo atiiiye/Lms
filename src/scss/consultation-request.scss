@@ -31,86 +31,130 @@ main.consultation-request {
         }
 
         div.consultation-request__form-placeholder {
-            width: calc(100% - 300px);
+            width: calc(100% - 350px);
             background-color: rgba($color: $color-gray, $alpha: .08);
 
             form.consultation-request__form {
-                width: 100%;
+                width: 90%;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
                 justify-content: center;
-
+                padding-right: 2rem;
 
                 div.form__group {
                     width: 100%;
                     position: relative;
                     padding: 1rem 1rem 0;
                     margin-top: 1rem;
-                }
+                    flex-direction: column;
+                    display: flex;
 
-                .form__field {
-                    width: 100%;
-                    border: 0;
-                    border-bottom: 2px solid rgba($color: $color-gray, $alpha: .75);
-                    outline: 0;
-                    font-size: 90%;
-                    color: rgba($color: $color-gray-2, $alpha: .75);
-                    padding: 8px 0;
-                    background: transparent;
-                    transition: border-color 0.2s;
-                    margin: .5rem 0;
-                    font-weight: 500;
+                    .form__field {
+                        width: 100%;
+                        border: 0;
+                        border-bottom: 2px solid rgba($color: $color-gray, $alpha: .75);
+                        outline: 0;
+                        font-size: 90%;
+                        color: rgba($color: $color-gray-2, $alpha: .75);
+                        padding: 8px 0;
+                        background: transparent;
+                        transition: border-color 0.2s;
+                        margin: .5rem 0;
+                        font-weight: 500;
 
-                    &::placeholder {
-                        color: transparent;
+                        &::placeholder {
+                            color: transparent;
+                        }
+
+                        &:placeholder-shown~.form__label {
+                            cursor: text;
+                            top: 2rem;
+                        }
                     }
 
-                    &:placeholder-shown~.form__label {
-                        cursor: text;
-                        top: 2rem;
-                    }
-                }
-
-                label.form__label {
-                    position: absolute;
-                    top: 0;
-                    display: block;
-                    transition: 0.2s;
-                    font-size: 95%;
-                    color: rgba($color: $color-gray, $alpha: .75);
-                }
-
-                .form__field:focus {
-                    ~label.form__label {
+                    label.form__label {
                         position: absolute;
                         top: 0;
                         display: block;
                         transition: 0.2s;
-                        color: rgba($color: $color-gray-2, $alpha: .8);
+                        font-size: 95%;
+                        color: rgba($color: $color-gray, $alpha: .75);
+                    }
+
+                    .form__field:focus {
+                        ~label.form__label {
+                            position: absolute;
+                            top: 0;
+                            display: block;
+                            transition: 0.2s;
+                            color: rgba($color: $color-gray-2, $alpha: .8);
+                            font-weight: 600;
+                        }
+
+                        padding-bottom: 6px;
+                        font-weight: 600;
+                        border-width: 3px;
+                        border-image: linear-gradient(to left, rgba($color: $color-gray-2, $alpha: .85), rgba($color: $color-gray-2, $alpha: .5));
+                        border-image-slice: 1;
+                    }
+
+                    .form__field {
+
+                        &:required,
+                        &:invalid {
+                            box-shadow: none;
+                        }
+                    }
+
+                    span.form__field__error {
+                        color: rgba($color: red, $alpha: 1.0);
+                        font-size: 12px;
                         font-weight: 600;
                     }
-
-                    padding-bottom: 6px;
-                    font-weight: 600;
-                    border-width: 3px;
-                    border-image: linear-gradient(to left, rgba($color: $color-gray-2, $alpha: .85), rgba($color: $color-gray-2, $alpha: .5));
-                    border-image-slice: 1;
                 }
 
-                .form__field {
+                div.status-group {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    padding: 1rem 1rem 0;
+                    margin-top: 1rem;
+                    width: 100%;
 
-                    &:required,
-                    &:invalid {
-                        box-shadow: none;
+                    div.status-group-fields {
+                        display: flex;
+
+                        div.form__group.status_field {
+                            display: flex;
+                            width: 120px;
+                            padding: 0;
+                            margin-top: 0;
+                            position: relative;
+
+                            .form__field {
+                                width: 18px;
+                                height: 18px;
+                            }
+
+                            .form__label {
+                                position: absolute;
+                                right: 35px;
+                                top: .5rem;
+                            }
+
+                        }
+                    }
+
+
+                    span.form__field__error {
+                        margin-top: .75rem;
+                        color: rgba($color: red, $alpha: 1.0);
+                        font-size: 12px;
+                        font-weight: 600;
                     }
                 }
 
-                span.form__field__error {
-                    color: rgba($color: red, $alpha: 1.0);
-                    font-size: 12px;
-                    font-weight: 600;
-                }
 
                 button.consultation-request__form__button {
 

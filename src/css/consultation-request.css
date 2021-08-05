@@ -119,16 +119,17 @@ main.consultation-request section.consultation-request__content div.consultation
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder {
-  width: calc(100% - 300px);
+  width: calc(100% - 350px);
   background-color: rgba(137, 137, 137, 0.08);
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  padding-right: 2rem;
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group {
@@ -136,9 +137,11 @@ main.consultation-request section.consultation-request__content div.consultation
   position: relative;
   padding: 1rem 1rem 0;
   margin-top: 1rem;
+  flex-direction: column;
+  display: flex;
 }
 
-main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form .form__field {
+main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group .form__field {
   width: 100%;
   border: 0;
   border-bottom: 2px solid rgba(137, 137, 137, 0.75);
@@ -152,16 +155,16 @@ main.consultation-request section.consultation-request__content div.consultation
   font-weight: 500;
 }
 
-main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form .form__field::placeholder {
+main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group .form__field::placeholder {
   color: transparent;
 }
 
-main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form .form__field:placeholder-shown ~ .form__label {
+main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group .form__field:placeholder-shown ~ .form__label {
   cursor: text;
   top: 2rem;
 }
 
-main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form label.form__label {
+main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group label.form__label {
   position: absolute;
   top: 0;
   display: block;
@@ -170,7 +173,7 @@ main.consultation-request section.consultation-request__content div.consultation
   color: rgba(137, 137, 137, 0.75);
 }
 
-main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form .form__field:focus {
+main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group .form__field:focus {
   padding-bottom: 6px;
   font-weight: 600;
   border-width: 3px;
@@ -178,7 +181,7 @@ main.consultation-request section.consultation-request__content div.consultation
   border-image-slice: 1;
 }
 
-main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form .form__field:focus ~ label.form__label {
+main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group .form__field:focus ~ label.form__label {
   position: absolute;
   top: 0;
   display: block;
@@ -187,11 +190,50 @@ main.consultation-request section.consultation-request__content div.consultation
   font-weight: 600;
 }
 
-main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form .form__field:required, main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form .form__field:invalid {
+main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group .form__field:required, main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group .form__field:invalid {
   box-shadow: none;
 }
 
-main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form span.form__field__error {
+main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group span.form__field__error {
+  color: red;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.status-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem 1rem 0;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.status-group div.status-group-fields {
+  display: flex;
+}
+
+main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.status-group div.status-group-fields div.form__group.status_field {
+  display: flex;
+  width: 120px;
+  padding: 0;
+  margin-top: 0;
+  position: relative;
+}
+
+main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.status-group div.status-group-fields div.form__group.status_field .form__field {
+  width: 18px;
+  height: 18px;
+}
+
+main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.status-group div.status-group-fields div.form__group.status_field .form__label {
+  position: absolute;
+  right: 35px;
+  top: .5rem;
+}
+
+main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.status-group span.form__field__error {
+  margin-top: .75rem;
   color: red;
   font-size: 12px;
   font-weight: 600;

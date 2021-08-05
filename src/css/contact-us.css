@@ -177,10 +177,12 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
   position: relative;
   padding: 1rem 1rem 0;
   margin-top: 1rem;
+  flex-direction: column;
+  display: flex;
 }
 
-main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field {
-  width: 100%;
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group .form__field {
+  width: 95%;
   border: 0;
   border-bottom: 2px solid rgba(137, 137, 137, 0.75);
   outline: 0;
@@ -193,16 +195,16 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
   font-weight: 500;
 }
 
-main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field::placeholder {
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group .form__field::placeholder {
   color: transparent;
 }
 
-main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field:placeholder-shown ~ .form__label {
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group .form__field:placeholder-shown ~ .form__label {
   cursor: text;
   top: 2rem;
 }
 
-main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form label.form__label {
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group label.form__label {
   position: absolute;
   top: 0;
   display: block;
@@ -211,7 +213,7 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
   color: rgba(137, 137, 137, 0.75);
 }
 
-main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field:focus {
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group .form__field:focus {
   padding-bottom: 6px;
   font-weight: 600;
   border-width: 3px;
@@ -219,7 +221,7 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
   border-image-slice: 1;
 }
 
-main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field:focus ~ label.form__label {
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group .form__field:focus ~ label.form__label {
   position: absolute;
   top: 0;
   display: block;
@@ -228,15 +230,15 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
   font-weight: 600;
 }
 
-main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field:required, main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field:invalid {
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group .form__field:required, main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group .form__field:invalid {
   box-shadow: none;
 }
 
-main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form textarea#message {
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group textarea#message {
   width: 50%;
 }
 
-main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form span.form__field__error {
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group span.form__field__error {
   color: red;
   font-size: 12px;
   font-weight: 600;

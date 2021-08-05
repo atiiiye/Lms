@@ -24,7 +24,7 @@ $(document).ready(function () {
 
         if (PhoneNumberField.val().length === 0) {
             ErrorPhonenumber.html("لطفا شماره تماس خود را وارد کنید")
-        } else if (!PhoneNumberField.val().match(/^[0-9]+$/)) {
+        } else if (!PhoneNumberField.val().match(/^[0-9]+$/) || PhoneNumberField.val().length < 8) {
             ErrorPhonenumber.html("شماره تماس صحیح نمی باشد")
         } else {
             ErrorPhonenumber.html("")

@@ -1,0 +1,26 @@
+@import './../base';
+
+@media (max-width : 475px) {
+    main.activation-code {
+        form.activation-code__form {
+            width: 300px;
+
+            div.form__group {
+                .form__field {}
+
+                label.form__label {}
+
+                .form__field:focus {
+                    ~label.form__label {}
+                }
+
+                .form__field {}
+
+                span.form__field__error {}
+            }
+
+
+            button.activation-code__button {}
+        }
+    }
+}

@@ -125,7 +125,7 @@ body .container-fluid {
     padding: 1rem 1rem 0;
     margin-top: 1rem;
   }
-  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field {
+  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group .form__field {
     width: 100%;
     border: 0;
     border-bottom: 2px solid rgba(137, 137, 137, 0.75);
@@ -137,7 +137,7 @@ body .container-fluid {
     transition: border-color 0.2s;
     margin-bottom: .5rem;
   }
-  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form label.form__label {
+  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group label.form__label {
     position: absolute;
     top: 0;
     display: block;
@@ -145,13 +145,13 @@ body .container-fluid {
     font-size: 95%;
     color: rgba(137, 137, 137, 0.75);
   }
-  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field:focus {
+  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group .form__field:focus {
     padding-bottom: 6px;
     border-width: 3px;
     border-image: linear-gradient(to left, rgba(27, 27, 27, 0.85), rgba(27, 27, 27, 0.5));
     border-image-slice: 1;
   }
-  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form textarea#message {
+  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group textarea#message {
     width: 65%;
   }
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form button.contact-us-content__form__button {
@@ -177,7 +177,7 @@ body .container-fluid {
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form {
     width: 100%;
   }
-  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form textarea#message {
+  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group textarea#message {
     width: 75%;
   }
 }
@@ -187,7 +187,7 @@ body .container-fluid {
     margin: 0 0rem 1rem;
     width: 90%;
   }
-  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form textarea#message {
+  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group textarea#message {
     width: 80%;
   }
 }
