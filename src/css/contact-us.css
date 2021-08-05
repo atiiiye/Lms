@@ -124,7 +124,7 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
 }
 
 main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box {
-  width: calc(100% - 6rem);
+  width: calc(80% - 6rem);
   display: flex;
   background-color: rgba(137, 137, 137, 0.08);
   padding: 2rem 2rem 0;
@@ -138,7 +138,7 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
 }
 
 main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box aside.contact-us-content__social-media div.contact-us-content__social-media-box {
-  padding: .2rem;
+  padding: .35rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;

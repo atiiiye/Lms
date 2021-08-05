@@ -170,6 +170,7 @@ body .container-fluid {
   }
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box {
     margin: 0 2rem 2rem;
+    width: calc(90% - 6rem);
   }
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box aside.contact-us-content__social-media div.contact-us-content__social-media-box a.contact-us-content__social-media-link {
     font-size: 85%;
