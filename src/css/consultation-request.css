@@ -133,7 +133,7 @@ main.consultation-request section.consultation-request__content div.consultation
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group {
-  width: 100%;
+  width: 90%;
   position: relative;
   padding: 1rem 1rem 0;
   margin-top: 1rem;
@@ -206,7 +206,7 @@ main.consultation-request section.consultation-request__content div.consultation
   justify-content: flex-start;
   padding: 1rem 1rem 0;
   margin-top: 1rem;
-  width: 100%;
+  width: 90%;
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.status-group div.status-group-fields {
@@ -228,7 +228,7 @@ main.consultation-request section.consultation-request__content div.consultation
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.status-group div.status-group-fields div.form__group.status_field .form__label {
   position: absolute;
-  right: 35px;
+  right: 25px;
   top: .5rem;
 }
 
