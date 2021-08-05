@@ -106,3 +106,56 @@
         }
     }
 }
+
+@media (max-width : 576px) {
+    main.consultation-request {
+        h1.consultation-request__title {}
+
+        section.consultation-request__content {
+            div.consultation-request__image-placeholder {
+                width: 200px;
+                height: 200px;
+
+                img.consultation-request__image {}
+            }
+
+            div.consultation-request__form-placeholder {
+                width: 90%;
+
+                form.consultation-request__form {
+                    div.form__group {
+                        .form__field {}
+
+                        label.form__label {
+                            font-size: 14px;
+                        }
+
+                        .form__field:focus {
+                            ~label.form__label {}
+                        }
+
+                        .form__field {}
+
+                        span.form__field__error {}
+                    }
+
+                    div.status-group {
+
+                        div.status-group-fields {
+                            div.form__group.status_field {
+                                .form__field {}
+
+                                .form__label {}
+
+                            }
+                        }
+
+                        span.form__field__error {}
+                    }
+
+                    button.consultation-request__form__button {}
+                }
+            }
+        }
+    }
+}
