@@ -74,14 +74,14 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba($color: $color-light-2, $alpha: .95);
+        background-color: rgba($color: $color-light-2, $alpha: 1.0);
 
         div.image-gallery.owl-carousel.owl-theme {
             display: flex;
             width: 80%;
             height: 70%;
-            background-color: rgba($color: $color-light-2, $alpha: 1.0);
-            // box-shadow: 0 0 4px .1rem rgba($color: $color-dark, $alpha: .25);
+            background-color: rgba($color: $color-gray, $alpha: .05);
+
 
             div.owl-stage-outer {
                 width: 100%;

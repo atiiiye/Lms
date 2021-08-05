@@ -42,8 +42,7 @@ html ::-webkit-scrollbar {
 }
 
 html ::-webkit-scrollbar-thumb {
-  background: rgba(27, 27, 27, 0.3);
-  border-radius: 10px;
+  background: rgba(27, 27, 27, 0.2);
 }
 
 html ::-webkit-scrollbar-thumb:hover {
@@ -64,8 +63,7 @@ body ::-webkit-scrollbar {
 }
 
 body ::-webkit-scrollbar-thumb {
-  background: rgba(27, 27, 27, 0.3);
-  border-radius: 10px;
+  background: rgba(27, 27, 27, 0.2);
 }
 
 body ::-webkit-scrollbar-thumb:hover {
@@ -88,17 +86,22 @@ body .container-fluid {
 
 main.course-content {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 main.course-content section.single-course {
-  width: 100%;
+  background-color: rgba(137, 137, 137, 0.08);
+  width: 90%;
   height: 800px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background-color: rgba(137, 137, 137, 0.08);
-  padding: 2rem 3rem;
+  padding: 3rem;
   box-sizing: border-box;
+  margin-top: 4rem;
 }
 
 main.course-content section.single-course div.single-course__image-video-course {
@@ -108,7 +111,6 @@ main.course-content section.single-course div.single-course__image-video-course 
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgba(250, 246, 251, 0.8);
 }
 
 main.course-content section.single-course div.single-course__image-video-course img.single-course__image-course {
@@ -129,7 +131,6 @@ main.course-content section.single-course div.single-course__details-course {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: rgba(250, 246, 251, 0.8);
 }
 
 main.course-content section.single-course div.single-course__details-course div.single-course__title-buton-part {
@@ -151,7 +152,6 @@ main.course-content section.single-course div.single-course__details-course div.
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 4rem;
 }
 
 main.course-content section.single-course div.single-course__details-course div.single-course__title-buton-part div.single-course__price-signup span.single-course__price {
