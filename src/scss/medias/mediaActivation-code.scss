@@ -8,7 +8,9 @@
             div.form__group {
                 .form__field {}
 
-                label.form__label {}
+                label.form__label {
+                    font-size: 14px;
+                }
 
                 .form__field:focus {
                     ~label.form__label {}

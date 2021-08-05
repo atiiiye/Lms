@@ -152,9 +152,6 @@ body .container-fluid {
     border-image: linear-gradient(to left, rgba(27, 27, 27, 0.85), rgba(27, 27, 27, 0.5));
     border-image-slice: 1;
   }
-  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group textarea#message {
-    width: 65%;
-  }
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form button.contact-us-content__form__button {
     padding: 0;
     width: 120px;
@@ -179,8 +176,8 @@ body .container-fluid {
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form {
     width: 100%;
   }
-  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group textarea#message {
-    width: 75%;
+  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group label.form__label {
+    font-size: 14px;
   }
 }
 
@@ -188,9 +185,6 @@ body .container-fluid {
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box {
     margin: 0 0rem 1rem;
     width: 90%;
-  }
-  main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group textarea#message {
-    width: 80%;
   }
 }
 /*# sourceMappingURL=mediaContact-us.css.map */

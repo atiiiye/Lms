@@ -118,10 +118,27 @@ body .container-fluid {
     height: 200px;
   }
   main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder {
-    width: 90%;
+    width: 100%;
+  }
+  main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group {
+    padding: 0;
   }
   main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group label.form__label {
     font-size: 14px;
+  }
+  main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.status-group {
+    padding: 0;
+  }
+  main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.status-group div.status-group-fields div.form__group.status_field {
+    width: 90px;
+  }
+  main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.status-group div.status-group-fields div.form__group.status_field .form__field {
+    width: 16px;
+    height: 16px;
+  }
+  main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.status-group div.status-group-fields div.form__group.status_field .form__label {
+    font-size: 14px;
+    right: 20px;
   }
 }
 /*# sourceMappingURL=mediaConsultation-request.css.map */

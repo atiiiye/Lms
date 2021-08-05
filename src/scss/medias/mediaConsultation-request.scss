@@ -120,10 +120,12 @@
             }
 
             div.consultation-request__form-placeholder {
-                width: 90%;
+                width: 100%;
 
                 form.consultation-request__form {
                     div.form__group {
+                        padding: 0;
+
                         .form__field {}
 
                         label.form__label {
@@ -140,12 +142,22 @@
                     }
 
                     div.status-group {
+                        padding: 0;
 
                         div.status-group-fields {
                             div.form__group.status_field {
-                                .form__field {}
+                                width: 90px;
 
-                                .form__label {}
+                                .form__field {
+                                    width: 16px;
+                                    height: 16px;
+                                }
+
+                                .form__label {
+                                    font-size: 14px;
+                                    right: 20px;
+
+                                }
 
                             }
                         }

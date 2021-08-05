@@ -90,5 +90,8 @@ body .container-fluid {
   main.activation-code form.activation-code__form {
     width: 300px;
   }
+  main.activation-code form.activation-code__form div.form__group label.form__label {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=mediaActivation-code.css.map */

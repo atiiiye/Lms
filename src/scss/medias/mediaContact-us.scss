@@ -83,11 +83,6 @@
                             border-image-slice: 1;
                         }
 
-
-                        textarea#message {
-                            width: 65%;
-                        }
-
                         span.form__field__error {}
                     }
 
@@ -139,14 +134,12 @@
 
                         .form__field {}
 
-                        label.form__label {}
+                        label.form__label {
+                            font-size: 14px;
+                        }
 
                         .form__field:focus {
                             ~label.form__label {}
-                        }
-
-                        textarea#message {
-                            width: 75%;
                         }
 
                         span.form__field__error {}
@@ -195,9 +188,6 @@
 
                         span.form__field__error {}
 
-                        textarea#message {
-                            width: 80%;
-                        }
                     }
 
                     button.contact-us-content__form__button {}
