@@ -26,9 +26,10 @@ main.about-us {
             box-sizing: border-box;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             background-color: rgba($color: $color-light-2, $alpha: 1.0);
             margin: 0 3rem 4rem;
+            padding-top: 3rem;
 
             div.about-us-content__image-placeholder {
                 width: 250px;
@@ -44,7 +45,7 @@ main.about-us {
             span.about-us-content__description {
                 font-size: 95%;
                 padding: 0 2rem;
-                margin: 2rem 0;
+                margin: 0 0 2rem;
                 box-sizing: border-box;
                 color: rgba($color: $color-gray, $alpha: .95);
                 line-height: 24px;

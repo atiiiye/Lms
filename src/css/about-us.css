@@ -114,9 +114,10 @@ main.about-us section.about-us-content div.about-us-content__main-box {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: #faf6fb;
   margin: 0 3rem 4rem;
+  padding-top: 3rem;
 }
 
 main.about-us section.about-us-content div.about-us-content__main-box div.about-us-content__image-placeholder {
@@ -133,7 +134,7 @@ main.about-us section.about-us-content div.about-us-content__main-box div.about-
 main.about-us section.about-us-content div.about-us-content__main-box span.about-us-content__description {
   font-size: 95%;
   padding: 0 2rem;
-  margin: 2rem 0;
+  margin: 0 0 2rem;
   box-sizing: border-box;
   color: rgba(137, 137, 137, 0.95);
   line-height: 24px;

@@ -12,7 +12,7 @@ main.container-fluid.contact-us {
         justify-content: center;
 
         div.contact-us-content__text {
-            width: 60%;
+            width: 65%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -22,7 +22,7 @@ main.container-fluid.contact-us {
                 color: rgba($color:$color-gray-2, $alpha: .85);
                 font-weight: 600;
                 text-align: center;
-                padding: 2rem;
+                padding: 2rem 0;
                 margin-bottom: 0;
             }
 
@@ -37,10 +37,12 @@ main.container-fluid.contact-us {
         }
 
         div.contact-us-content__contact-box {
-            width: calc(80% - 6rem);
+            width: 65%;
             display: flex;
+            justify-content: center;
+
             background-color: rgba($color: $color-gray, $alpha: .08);
-            padding: 2rem 2rem 0;
+            padding: 2rem 1.5rem 0;
             margin: 0 3rem 2rem;
 
             aside.contact-us-content__social-media {
@@ -49,7 +51,7 @@ main.container-fluid.contact-us {
                 top: 3rem;
 
                 div.contact-us-content__social-media-box {
-                    padding: .35rem;
+                    padding: .35rem 0;
                     display: flex;
                     align-items: center;
                     justify-content: flex-start;
@@ -73,16 +75,18 @@ main.container-fluid.contact-us {
                         text-decoration: none;
                         color: rgba($color: $color-gray-2, $alpha: .5);
                         padding-right: .5rem;
+                        font-size: 14px;
                     }
                 }
             }
 
             form.contact-us-content__form {
-                width: 75%;
+                width: 85%;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
                 justify-content: center;
+                padding-right: 1rem;
 
                 div.form__group {
                     width: 100%;
