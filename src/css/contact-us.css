@@ -74,7 +74,7 @@ body ::-webkit-scrollbar-thumb:hover {
 
 body ::selection {
   background-color: #ff8b8b;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 body a:focus {
@@ -189,7 +189,7 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
   padding: 8px 0;
   background: transparent;
   transition: border-color 0.2s;
-  margin-bottom: .5rem;
+  margin: .5rem 0;
   font-weight: 500;
 }
 
