@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="./src/css/header.css" />
     <link rel="stylesheet" href="./src/css/menu.css" />
 
-    <link rel="stylesheet" href="./src/css/contact-us.css">
-    <link rel="stylesheet" href="./src/css/mediaContact-us.css">
+    <link rel="stylesheet" href="./src/css/consultation-request.css">
+    <link rel="stylesheet" href="./src/css/mediaConsultation-request.css">
 
     <link rel="stylesheet" href="./src/css/footer.css" />
     <link rel="stylesheet" href="./src/css/mediaFooter.css" />
@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <title>Lms/Contact Us</title>
+    <title>Lms/Consultation request</title>
 </head>
 
 <body>
@@ -71,47 +71,15 @@
 
     </header>
 
-    <main class="container-fluid contact-us">
-
-        <section class="contact-us-content">
-            <div class="contact-us-content__text">
-                <h1 class="h3 contact-us-content__title">تماس با ما</h1>
-                <span class="contact-us-content__description">
-                    کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به
-                    پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
-                    طراحی اساسا مورد استفاده قرار گیرد.
-                    فارسی ایجاد
-                </span>
-
+    <main class="container-fluid consultation-request">
+        <h1 class="h3 consultation-request__title">درخواست مشاوره</h1>
+        <section class="consultation-request__content">
+            <div class="consultation-request__image-placeholder">
+                <img class="consultation-request__image" src="./src/images/item2.png" alt="couldn`t load image">
             </div>
 
-            <div class="contact-us-content__contact-box">
-                <aside class="contact-us-content__social-media">
-                    <div class="contact-us-content__social-media-box">
-                        <i class="fa fa-instagram contact-us-content__social-media-icon"></i>
-
-                        <a href="#" class="contact-us-content__social-media-link">
-                            lms-info
-                        </a>
-
-                    </div>
-                    <div class="contact-us-content__social-media-box">
-                        <i class="fa fa-telegram contact-us-content__social-media-icon"></i>
-
-                        <a href="#" class="contact-us-content__social-media-link">
-                            @lms-info
-                        </a>
-                    </div>
-                    <div class="contact-us-content__social-media-box">
-                        <i class="fa fa-envelope-o contact-us-content__social-media-icon"></i>
-
-                        <a href="#" class="contact-us-content__social-media-link">
-                            lms@gmail.com
-                        </a>
-                    </div>
-                </aside>
-
-                <form class="contact-us-content__form">
+            <div class="consultation-request__form-placeholder">
+                <form class="consultation-request__form">
                     <div class="form__group field">
                         <input type="text" class="form__field name" placeholder="نام و نام خانوادگی" name="name"
                             id='name' required />
@@ -127,13 +95,13 @@
 
                     </div>
                     <div class="form__group field">
-                        <textarea class="form__field" placeholder="پیام" rows="8" id="message" required></textarea>
-                        <label for="message" class="form__label">پیام</label>
-                        <span class="form__field__error message"></span>
+                        <input type="text" class="form__field" placeholder="موضوع مشاوره" id="subject" required></input>
+                        <label for="subject" class="form__label">موضوع مشاوره</label>
+                        <span class="form__field__error subject"></span>
 
                     </div>
 
-                    <button class="contact-us-content__form__button" type="submit" id="submit">ارسال</button>
+                    <button class="consultation-request__form__button" type="submit" id="submit">ارسال</button>
                 </form>
 
             </div>
@@ -141,7 +109,6 @@
         </section>
 
     </main>
-
 
     <footer class="container-fluid">
         <section class="footer-medias">
@@ -189,7 +156,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <script src="./src/js/contact-us.js"></script>
+    <script src="./src/js/consultation-request.js"></script>
 </body>
 
 </html>

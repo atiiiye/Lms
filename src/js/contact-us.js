@@ -1,36 +1,45 @@
 $(document).ready(function () {
 
-    let valueNameField = $('.form__field#name')
-    let valuePhoneNumberField = $('.form__field#phonenumber')
-    let valueMessageField = $('.form__field#message')
+    let NameField = $('.form__field#name')
+    let PhoneNumberField = $('.form__field#phonenumber')
+    let MessageField = $('.form__field#message')
+
+    let ErrorName = $('.form__field__error.name')
+    let ErrorPhonenumber = $('.form__field__error.phonenumber')
+    let ErrorMessage = $('.form__field__error.message')
+
+    let submitButton = $('.contact-us-content__form__button')
 
     $('#submit').on('click', (event) => {
         event.preventDefault()
 
-        if (valueNameField.val().length === 0) {
-            $('.form__field__error.name').html("لطفا نام و نام خانوادگی خود را وارد کنید")
-        } else if (!valueNameField.val().match(/^[آإأابپتثجچحخدذرزژسشصضطظعغفقکگلمنهۀةوؤیيئءًٌٍَُِّ\s]+$/)) {
-            $('.form__field__error.name').html("نام و نام خانوادگی صحیح نمی باشد")
+        if (NameField.val().length === 0) {
+            ErrorName.html("لطفا نام و نام خانوادگی خود را وارد کنید")
+        } else if (!NameField.val().match(/^[آإأابپتثجچحخدذرزژسشصضطظعغفقکگلمنهۀةوؤیيئءًٌٍَُِّ\s]+$/)) {
+            ErrorName.html("نام و نام خانوادگی صحیح نمی باشد")
         } else {
-            $('.form__field__error.name').html("")
+            ErrorName.html("")
         }
 
 
-        if (valuePhoneNumberField.val().length === 0) {
-            $('.form__field__error.phonenumber').html("لطفا شماره تماس خود را وارد کنید")
-        } else if (!valuePhoneNumberField.val().match(/^[0-9]+$/)) {
-            $('.form__field__error.phonenumber').html("شماره تماس صحیح نمی باشد")
+        if (PhoneNumberField.val().length === 0) {
+            ErrorPhonenumber.html("لطفا شماره تماس خود را وارد کنید")
+        } else if (!PhoneNumberField.val().match(/^[0-9]+$/)) {
+            ErrorPhonenumber.html("شماره تماس صحیح نمی باشد")
         } else {
-            $('.form__field__error.phonenumber').html("")
+            ErrorPhonenumber.html("")
         }
 
-        if (valueMessageField.val().length === 0) {
-            $('.form__field__error.message').html("لطفا پیام خود را وارد کنید")
-        } else {
-            $('.form__field__error.message').html("")
-        }
+        if (MessageField.val().length === 0) ErrorMessage.html("لطفا پیام خود را وارد کنید")
+        else ErrorMessage.html("")
 
-
+        // if (NameField.val() &&
+        //     PhoneNumberField.val() &&
+        //     MessageField.val() &&
+        //     !ErrorName &&
+        //     !ErrorPhonenumber &&
+        //     !ErrorMessage) {
+        //     submitButton.prop("disabled", false)
+        // }
     })
-
 })

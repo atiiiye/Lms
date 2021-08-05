@@ -1,88 +1,46 @@
 @import './base';
 
-main.container-fluid.contact-us {
-
+main.consultation-request {
     width: 100%;
 
-    section.contact-us-content {
+    h1.consultation-request__title {
+        color: rgba($color:$color-gray-2, $alpha: .85);
+        font-weight: 600;
+        text-align: center;
+        padding: 2rem;
+        margin-bottom: 0;
+    }
+
+    section.consultation-request__content {
         width: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: flex-start;
+        padding: 2rem;
 
-        div.contact-us-content__text {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        div.consultation-request__image-placeholder {
+            width: 250px;
+            height: 250px;
+            background-color: rgba($color: $color-gray, $alpha: .08);
+            margin: 0 1rem;
 
-            h1.contact-us-content__title {
-                color: rgba($color:$color-gray-2, $alpha: .85);
-                font-weight: 600;
-                text-align: center;
-                padding: 2rem;
-                margin-bottom: 0;
-            }
-
-            span.contact-us-content__description {
-                font-size: 95%;
-                padding: 2rem;
-                box-sizing: border-box;
-                color: rgba($color: $color-gray, $alpha: .95);
-                line-height: 26px;
-                text-align: justify;
+            img.consultation-request__image {
+                width: 100%;
+                height: 100%;
             }
         }
 
-        div.contact-us-content__contact-box {
-            width: calc(100% - 6rem);
-            display: flex;
+        div.consultation-request__form-placeholder {
+            width: calc(100% - 300px);
             background-color: rgba($color: $color-gray, $alpha: .08);
-            padding: 2rem 2rem 0;
-            margin: 0 3rem 2rem;
 
-            aside.contact-us-content__social-media {
-                width: 25%;
-                position: relative;
-                top: 3rem;
-
-                div.contact-us-content__social-media-box {
-                    padding: .2rem;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-
-                    &:hover>a.contact-us-content__social-media-link,
-                    &:hover>i.contact-us-content__social-media-icon {
-                        color: rgba($color: $color-pink-light, $alpha: .95);
-
-                    }
-
-                    i.contact-us-content__social-media-icon {
-                        font-size: 24px;
-                        color: rgba($color: $color-gray-2, $alpha: .85);
-                        background-color: rgba($color: $color-gray, $alpha: .2);
-                        padding: .75rem;
-                        border-radius: 50%;
-                    }
-
-                    a.contact-us-content__social-media-link {
-                        direction: ltr;
-                        text-decoration: none;
-                        color: rgba($color: $color-gray-2, $alpha: .5);
-                        padding-right: .5rem;
-                    }
-                }
-            }
-
-            form.contact-us-content__form {
-                width: 75%;
+            form.consultation-request__form {
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
                 justify-content: center;
+
 
                 div.form__group {
                     width: 100%;
@@ -146,18 +104,6 @@ main.container-fluid.contact-us {
                     &:invalid {
                         box-shadow: none;
                     }
-
-                    &:required {
-                        // border-color: rgba($color: red, $alpha: .85);
-                        // padding-bottom: 6px;
-                        // font-weight: 700;
-                        // border-width: 3px;
-                        // border-image-slice: 1;
-                    }
-                }
-
-                textarea#message {
-                    width: 50%;
                 }
 
                 span.form__field__error {
@@ -166,7 +112,8 @@ main.container-fluid.contact-us {
                     font-weight: 600;
                 }
 
-                button.contact-us-content__form__button {
+                button.consultation-request__form__button {
+
                     font-weight: 500;
                     border: 2px solid rgba($color: $color-pink-light, $alpha: .95);
                     background-color: rgba($color: $color-pink-light, $alpha: 1.0);
@@ -182,10 +129,8 @@ main.container-fluid.contact-us {
                         color: rgba($color: $color-light-2, $alpha: 1.0);
                         border: 2px solid rgba($color: $color-pink-light, $alpha: 1.0);
                     }
-
                 }
             }
         }
-
     }
 }

@@ -232,6 +232,10 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
   box-shadow: none;
 }
 
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form textarea#message {
+  width: 50%;
+}
+
 main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form span.form__field__error {
   color: red;
   font-size: 12px;

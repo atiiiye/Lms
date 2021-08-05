@@ -21,7 +21,7 @@ main.about-us {
         }
 
         div.about-us-content__main-box {
-            width: calc(100% - 6rem);
+            width: calc(90% - 6rem);
             height: 75%;
             box-sizing: border-box;
             display: flex;
@@ -48,8 +48,8 @@ main.about-us {
                 box-sizing: border-box;
                 color: rgba($color: $color-gray, $alpha: .95);
                 line-height: 24px;
-                width: calc(100% - 300px);
-                max-width: calc(100% - 250px);
+                width: calc(100% - 400px);
+                max-width: calc(100% - 450px);
                 text-align: justify;
                 max-height: 80%;
                 overflow-y: auto;
