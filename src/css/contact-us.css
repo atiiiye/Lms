@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "Nastaliq";
+  font-style: normal;
+  src: url(../fonts/IranNastaliq/IranNastaliq.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  src: url(../fonts/IRANSansWeb/IRANSansWeb.eot);
+  src: url(../fonts/IRANSansWeb/IRANSansWeb.eot) format("embedded-opentype"), url(../fonts/IRANSansWeb/IRANSansWeb.woff2) format("woff2"), url(../fonts/IRANSansWeb/IRANSansWeb.woff) format("woff"), url(../fonts/IRANSansWeb/IRANSansWeb.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Sahel;
+  font-style: normal;
+  src: url(../fonts/sahel/Sahel.eot);
+  src: url(../fonts/sahel/Sahel.eot) format("embedded-opentype"), url(../fonts/sahel/Sahel.woff2) format("woff2"), url(../fonts/sahel/Sahel.woff) format("woff"), url(../fonts/sahel/Sahel.ttf) format("truetype");
+  src: url(../fonts/sahel/Farsi-Digits/Sahel-FD.eot);
+  src: url(../fonts/sahel/Farsi-Digits/Sahel-FD.eot) format("embedded-opentype"), url(../fonts/sahel/Farsi-Digits/Sahel-FD.woff2) format("woff2"), url(../fonts/sahel/Farsi-Digits/Sahel-FD.woff) format("woff"), url(../fonts/sahel/Farsi-Digits/Sahel-FD.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Samim;
+  font-style: normal;
+  src: url(../fonts/samim/Samim.eot);
+  src: url(../fonts/samim/Samim.eot) format("embedded-opentype"), url(../fonts/samim/Samim.woff2) format("woff2"), url(../fonts/samim/Samim.woff) format("woff"), url(../fonts/samim/Samim.ttf) format("truetype");
+  src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot);
+  src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot) format("embedded-opentype"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff2) format("woff2"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff) format("woff"), url(../fonts/samim/Farsi-Digits/Samim-FD.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  src: url(../fonts/Vazir/Vazir.eot);
+  src: url(../fonts/Vazir/Vazir.eot) format("embedded-opentype"), url(../fonts/Vazir/Vazir.woff2) format("woff2"), url(../fonts/Vazir/Vazir.woff) format("woff");
+}
+
+html ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: rgba(27, 27, 27, 0.3);
+  border-radius: 10px;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background: rgba(27, 27, 27, 0.75);
+}
+
+body {
+  font-family: 'IRANSans';
+  background-color: #faf6fb;
+  font-size: 100%;
+  direction: rtl;
+  box-sizing: border-box;
+}
+
+body ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background: rgba(27, 27, 27, 0.3);
+  border-radius: 10px;
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: rgba(27, 27, 27, 0.75);
+}
+
+body ::selection {
+  background-color: #ff8b8b;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+body a:focus {
+  outline: 0;
+}
+
+body .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+main.container-fluid.contact-us {
+  width: 100%;
+}
+
+main.container-fluid.contact-us section.contact-us-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__text h1.contact-us-content__title {
+  color: rgba(27, 27, 27, 0.85);
+  font-weight: 600;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 0;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__text span.contact-us-content__description {
+  font-size: 95%;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: rgba(137, 137, 137, 0.95);
+  line-height: 26px;
+  text-align: justify;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box {
+  width: calc(100% - 6rem);
+  display: flex;
+  background-color: rgba(137, 137, 137, 0.08);
+  padding: 2rem 2rem 0;
+  margin: 0 3rem 2rem;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box aside.contact-us-content__social-media {
+  width: 25%;
+  position: relative;
+  top: 3rem;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box aside.contact-us-content__social-media div.contact-us-content__social-media-box {
+  padding: .2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box aside.contact-us-content__social-media div.contact-us-content__social-media-box:hover > a.contact-us-content__social-media-link,
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box aside.contact-us-content__social-media div.contact-us-content__social-media-box:hover > i.contact-us-content__social-media-icon {
+  color: rgba(255, 139, 139, 0.95);
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box aside.contact-us-content__social-media div.contact-us-content__social-media-box i.contact-us-content__social-media-icon {
+  font-size: 24px;
+  color: rgba(27, 27, 27, 0.85);
+  background-color: rgba(137, 137, 137, 0.2);
+  padding: .75rem;
+  border-radius: 50%;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box aside.contact-us-content__social-media div.contact-us-content__social-media-box a.contact-us-content__social-media-link {
+  direction: ltr;
+  text-decoration: none;
+  color: rgba(27, 27, 27, 0.5);
+  padding-right: .5rem;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group {
+  width: 100%;
+  position: relative;
+  padding: 1rem 1rem 0;
+  margin-top: 1rem;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid rgba(137, 137, 137, 0.75);
+  outline: 0;
+  font-size: 90%;
+  color: rgba(27, 27, 27, 0.75);
+  padding: 8px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  margin-bottom: .5rem;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field::placeholder {
+  color: transparent;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field:placeholder-shown ~ .form__label {
+  cursor: text;
+  top: 2rem;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form label.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 95%;
+  color: rgba(137, 137, 137, 0.75);
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 600;
+  border-width: 3px;
+  border-image: linear-gradient(to left, rgba(27, 27, 27, 0.85), rgba(27, 27, 27, 0.5));
+  border-image-slice: 1;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field:focus ~ label.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  color: rgba(27, 27, 27, 0.85);
+  font-weight: 600;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field:required, main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form .form__field:invalid {
+  box-shadow: none;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form span.form__field__error {
+  color: red;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form button.contact-us-content__form__button {
+  font-weight: 500;
+  border: 2px solid rgba(255, 139, 139, 0.95);
+  background-color: #ff8b8b;
+  border-radius: 4px;
+  padding: 0;
+  width: 120px;
+  color: rgba(250, 246, 251, 0.8);
+  margin: 2rem 0 2rem 1rem;
+  font-size: 1.15rem;
+}
+
+main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form button.contact-us-content__form__button:hover, main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form button.contact-us-content__form__button:focus {
+  color: #faf6fb;
+  border: 2px solid #ff8b8b;
+}
+/*# sourceMappingURL=contact-us.css.map */
