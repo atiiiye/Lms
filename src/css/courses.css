@@ -98,29 +98,30 @@ main.courses-content h1.courses-title {
 main.courses-content section.courses-part {
   background-color: rgba(137, 137, 137, 0.08);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   height: 260px;
   margin-bottom: 2rem;
   padding: 0;
+  width: 880px;
 }
 
 main.courses-content section.courses-part div.courses-part__image-side {
-  width: 350px;
-  height: 100%;
+  width: 250px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 main.courses-content section.courses-part div.courses-part__image-side img.courses-part__image {
-  width: 90%;
-  height: 200px;
+  width: 100%;
+  height: 100%;
 }
 
 main.courses-content section.courses-part div.course-part__detailes-courses {
   height: 100%;
-  width: calc(100% - 350px);
+  width: calc(100% - 300px);
   display: flex;
   flex-direction: column;
   align-items: center;

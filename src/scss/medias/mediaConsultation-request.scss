@@ -7,6 +7,7 @@
         section.consultation-request__content {
             flex-direction: column;
             align-items: center;
+            width: 80%;
 
             div.consultation-request__image-placeholder {
                 margin: 0 1rem 2rem;
@@ -61,6 +62,8 @@
         h1.consultation-request__title {}
 
         section.consultation-request__content {
+            width: 85%;
+
             div.consultation-request__image-placeholder {
                 width: 220px;
                 height: 220px;
@@ -72,6 +75,7 @@
                 width: 85%;
 
                 form.consultation-request__form {
+
                     div.form__group {
                         .form__field {}
 
@@ -112,6 +116,8 @@
         h1.consultation-request__title {}
 
         section.consultation-request__content {
+            width: 100%;
+
             div.consultation-request__image-placeholder {
                 width: 200px;
                 height: 200px;

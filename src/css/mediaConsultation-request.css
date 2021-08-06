@@ -88,6 +88,7 @@ body .container-fluid {
   main.consultation-request section.consultation-request__content {
     flex-direction: column;
     align-items: center;
+    width: 80%;
   }
   main.consultation-request section.consultation-request__content div.consultation-request__image-placeholder {
     margin: 0 1rem 2rem;
@@ -101,6 +102,9 @@ body .container-fluid {
 }
 
 @media (max-width: 768px) {
+  main.consultation-request section.consultation-request__content {
+    width: 85%;
+  }
   main.consultation-request section.consultation-request__content div.consultation-request__image-placeholder {
     width: 220px;
     height: 220px;
@@ -111,6 +115,9 @@ body .container-fluid {
 }
 
 @media (max-width: 576px) {
+  main.consultation-request section.consultation-request__content {
+    width: 100%;
+  }
   main.consultation-request section.consultation-request__content div.consultation-request__image-placeholder {
     width: 200px;
     height: 200px;

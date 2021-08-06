@@ -9,44 +9,43 @@ main.course-content {
 
     section.single-course {
         background-color: rgba($color: $color-gray, $alpha: .08);
-        width: 90%;
+        width: 880px;
         height: 800px;
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        padding: 3rem;
+        padding: 2rem;
         box-sizing: border-box;
         margin-top: 4rem;
 
         div.single-course__image-video-course {
-            width: 400px;
+            width: 300px;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
             // background-color: rgba($color: $color-light-2, $alpha: .8);
+            margin: 2rem 2rem 0 1rem;
 
             img.single-course__image-course {
-                height: 250px;
-                width: 80%;
-                margin: 2rem 2rem 1rem 1rem;
+                height: 220px;
+                width: 90%;
+                margin-bottom: 2rem;
             }
 
             video.single-video-course {
-                width: 80%;
-                margin: 1rem 2rem 1rem 1rem;
+                width: 90%;
             }
         }
 
         div.single-course__details-course {
-            width: calc(100% - 400px);
+            width: calc(100% - 300px);
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            // background-color: rgba($color: $color-light-2, $alpha: .8);
 
             div.single-course__title-buton-part {
                 width: 100%;
@@ -103,7 +102,7 @@ main.course-content {
                 font-size: 88%;
                 color: rgba($color: $color-gray, $alpha: .85);
                 line-height: 28px;
-                max-width: 80%;
+                max-width: 90%;
                 text-align: justify;
                 margin-top: 1rem;
                 padding-left: .5rem;

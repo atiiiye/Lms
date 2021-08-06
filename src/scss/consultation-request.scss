@@ -2,6 +2,10 @@
 
 main.consultation-request {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     h1.consultation-request__title {
         color: rgba($color:$color-gray-2, $alpha: .85);
@@ -12,7 +16,7 @@ main.consultation-request {
     }
 
     section.consultation-request__content {
-        width: 100%;
+        width: 880px;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -20,7 +24,7 @@ main.consultation-request {
 
         div.consultation-request__image-placeholder {
             width: 250px;
-            height: 250px;
+            height: 220px;
             background-color: rgba($color: $color-gray, $alpha: .08);
             margin: 0 1rem;
 
@@ -31,7 +35,7 @@ main.consultation-request {
         }
 
         div.consultation-request__form-placeholder {
-            width: 65%;
+            width: calc(100% - 250px);
             background-color: rgba($color: $color-gray, $alpha: .08);
 
             form.consultation-request__form {
@@ -40,7 +44,6 @@ main.consultation-request {
                 flex-direction: column;
                 align-items: flex-end;
                 justify-content: center;
-                padding-right: 2rem;
 
                 div.form__group {
                     width: 90%;

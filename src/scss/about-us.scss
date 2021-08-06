@@ -21,14 +21,14 @@ main.about-us {
         }
 
         div.about-us-content__main-box {
-            width: calc(90% - 6rem);
+            width: 880px;
             height: 75%;
             box-sizing: border-box;
             display: flex;
             justify-content: center;
             align-items: flex-start;
             background-color: rgba($color: $color-gray, $alpha: .08);
-            margin: 0 3rem 4rem;
+            margin: 0 2rem 4rem;
             padding-top: 3rem;
 
             div.about-us-content__image-placeholder {
@@ -45,12 +45,12 @@ main.about-us {
             span.about-us-content__description {
                 font-size: 95%;
                 padding: 0 2rem;
-                margin: 0 0 2rem;
+                margin: 0 0 1rem;
                 box-sizing: border-box;
                 color: rgba($color: $color-gray, $alpha: .95);
                 line-height: 24px;
-                width: calc(100% - 400px);
-                max-width: calc(100% - 450px);
+                width: calc(100% - 300px);
+                max-width: calc(100% - 300px);
                 text-align: justify;
                 max-height: 80%;
                 overflow-y: auto;

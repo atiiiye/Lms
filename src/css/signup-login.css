@@ -84,62 +84,7 @@ body .container-fluid {
   margin: 0;
 }
 
-main.about-us {
+main {
   width: 100%;
 }
-
-main.about-us section.about-us-content {
-  width: 100%;
-  height: 700px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #faf6fb;
-}
-
-main.about-us section.about-us-content h1.h3.about-us-content__title {
-  color: rgba(27, 27, 27, 0.85);
-  font-weight: 600;
-  text-align: center;
-  padding: 2rem;
-  margin-bottom: 0;
-}
-
-main.about-us section.about-us-content div.about-us-content__main-box {
-  width: 880px;
-  height: 75%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  background-color: rgba(137, 137, 137, 0.08);
-  margin: 0 2rem 4rem;
-  padding-top: 3rem;
-}
-
-main.about-us section.about-us-content div.about-us-content__main-box div.about-us-content__image-placeholder {
-  width: 250px;
-  height: 250px;
-  background-color: rgba(137, 137, 137, 0.08);
-}
-
-main.about-us section.about-us-content div.about-us-content__main-box div.about-us-content__image-placeholder img.about-us-content__image {
-  width: 100%;
-  height: 100%;
-}
-
-main.about-us section.about-us-content div.about-us-content__main-box span.about-us-content__description {
-  font-size: 95%;
-  padding: 0 2rem;
-  margin: 0 0 1rem;
-  box-sizing: border-box;
-  color: rgba(137, 137, 137, 0.95);
-  line-height: 24px;
-  width: calc(100% - 300px);
-  max-width: calc(100% - 300px);
-  text-align: justify;
-  max-height: 80%;
-  overflow-y: auto;
-}
-/*# sourceMappingURL=about-us.css.map */
+/*# sourceMappingURL=signup-login.css.map */

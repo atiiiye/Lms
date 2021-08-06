@@ -86,6 +86,10 @@ body .container-fluid {
 
 main.consultation-request {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 main.consultation-request h1.consultation-request__title {
@@ -97,7 +101,7 @@ main.consultation-request h1.consultation-request__title {
 }
 
 main.consultation-request section.consultation-request__content {
-  width: 100%;
+  width: 880px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -106,7 +110,7 @@ main.consultation-request section.consultation-request__content {
 
 main.consultation-request section.consultation-request__content div.consultation-request__image-placeholder {
   width: 250px;
-  height: 250px;
+  height: 220px;
   background-color: rgba(137, 137, 137, 0.08);
   margin: 0 1rem;
 }
@@ -117,7 +121,7 @@ main.consultation-request section.consultation-request__content div.consultation
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder {
-  width: 65%;
+  width: calc(100% - 250px);
   background-color: rgba(137, 137, 137, 0.08);
 }
 
@@ -127,7 +131,6 @@ main.consultation-request section.consultation-request__content div.consultation
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  padding-right: 2rem;
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group {
