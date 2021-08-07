@@ -84,97 +84,63 @@ body .container-fluid {
   margin: 0;
 }
 
-main.courses-content {
-  width: 100%;
+@media (max-width: 991px) {
+  main.signup-login-page section.signup-login-content {
+    width: 70%;
+    flex-direction: column;
+  }
+  main.signup-login-page section.signup-login-content div.signup-login-content__form-box {
+    width: 100%;
+  }
+  main.signup-login-page section.signup-login-content div.signup-login-content__form-box h2.signup-login-content__title {
+    width: 90%;
+    padding: 1rem 2rem;
+  }
+  main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.form__group {
+    padding: 1rem 1rem 0;
+    margin-top: 1rem;
+  }
+  main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.form__group label.form__label {
+    font-size: 95%;
+  }
 }
 
-main.courses-content h1.courses-title {
-  color: rgba(27, 27, 27, 0.85);
-  font-weight: 600;
-  text-align: center;
-  padding: 2rem;
+@media (max-width: 768px) {
+  main.signup-login-page section.signup-login-content {
+    width: 75%;
+  }
+  main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.form__group label.form__label {
+    font-size: 90%;
+  }
+  main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.remember-field label.form__label-remember {
+    font-size: 90%;
+  }
+  main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.signup-login-content__form-fields {
+    flex-direction: column;
+  }
 }
 
-main.courses-content section.courses-part {
-  background-color: rgba(137, 137, 137, 0.08);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 260px;
-  margin-bottom: 2rem;
-  padding: 0;
-  width: 950px;
+@media (max-width: 576px) {
+  main.signup-login-page section.signup-login-content {
+    width: 85%;
+  }
+  main.signup-login-page section.signup-login-content div.signup-login-content__form-box h2.signup-login-content__title {
+    padding: 1rem;
+  }
+  main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form button.signup-login-content__button {
+    width: 100px;
+    font-size: 1.1rem;
+  }
 }
 
-main.courses-content section.courses-part div.courses-part__image-side {
-  width: 250px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 425px) {
+  main.signup-login-page section.signup-login-content {
+    width: 95%;
+    margin: 2rem 1rem;
+  }
 }
-
-main.courses-content section.courses-part div.courses-part__image-side img.courses-part__image {
-  width: 100%;
-  height: 100%;
-}
-
-main.courses-content section.courses-part div.course-part__detailes-courses {
-  height: 100%;
-  width: calc(100% - 300px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-main.courses-content section.courses-part div.course-part__detailes-courses h4.course-part__title-courses {
-  color: rgba(27, 27, 27, 0.8);
-  font-weight: 600;
-  text-align: center;
-  padding: 2rem;
-  padding-bottom: 0;
-}
-
-main.courses-content section.courses-part div.course-part__detailes-courses span.course-part__description-courses {
-  font-size: 85%;
-  color: rgba(137, 137, 137, 0.95);
-  line-height: 24px;
-  width: 100%;
-  max-width: 80%;
-  text-align: justify;
-  margin-top: 1rem;
-  max-height: 45%;
-  overflow-y: hidden;
-}
-
-main.courses-content section.courses-part div.course-part__detailes-courses div.course-part__button-box {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  position: absolute;
-  bottom: .75rem;
-  left: 4rem;
-}
-
-main.courses-content section.courses-part div.course-part__detailes-courses div.course-part__button-box button.course-part__button {
-  font-weight: 500;
-  border: 2px solid rgba(255, 139, 139, 0.9);
-  background-color: #ff8b8b;
-  border-radius: 4px;
-  padding: 0;
-  width: 100px;
-}
-
-main.courses-content section.courses-part div.course-part__detailes-courses div.course-part__button-box button.course-part__button:hover > a.course-part__link,
-main.courses-content section.courses-part div.course-part__detailes-courses div.course-part__button-box button.course-part__button:focus > a.course-part__link {
-  color: #faf6fb;
-  border: 2px solid #ff8b8b;
-}
-
-main.courses-content section.courses-part div.course-part__detailes-courses div.course-part__button-box button.course-part__button a.course-part__link {
-  text-decoration: none;
-  color: rgba(250, 246, 251, 0.8);
-  width: 100%;
-}
-/*# sourceMappingURL=courses.css.map */
+/*# sourceMappingURL=mediaSignup-login.css.map */

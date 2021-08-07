@@ -97,7 +97,7 @@ main.container-fluid.contact-us section.contact-us-content {
 }
 
 main.container-fluid.contact-us section.contact-us-content div.contact-us-content__text {
-  width: 65%;
+  width: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,7 +122,7 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
 }
 
 main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box {
-  width: 880px;
+  width: 950px;
   display: flex;
   justify-content: center;
   background-color: rgba(137, 137, 137, 0.08);

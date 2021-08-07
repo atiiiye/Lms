@@ -1,0 +1,218 @@
+@import './../base';
+
+@media(max-width : 991px) {
+    main.signup-login-page {
+        section.signup-login-content {
+            width: 70%;
+            flex-direction: column;
+
+            div.signup-login-content__form-box {
+                width: 100%;
+
+                h2.signup-login-content__title {
+                    width: 90%;
+                    padding: 1rem 2rem;
+                }
+
+                form.signup-login-content__form {
+                    width: 90%;
+                    margin-bottom: 2rem;
+
+                    div.form__group {
+                        padding: 1rem 1rem 0;
+                        margin-top: 1rem;
+
+                        .form__field {}
+
+                        label.form__label {
+                            font-size: 95%;
+                        }
+
+                        .form__field:focus {
+                            ~label.form__label {}
+                        }
+
+                        .form__field {}
+
+                        span.form__field__error {}
+
+                    }
+
+                    div.remember-field {
+                        input[type="checkbox"] {}
+
+                        label.form__label-remember {}
+
+                        .form__field:focus {
+                            ~label.form__label-remember {}
+                        }
+                    }
+
+                    span.signup-login-content__form-rules-text {}
+
+                    button.signup-login-content__button {}
+
+                    a.signup-login-content__forgot-pasword {}
+
+                    div.signup-login-content__form-fields {}
+                }
+            }
+        }
+    }
+}
+
+@media(max-width : 768px) {
+    main.signup-login-page {
+        section.signup-login-content {
+            width: 75%;
+
+            div.signup-login-content__form-box {
+
+                h2.signup-login-content__title {}
+
+                form.signup-login-content__form {
+                    div.form__group {
+                        .form__field {}
+
+                        label.form__label {
+                            font-size: 90%;
+                        }
+
+                        .form__field:focus {
+                            ~label.form__label {}
+                        }
+
+                        .form__field {}
+
+                        span.form__field__error {}
+
+                    }
+
+                    div.remember-field {
+                        input[type="checkbox"] {}
+
+                        label.form__label-remember {
+                            font-size: 90%;
+                        }
+
+                        .form__field:focus {
+                            ~label.form__label-remember {}
+                        }
+                    }
+
+                    span.signup-login-content__form-rules-text {}
+
+                    button.signup-login-content__button {}
+
+                    a.signup-login-content__forgot-pasword {}
+
+                    div.signup-login-content__form-fields {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width : 576px) {
+    main.signup-login-page {
+        section.signup-login-content {
+            width: 85%;
+
+            div.signup-login-content__form-box {
+
+                h2.signup-login-content__title {
+                    padding: 1rem;
+                }
+
+                form.signup-login-content__form {
+                    div.form__group {
+                        .form__field {}
+
+                        label.form__label {}
+
+                        .form__field:focus {
+                            ~label.form__label {}
+                        }
+
+                        .form__field {}
+
+                        span.form__field__error {}
+
+                    }
+
+                    div.remember-field {
+                        input[type="checkbox"] {}
+
+                        label.form__label-remember {}
+
+                        .form__field:focus {
+                            ~label.form__label-remember {}
+                        }
+                    }
+
+                    span.signup-login-content__form-rules-text {}
+
+                    button.signup-login-content__button {
+                        width: 100px;
+                        font-size: 1.1rem;
+                    }
+
+                    a.signup-login-content__forgot-pasword {}
+
+                    div.signup-login-content__form-fields {}
+                }
+            }
+        }
+    }
+}
+
+@media(max-width : 425px) {
+    main.signup-login-page {
+        section.signup-login-content {
+            width: 95%;
+            margin: 2rem 1rem;
+
+            div.signup-login-content__form-box {
+
+                h2.signup-login-content__title {}
+
+                form.signup-login-content__form {
+                    div.form__group {
+                        .form__field {}
+
+                        label.form__label {}
+
+                        .form__field:focus {
+                            ~label.form__label {}
+                        }
+
+                        .form__field {}
+
+                        span.form__field__error {}
+
+                    }
+
+                    div.remember-field {
+                        input[type="checkbox"] {}
+
+                        label.form__label-remember {}
+
+                        .form__field:focus {
+                            ~label.form__label-remember {}
+                        }
+                    }
+
+                    span.signup-login-content__form-rules-text {}
+
+                    button.signup-login-content__button {}
+
+                    a.signup-login-content__forgot-pasword {}
+
+                    div.signup-login-content__form-fields {}
+                }
+            }
+        }
+    }
+}

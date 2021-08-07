@@ -94,7 +94,7 @@ main.course-content {
 
 main.course-content section.single-course {
   background-color: rgba(137, 137, 137, 0.08);
-  width: 880px;
+  width: 950px;
   height: 800px;
   display: flex;
   align-items: flex-start;
