@@ -125,7 +125,7 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
   width: 950px;
   display: flex;
   justify-content: center;
-  background-color: rgba(137, 137, 137, 0.08);
+  background-color: #0a1931;
   padding: 2rem 1.5rem 0;
   margin: 0 3rem 2rem;
 }
@@ -145,12 +145,12 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
 
 main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box aside.contact-us-content__social-media div.contact-us-content__social-media-box:hover > a.contact-us-content__social-media-link,
 main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box aside.contact-us-content__social-media div.contact-us-content__social-media-box:hover > i.contact-us-content__social-media-icon {
-  color: rgba(255, 139, 139, 0.95);
+  color: rgba(255, 201, 71, 0.95);
 }
 
 main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box aside.contact-us-content__social-media div.contact-us-content__social-media-box i.contact-us-content__social-media-icon {
   font-size: 24px;
-  color: rgba(27, 27, 27, 0.85);
+  color: rgba(244, 249, 249, 0.85);
   background-color: rgba(137, 137, 137, 0.2);
   padding: .75rem;
   border-radius: 50%;
@@ -159,7 +159,7 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
 main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box aside.contact-us-content__social-media div.contact-us-content__social-media-box a.contact-us-content__social-media-link {
   direction: ltr;
   text-decoration: none;
-  color: rgba(27, 27, 27, 0.5);
+  color: rgba(244, 249, 249, 0.75);
   padding-right: .5rem;
   font-size: 14px;
 }
@@ -185,10 +185,10 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
 main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group .form__field {
   width: 95%;
   border: 0;
-  border-bottom: 2px solid rgba(137, 137, 137, 0.75);
+  border-bottom: 2px solid rgba(244, 249, 249, 0.75);
   outline: 0;
   font-size: 90%;
-  color: rgba(27, 27, 27, 0.75);
+  color: rgba(244, 249, 249, 0.75);
   padding: 8px 0;
   background: transparent;
   transition: border-color 0.2s;
@@ -211,14 +211,14 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
   display: block;
   transition: 0.2s;
   font-size: 95%;
-  color: rgba(137, 137, 137, 0.75);
+  color: rgba(244, 249, 249, 0.75);
 }
 
 main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group .form__field:focus {
   padding-bottom: 6px;
   font-weight: 600;
   border-width: 3px;
-  border-image: linear-gradient(to left, rgba(27, 27, 27, 0.85), rgba(27, 27, 27, 0.5));
+  border-image: linear-gradient(to left, rgba(244, 249, 249, 0.85), rgba(244, 249, 249, 0.5));
   border-image-slice: 1;
 }
 
@@ -227,7 +227,7 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
   top: 0;
   display: block;
   transition: 0.2s;
-  color: rgba(27, 27, 27, 0.8);
+  color: rgba(244, 249, 249, 0.8);
   font-weight: 600;
 }
 
@@ -243,18 +243,16 @@ main.container-fluid.contact-us section.contact-us-content div.contact-us-conten
 
 main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form button.contact-us-content__form__button {
   font-weight: 500;
-  border: 2px solid rgba(255, 139, 139, 0.95);
-  background-color: #ff8b8b;
+  border: 2px solid rgba(255, 201, 71, 0.95);
+  background-color: #ffc947;
   border-radius: 4px;
   padding: 0;
   width: 120px;
-  color: rgba(250, 246, 251, 0.8);
   margin: 2rem 0 2rem 1rem;
   font-size: 1.15rem;
 }
 
 main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form button.contact-us-content__form__button:hover, main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form button.contact-us-content__form__button:focus {
-  color: #faf6fb;
-  border: 2px solid #ff8b8b;
+  border: 2px solid #ffc947;
 }
 /*# sourceMappingURL=contact-us.css.map */
