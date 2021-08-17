@@ -12,7 +12,7 @@ main.courses-content {
     }
 
     section.courses-part {
-        background-color: rgba($color: $color-gray, $alpha: .08);
+        background-color: rgba($color: $color-banner-box, $alpha: 1.0);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -44,7 +44,7 @@ main.courses-content {
             position: relative;
 
             h4.course-part__title-courses {
-                color: rgba($color:$color-gray-2, $alpha: .8);
+                color: rgba($color:$color-button, $alpha: 1.0);
                 font-weight: 600;
                 text-align: center;
                 padding: 2rem;
@@ -53,7 +53,7 @@ main.courses-content {
 
             span.course-part__description-courses {
                 font-size: 85%;
-                color: rgba($color: $color-gray, $alpha: .95);
+                color: rgba($color: $color-font, $alpha: .95);
                 line-height: 24px;
                 width: 100%;
                 max-width: 80%;
@@ -73,21 +73,21 @@ main.courses-content {
 
                 button.course-part__button {
                     font-weight: 500;
-                    border: 2px solid rgba($color: $color-pink-light, $alpha: .9);
-                    background-color: rgba($color: $color-pink-light, $alpha: 1.0);
+                    border: 2px solid rgba($color: $color-button, $alpha: .9);
+                    background-color: rgba($color: $color-button, $alpha: 1.0);
                     border-radius: 4px;
                     padding: 0;
                     width: 100px;
 
                     &:hover>a.course-part__link,
                     &:focus>a.course-part__link {
-                        color: rgba($color: $color-light-2, $alpha: 1.0);
-                        border: 2px solid rgba($color: $color-pink-light, $alpha: 1.0);
+                        color: rgba($color: $color-font, $alpha: 1.0);
+                        border: 2px solid rgba($color: $color-button, $alpha: 1.0);
                     }
 
                     a.course-part__link {
                         text-decoration: none;
-                        color: rgba($color: $color-light-2, $alpha: .8);
+                        color: rgba($color: $color-font, $alpha: .8);
                         width: 100%;
                     }
                 }

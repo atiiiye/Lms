@@ -9,7 +9,7 @@ main.signup-login-page {
     section.signup-login-content {
         width: 950px;
         margin: 2rem;
-        background-color: rgba($color: $color-light-2, $alpha: 1.0);
+        background-color: rgba($color: $color-font, $alpha: 1.0);
         display: flex;
         align-items: flex-start;
         justify-content: center;
@@ -36,7 +36,7 @@ main.signup-login-page {
                 align-items: flex-end;
                 justify-content: center;
                 flex-direction: column;
-                background-color: rgba($color: $color-gray, $alpha: .08);
+                background-color: rgba($color: $color-banner-box, $alpha: 1.0);
                 padding: 1rem;
 
                 div.form__group {
@@ -53,7 +53,7 @@ main.signup-login-page {
                         border-bottom: 2px solid rgba($color: $color-gray, $alpha: .75);
                         outline: 0;
                         font-size: 90%;
-                        color: rgba($color: $color-gray-2, $alpha: .75);
+                        color: rgba($color: $color-font, $alpha: .75);
                         padding: 8px 0;
                         background: transparent;
                         transition: border-color 0.2s;
@@ -76,7 +76,7 @@ main.signup-login-page {
                         display: block;
                         transition: 0.2s;
                         font-size: 95%;
-                        color: rgba($color: $color-gray, $alpha: .75);
+                        color: rgba($color: $color-font, $alpha: .85);
                     }
 
                     .form__field:focus {
@@ -85,14 +85,14 @@ main.signup-login-page {
                             top: 0;
                             display: block;
                             transition: 0.2s;
-                            color: rgba($color: $color-gray-2, $alpha: .8);
+                            color: rgba($color: $color-font, $alpha: .95);
                             font-weight: 600;
                         }
 
                         padding-bottom: 6px;
                         font-weight: 600;
                         border-width: 3px;
-                        border-image: linear-gradient(to left, rgba($color: $color-gray-2, $alpha: .85), rgba($color: $color-gray-2, $alpha: .5));
+                        border-image: linear-gradient(to left, rgba($color: $color-font, $alpha: .85), rgba($color: $color-font, $alpha: .5));
                         border-image-slice: 1;
                     }
 
@@ -124,13 +124,13 @@ main.signup-login-page {
                         position: absolute;
                         right: 36px;
                         top: 24px;
-                        color: rgba($color: $color-gray, $alpha: .75);
+                        color: rgba($color: $color-font, $alpha: .75);
 
                     }
 
                     .form__field:focus {
                         ~label.form__label-remember {
-                            color: rgba($color: $color-gray-2, $alpha: .8);
+                            color: rgba($color: $color-font, $alpha: .8);
                         }
                     }
                 }
@@ -141,30 +141,32 @@ main.signup-login-page {
                     text-align: center;
                     line-height: 1.8;
                     padding: 1rem;
+                    color: rgba($color: $color-font, $alpha: 1.0);
+
                 }
 
                 button.signup-login-content__button {
                     font-weight: 500;
-                    border: 2px solid rgba($color: $color-pink-light, $alpha: .95);
-                    background-color: rgba($color: $color-pink-light, $alpha: 1.0);
+                    border: 2px solid rgba($color: $color-button, $alpha: .95);
+                    background-color: rgba($color: $color-button, $alpha: 1.0);
                     border-radius: 4px;
                     padding: 0;
                     width: 120px;
-                    color: rgba($color: $color-light-2, $alpha: .8);
+                    color: rgba($color: $color-font, $alpha: .8);
                     margin: 2rem 0 2rem 1rem;
                     font-size: 1.15rem;
 
                     &:hover,
                     &:focus {
-                        color: rgba($color: $color-light-2, $alpha: 1.0);
-                        border: 2px solid rgba($color: $color-pink-light, $alpha: 1.0);
+                        color: rgba($color: $color-font, $alpha: 1.0);
+                        border: 2px solid rgba($color: $color-button, $alpha: 1.0);
                     }
 
                 }
 
                 a.signup-login-content__forgot-pasword {
                     font-weight: 600;
-                    color: rgba($color: $color-pink-light, $alpha: 1.0);
+                    color: rgba($color: $color-button, $alpha: 1.0);
                     font-size: 14px;
                     width: 100%;
                     text-align: right;

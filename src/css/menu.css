@@ -71,7 +71,7 @@ body ::-webkit-scrollbar-thumb:hover {
 }
 
 body ::selection {
-  background-color: #ff8b8b;
+  background-color: #FFC947;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
@@ -106,14 +106,14 @@ nav.main-navbar div.main-navbar__hamburger-menu {
 }
 
 nav.main-navbar div.main-navbar__hamburger-menu span.ti-menu {
-  color: rgba(137, 137, 137, 0.75);
+  color: rgba(244, 249, 249, 0.75);
   height: 100%;
   width: 100%;
   font-size: 30px;
 }
 
 nav.main-navbar div.main-navbar__hamburger-menu span.ti-menu:hover {
-  color: #faf6fb;
+  color: #f4f9f9;
 }
 
 nav.main-navbar img.main-navbar__logo {
@@ -136,7 +136,7 @@ div.collapse.show#coll-navbar {
   right: 0;
   padding-right: 1rem;
   top: 0;
-  background-color: #1b1b1b;
+  background-color: #0a1931;
   width: 250px;
   transform: translate(0, 0);
   transition: transform .4s ease-in-out;
@@ -145,7 +145,7 @@ div.collapse.show#coll-navbar {
 
 div.collapse.show#coll-navbar ul.navbar-nav {
   padding-top: 4rem;
-  background-color: #1b1b1b;
+  background-color: #0a1931;
 }
 
 div.collapse.show#coll-navbar ul.navbar-nav li.nav-item {
@@ -156,11 +156,11 @@ div.collapse.show#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu
   width: 100%;
   height: 100%;
   padding: 0;
-  color: rgba(250, 246, 251, 0.75);
+  color: rgba(244, 249, 249, 0.75);
 }
 
 div.collapse.show#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu:hover {
-  color: #faf6fb;
+  color: #f4f9f9;
 }
 
 div.collapsing#coll-navbar {
@@ -169,7 +169,7 @@ div.collapsing#coll-navbar {
   right: 0;
   top: 0;
   padding-right: 1rem;
-  background-color: #1b1b1b;
+  background-color: #0a1931;
   width: 250px;
   transform: translate(100%, 0);
   transition: transform .4s ease-in-out;
@@ -188,10 +188,10 @@ div.collapsing#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu {
   width: 100%;
   height: 100%;
   padding: 0;
-  color: rgba(250, 246, 251, 0.75);
+  color: rgba(244, 249, 249, 0.75);
 }
 
 div.collapsing#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu:hover {
-  color: #faf6fb;
+  color: #f4f9f9;
 }
 /*# sourceMappingURL=menu.css.map */

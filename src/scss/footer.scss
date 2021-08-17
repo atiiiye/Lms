@@ -2,7 +2,7 @@
 
 footer {
     width: 100%;
-    background-color: rgba($color: $color-gray-2, $alpha: .75);
+    background-color: rgba($color: $color-banner-box, $alpha: 1.0);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,7 +11,7 @@ footer {
     section.footer-medias {
         height: 300px;
         width: 100%;
-        background-color: rgba($color: $color-gray-2, $alpha: .85);
+        background-color: rgba($color: $color-banner-box, $alpha: .85);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -22,13 +22,13 @@ footer {
             text-decoration: none;
 
             i.footer-medias__icon {
-                color: rgba($color: $color-light-2, $alpha: 1.0);
+                color: rgba($color: $color-font, $alpha: 1.0);
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
                 &:hover {
-                    color: rgba($color: $color-light-2, $alpha: .5);
+                    color: rgba($color: $color-font, $alpha: .75);
                     transform: scale(1.5);
                     transition: all .3s ease-in;
                 }
@@ -53,19 +53,19 @@ footer {
             flex-direction: column;
 
             i.footer-middle__icon {
-                color: rgba($color: $color-light-2, $alpha: 1.0);
+                color: rgba($color: $color-font, $alpha: 1.0);
                 font-size: 30px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
                 &:hover {
-                    color: rgba($color: $color-light-2, $alpha: .85);
+                    color: rgba($color: $color-font, $alpha: .95);
                 }
             }
 
             span.footer-middle__title {
-                color: rgba($color: $color-light-2, $alpha: 1.0);
+                color: rgba($color: $color-font, $alpha: 1.0);
                 text-align: center;
                 margin-top: 1rem;
                 font-size: 18px;
@@ -76,14 +76,14 @@ footer {
     section.footer-privacy {
         height: 100px;
         width: 100%;
-        background-color: rgba($color: $color-dark, $alpha: .95);
+        background-color: rgba($color: $color-banner-box, $alpha: 1.0);
         display: flex;
         justify-content: center;
         align-items: center;
 
         span.footer-privacy__description {
             font-size: 14px;
-            color: rgba($color: $color-light-2, $alpha: .75);
+            color: rgba($color: $color-font, $alpha: 1.0);
         }
     }
 }

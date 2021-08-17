@@ -71,7 +71,7 @@ body ::-webkit-scrollbar-thumb:hover {
 }
 
 body ::selection {
-  background-color: #ff8b8b;
+  background-color: #FFC947;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
@@ -86,7 +86,7 @@ body .container-fluid {
 
 footer {
   width: 100%;
-  background-color: rgba(27, 27, 27, 0.75);
+  background-color: #0a1931;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,7 +96,7 @@ footer {
 footer section.footer-medias {
   height: 300px;
   width: 100%;
-  background-color: rgba(27, 27, 27, 0.85);
+  background-color: rgba(10, 25, 49, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,14 +109,14 @@ footer section.footer-medias a.footer-medias__icon-link {
 }
 
 footer section.footer-medias a.footer-medias__icon-link i.footer-medias__icon {
-  color: #faf6fb;
+  color: #f4f9f9;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 footer section.footer-medias a.footer-medias__icon-link i.footer-medias__icon:hover {
-  color: rgba(250, 246, 251, 0.5);
+  color: rgba(244, 249, 249, 0.75);
   transform: scale(1.5);
   transition: all .3s ease-in;
 }
@@ -140,7 +140,7 @@ footer section.footer-middle div.footer-middle__contact-box {
 }
 
 footer section.footer-middle div.footer-middle__contact-box i.footer-middle__icon {
-  color: #faf6fb;
+  color: #f4f9f9;
   font-size: 30px;
   display: flex;
   justify-content: center;
@@ -148,11 +148,11 @@ footer section.footer-middle div.footer-middle__contact-box i.footer-middle__ico
 }
 
 footer section.footer-middle div.footer-middle__contact-box i.footer-middle__icon:hover {
-  color: rgba(250, 246, 251, 0.85);
+  color: rgba(244, 249, 249, 0.95);
 }
 
 footer section.footer-middle div.footer-middle__contact-box span.footer-middle__title {
-  color: #faf6fb;
+  color: #f4f9f9;
   text-align: center;
   margin-top: 1rem;
   font-size: 18px;
@@ -161,7 +161,7 @@ footer section.footer-middle div.footer-middle__contact-box span.footer-middle__
 footer section.footer-privacy {
   height: 100px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #0a1931;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,6 +169,6 @@ footer section.footer-privacy {
 
 footer section.footer-privacy span.footer-privacy__description {
   font-size: 14px;
-  color: rgba(250, 246, 251, 0.75);
+  color: #f4f9f9;
 }
 /*# sourceMappingURL=footer.css.map */

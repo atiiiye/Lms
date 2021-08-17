@@ -17,7 +17,7 @@ header {
         z-index: 11000;
 
         h1.main-banner__main-title {
-            color: $color-light-2;
+            color: $color-button;
             text-align: center;
             width: 320px;
             animation: typing 2.5s steps(18), blink .5s step-end infinite alternate;
@@ -38,12 +38,12 @@ header {
         }
 
         span.main-banner__description {
-            color: $color-light-2;
+            color: $color-button;
             margin-top: .5rem;
         }
 
         i {
-            color: $color-light-2;
+            color: $color-button;
             font-size: 36px;
             width: 44px;
             height: 44px;
@@ -65,7 +65,7 @@ header {
 }
 
 main {
-    background-color: rgba($color: $color-gray-2, $alpha: 1.0);
+    background-color: rgba($color: $color-banner-box, $alpha: 1.0);
 
     section.slider-section {
         width: 100%;
@@ -74,13 +74,13 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba($color: $color-light-2, $alpha: 1.0);
+        background-color: rgba($color: $color-font, $alpha: 1.0);
 
         div.image-gallery.owl-carousel.owl-theme {
             display: flex;
             width: 80%;
             height: 70%;
-            background-color: rgba($color: $color-gray, $alpha: .05);
+            background-color: rgba($color: $color-banner-box, $alpha: 1.0);
 
 
             div.owl-stage-outer {
@@ -108,7 +108,7 @@ main {
                 height: 100%;
 
                 button.owl-prev {
-                    color: $color-gray;
+                    color: $color-font;
                     position: absolute;
                     top: calc(50% - 16px);
                     left: 6%;
@@ -128,7 +128,7 @@ main {
                 }
 
                 button.owl-next {
-                    color: $color-gray;
+                    color: $color-font;
                     position: absolute;
                     top: calc(50% - 16px);
                     right: 6%;
@@ -170,7 +170,7 @@ main {
                     align-items: center;
                     text-align: justify;
                     font-size: 90%;
-                    color: rgba($color: $color-gray, $alpha: .85);
+                    color: rgba($color: $color-font, $alpha: 1.0);
                 }
 
                 div.image-gallery__box {
@@ -198,7 +198,7 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba($color: $color-gray-2, $alpha: 1.0);
+        background-color: rgba($color: $color-banner-box, $alpha: 1.0);
         // position: relative;
         padding: 2rem 3rem;
 
@@ -231,7 +231,7 @@ main {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: $color-light-2;
+        background-color: $color-font;
 
         h3.library-content__title {
             color: rgba($color: $color-gray, $alpha: .75);

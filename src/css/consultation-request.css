@@ -71,7 +71,7 @@ body ::-webkit-scrollbar-thumb:hover {
 }
 
 body ::selection {
-  background-color: #ff8b8b;
+  background-color: #FFC947;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
@@ -122,7 +122,7 @@ main.consultation-request section.consultation-request__content div.consultation
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder {
   width: calc(100% - 250px);
-  background-color: rgba(137, 137, 137, 0.08);
+  background-color: #0a1931;
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form {
@@ -148,7 +148,7 @@ main.consultation-request section.consultation-request__content div.consultation
   border-bottom: 2px solid rgba(137, 137, 137, 0.75);
   outline: 0;
   font-size: 90%;
-  color: rgba(27, 27, 27, 0.75);
+  color: rgba(244, 249, 249, 0.75);
   padding: 8px 0;
   background: transparent;
   transition: border-color 0.2s;
@@ -171,14 +171,14 @@ main.consultation-request section.consultation-request__content div.consultation
   display: block;
   transition: 0.2s;
   font-size: 95%;
-  color: rgba(137, 137, 137, 0.75);
+  color: rgba(244, 249, 249, 0.75);
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group .form__field:focus {
   padding-bottom: 6px;
   font-weight: 600;
   border-width: 3px;
-  border-image: linear-gradient(to left, rgba(27, 27, 27, 0.85), rgba(27, 27, 27, 0.5));
+  border-image: linear-gradient(to left, rgba(244, 249, 249, 0.85), rgba(244, 249, 249, 0.5));
   border-image-slice: 1;
 }
 
@@ -187,7 +187,7 @@ main.consultation-request section.consultation-request__content div.consultation
   top: 0;
   display: block;
   transition: 0.2s;
-  color: rgba(27, 27, 27, 0.8);
+  color: rgba(244, 249, 249, 0.8);
   font-weight: 600;
 }
 
@@ -242,18 +242,18 @@ main.consultation-request section.consultation-request__content div.consultation
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form button.consultation-request__form__button {
   font-weight: 500;
-  border: 2px solid rgba(255, 139, 139, 0.95);
-  background-color: #ff8b8b;
+  border: 2px solid rgba(255, 201, 71, 0.95);
+  background-color: #ffc947;
   border-radius: 4px;
   padding: 0;
   width: 120px;
-  color: rgba(250, 246, 251, 0.8);
+  color: rgba(244, 249, 249, 0.8);
   margin: 2rem 0 2rem 1rem;
   font-size: 1.15rem;
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form button.consultation-request__form__button:hover, main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form button.consultation-request__form__button:focus {
   color: #faf6fb;
-  border: 2px solid #ff8b8b;
+  border: 2px solid #ffc947;
 }
 /*# sourceMappingURL=consultation-request.css.map */

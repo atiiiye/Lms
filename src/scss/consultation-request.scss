@@ -36,7 +36,7 @@ main.consultation-request {
 
         div.consultation-request__form-placeholder {
             width: calc(100% - 250px);
-            background-color: rgba($color: $color-gray, $alpha: .08);
+            background-color: rgba($color: $color-banner-box, $alpha: 1.0);
 
             form.consultation-request__form {
                 width: 90%;
@@ -59,7 +59,7 @@ main.consultation-request {
                         border-bottom: 2px solid rgba($color: $color-gray, $alpha: .75);
                         outline: 0;
                         font-size: 90%;
-                        color: rgba($color: $color-gray-2, $alpha: .75);
+                        color: rgba($color: $color-font, $alpha: .75);
                         padding: 8px 0;
                         background: transparent;
                         transition: border-color 0.2s;
@@ -82,7 +82,7 @@ main.consultation-request {
                         display: block;
                         transition: 0.2s;
                         font-size: 95%;
-                        color: rgba($color: $color-gray, $alpha: .75);
+                        color: rgba($color: $color-font, $alpha: .75);
                     }
 
                     .form__field:focus {
@@ -91,14 +91,14 @@ main.consultation-request {
                             top: 0;
                             display: block;
                             transition: 0.2s;
-                            color: rgba($color: $color-gray-2, $alpha: .8);
+                            color: rgba($color: $color-font, $alpha: .8);
                             font-weight: 600;
                         }
 
                         padding-bottom: 6px;
                         font-weight: 600;
                         border-width: 3px;
-                        border-image: linear-gradient(to left, rgba($color: $color-gray-2, $alpha: .85), rgba($color: $color-gray-2, $alpha: .5));
+                        border-image: linear-gradient(to left, rgba($color: $color-font, $alpha: .85), rgba($color: $color-font, $alpha: .5));
                         border-image-slice: 1;
                     }
 
@@ -162,19 +162,19 @@ main.consultation-request {
                 button.consultation-request__form__button {
 
                     font-weight: 500;
-                    border: 2px solid rgba($color: $color-pink-light, $alpha: .95);
-                    background-color: rgba($color: $color-pink-light, $alpha: 1.0);
+                    border: 2px solid rgba($color: $color-button, $alpha: .95);
+                    background-color: rgba($color: $color-button, $alpha: 1.0);
                     border-radius: 4px;
                     padding: 0;
                     width: 120px;
-                    color: rgba($color: $color-light-2, $alpha: .8);
+                    color: rgba($color: $color-font, $alpha: .8);
                     margin: 2rem 0 2rem 1rem;
                     font-size: 1.15rem;
 
                     &:hover,
                     &:focus {
                         color: rgba($color: $color-light-2, $alpha: 1.0);
-                        border: 2px solid rgba($color: $color-pink-light, $alpha: 1.0);
+                        border: 2px solid rgba($color: $color-button, $alpha: 1.0);
                     }
                 }
             }

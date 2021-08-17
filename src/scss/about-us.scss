@@ -27,7 +27,7 @@ main.about-us {
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            background-color: rgba($color: $color-gray, $alpha: .08);
+            background-color: rgba($color: $color-banner-box, $alpha: 1.0);
             margin: 0 2rem 4rem;
             padding-top: 3rem;
 
@@ -47,7 +47,7 @@ main.about-us {
                 padding: 0 2rem;
                 margin: 0 0 1rem;
                 box-sizing: border-box;
-                color: rgba($color: $color-gray, $alpha: .95);
+                color: rgba($color: $color-font, $alpha: 1.0);
                 line-height: 24px;
                 width: calc(100% - 300px);
                 max-width: calc(100% - 300px);

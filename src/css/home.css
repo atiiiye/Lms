@@ -71,7 +71,7 @@ body ::-webkit-scrollbar-thumb:hover {
 }
 
 body ::selection {
-  background-color: #ff8b8b;
+  background-color: #FFC947;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
@@ -102,7 +102,7 @@ header div.main-banner {
 }
 
 header div.main-banner h1.main-banner__main-title {
-  color: #faf6fb;
+  color: #FFC947;
   text-align: center;
   width: 320px;
   animation: typing 2.5s steps(18), blink 0.5s step-end infinite alternate;
@@ -123,12 +123,12 @@ header div.main-banner h1.main-banner__main-title {
 }
 
 header div.main-banner span.main-banner__description {
-  color: #faf6fb;
+  color: #FFC947;
   margin-top: .5rem;
 }
 
 header div.main-banner i {
-  color: #faf6fb;
+  color: #FFC947;
   font-size: 36px;
   width: 44px;
   height: 44px;
@@ -147,7 +147,7 @@ header div.main-banner i {
 }
 
 main {
-  background-color: #1b1b1b;
+  background-color: #0a1931;
 }
 
 main section.slider-section {
@@ -156,14 +156,14 @@ main section.slider-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #faf6fb;
+  background-color: #f4f9f9;
 }
 
 main section.slider-section div.image-gallery.owl-carousel.owl-theme {
   display: flex;
   width: 80%;
   height: 70%;
-  background-color: rgba(137, 137, 137, 0.05);
+  background-color: #0a1931;
 }
 
 main section.slider-section div.image-gallery.owl-carousel.owl-theme div.owl-stage-outer {
@@ -192,7 +192,7 @@ main section.slider-section div.image-gallery.owl-carousel.owl-theme div.owl-nav
 }
 
 main section.slider-section div.image-gallery.owl-carousel.owl-theme div.owl-nav button.owl-prev {
-  color: #898989;
+  color: #F4F9F9;
   position: absolute;
   top: calc(50% - 16px);
   left: 6%;
@@ -211,7 +211,7 @@ main section.slider-section div.image-gallery.owl-carousel.owl-theme div.owl-nav
 }
 
 main section.slider-section div.image-gallery.owl-carousel.owl-theme div.owl-nav button.owl-next {
-  color: #898989;
+  color: #F4F9F9;
   position: absolute;
   top: calc(50% - 16px);
   right: 6%;
@@ -252,7 +252,7 @@ main section.slider-section div.image-gallery.owl-carousel.owl-theme div.item-sl
   align-items: center;
   text-align: justify;
   font-size: 90%;
-  color: rgba(137, 137, 137, 0.85);
+  color: #f4f9f9;
 }
 
 main section.slider-section div.image-gallery.owl-carousel.owl-theme div.item-slide div.image-gallery__box {
@@ -277,7 +277,7 @@ main section.slider-courses {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1b1b1b;
+  background-color: #0a1931;
   padding: 2rem 3rem;
 }
 
@@ -308,7 +308,7 @@ main section.library-content {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #faf6fb;
+  background-color: #F4F9F9;
 }
 
 main section.library-content h3.library-content__title {

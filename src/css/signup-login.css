@@ -71,7 +71,7 @@ body ::-webkit-scrollbar-thumb:hover {
 }
 
 body ::selection {
-  background-color: #ff8b8b;
+  background-color: #FFC947;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
@@ -94,7 +94,7 @@ main.signup-login-page {
 main.signup-login-page section.signup-login-content {
   width: 950px;
   margin: 2rem;
-  background-color: #faf6fb;
+  background-color: #f4f9f9;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -123,7 +123,7 @@ main.signup-login-page section.signup-login-content div.signup-login-content__fo
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(137, 137, 137, 0.08);
+  background-color: #0a1931;
   padding: 1rem;
 }
 
@@ -142,7 +142,7 @@ main.signup-login-page section.signup-login-content div.signup-login-content__fo
   border-bottom: 2px solid rgba(137, 137, 137, 0.75);
   outline: 0;
   font-size: 90%;
-  color: rgba(27, 27, 27, 0.75);
+  color: rgba(244, 249, 249, 0.75);
   padding: 8px 0;
   background: transparent;
   transition: border-color 0.2s;
@@ -165,14 +165,14 @@ main.signup-login-page section.signup-login-content div.signup-login-content__fo
   display: block;
   transition: 0.2s;
   font-size: 95%;
-  color: rgba(137, 137, 137, 0.75);
+  color: rgba(244, 249, 249, 0.85);
 }
 
 main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.form__group .form__field:focus {
   padding-bottom: 6px;
   font-weight: 600;
   border-width: 3px;
-  border-image: linear-gradient(to left, rgba(27, 27, 27, 0.85), rgba(27, 27, 27, 0.5));
+  border-image: linear-gradient(to left, rgba(244, 249, 249, 0.85), rgba(244, 249, 249, 0.5));
   border-image-slice: 1;
 }
 
@@ -181,7 +181,7 @@ main.signup-login-page section.signup-login-content div.signup-login-content__fo
   top: 0;
   display: block;
   transition: 0.2s;
-  color: rgba(27, 27, 27, 0.8);
+  color: rgba(244, 249, 249, 0.95);
   font-weight: 600;
 }
 
@@ -208,11 +208,11 @@ main.signup-login-page section.signup-login-content div.signup-login-content__fo
   position: absolute;
   right: 36px;
   top: 24px;
-  color: rgba(137, 137, 137, 0.75);
+  color: rgba(244, 249, 249, 0.75);
 }
 
 main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.remember-field .form__field:focus ~ label.form__label-remember {
-  color: rgba(27, 27, 27, 0.8);
+  color: rgba(244, 249, 249, 0.8);
 }
 
 main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form span.signup-login-content__form-rules-text {
@@ -221,28 +221,29 @@ main.signup-login-page section.signup-login-content div.signup-login-content__fo
   text-align: center;
   line-height: 1.8;
   padding: 1rem;
+  color: #f4f9f9;
 }
 
 main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form button.signup-login-content__button {
   font-weight: 500;
-  border: 2px solid rgba(255, 139, 139, 0.95);
-  background-color: #ff8b8b;
+  border: 2px solid rgba(255, 201, 71, 0.95);
+  background-color: #ffc947;
   border-radius: 4px;
   padding: 0;
   width: 120px;
-  color: rgba(250, 246, 251, 0.8);
+  color: rgba(244, 249, 249, 0.8);
   margin: 2rem 0 2rem 1rem;
   font-size: 1.15rem;
 }
 
 main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form button.signup-login-content__button:hover, main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form button.signup-login-content__button:focus {
-  color: #faf6fb;
-  border: 2px solid #ff8b8b;
+  color: #f4f9f9;
+  border: 2px solid #ffc947;
 }
 
 main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form a.signup-login-content__forgot-pasword {
   font-weight: 600;
-  color: #ff8b8b;
+  color: #ffc947;
   font-size: 14px;
   width: 100%;
   text-align: right;
