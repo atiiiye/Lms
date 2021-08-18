@@ -106,13 +106,14 @@ footer section.footer-medias a.footer-medias__icon-link {
   width: 25%;
   font-size: 30px;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer section.footer-medias a.footer-medias__icon-link i.footer-medias__icon {
   color: #f4f9f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: max-content;
 }
 
 footer section.footer-medias a.footer-medias__icon-link i.footer-medias__icon:hover {

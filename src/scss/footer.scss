@@ -20,12 +20,13 @@ footer {
             width: 25%;
             font-size: 30px;
             text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             i.footer-medias__icon {
                 color: rgba($color: $color-font, $alpha: 1.0);
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                width: max-content;
 
                 &:hover {
                     color: rgba($color: $color-font, $alpha: .75);
