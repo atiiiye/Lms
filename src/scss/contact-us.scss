@@ -58,13 +58,13 @@ main.container-fluid.contact-us {
 
                     &:hover>a.contact-us-content__social-media-link,
                     &:hover>i.contact-us-content__social-media-icon {
-                        color: rgba($color: $color-button, $alpha: .95);
+                        color: rgba($color: $color-button, $alpha: 1.0);
 
                     }
 
                     i.contact-us-content__social-media-icon {
                         font-size: 24px;
-                        color: rgba($color: $color-font, $alpha: .85);
+                        color: rgba($color: $color-font, $alpha: .95);
                         background-color: rgba($color: $color-gray, $alpha: .2);
                         padding: .75rem;
                         border-radius: 50%;
@@ -73,7 +73,7 @@ main.container-fluid.contact-us {
                     a.contact-us-content__social-media-link {
                         direction: ltr;
                         text-decoration: none;
-                        color: rgba($color: $color-font, $alpha: .75);
+                        color: rgba($color: $color-font, $alpha: .95);
                         padding-right: .5rem;
                         font-size: 14px;
                     }
