@@ -95,13 +95,13 @@ main.activation-code {
             border-radius: 4px;
             padding: 0;
             width: 120px;
-            color: rgba($color: $color-font, $alpha: .8);
+            color: rgba($color: $color-btn-text, $alpha: .8);
             margin: 2rem 0 2rem 1rem;
             font-size: 1.15rem;
 
             &:hover,
             &:focus {
-                color: rgba($color: $color-font, $alpha: 1.0);
+                color: rgba($color: $color-btn-text, $alpha: 1.0);
                 border: 2px solid rgba($color: $color-button, $alpha: 1.0);
             }
         }

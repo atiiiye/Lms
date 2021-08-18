@@ -90,6 +90,7 @@ main.course-content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #faf6fb;
 }
 
 main.course-content section.single-course {
@@ -171,13 +172,13 @@ main.course-content section.single-course div.single-course__details-course div.
 
 main.course-content section.single-course div.single-course__details-course div.single-course__title-buton-part div.single-course__price-signup button.single-course__signup-button:hover > a.single-course__signup-link,
 main.course-content section.single-course div.single-course__details-course div.single-course__title-buton-part div.single-course__price-signup button.single-course__signup-button:focus > a.single-course__signup-link {
-  color: #faf6fb;
+  color: black;
   border: 2px solid #ffc947;
 }
 
 main.course-content section.single-course div.single-course__details-course div.single-course__title-buton-part div.single-course__price-signup button.single-course__signup-button a.single-course__signup-link {
   text-decoration: none;
-  color: rgba(250, 246, 251, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   width: 100%;
   font-size: 1.15rem;
 }
@@ -199,6 +200,7 @@ main.course-content section.single-course div.single-course__details-course span
 main.course-content section.owl-carousel.owl-theme#courses-slider {
   width: 100%;
   padding: 1rem;
+  background-color: #faf6fb;
 }
 
 main.course-content section.owl-carousel.owl-theme#courses-slider div.owl-stage-outer {

@@ -312,7 +312,7 @@ main section.library-content {
 }
 
 main section.library-content h3.library-content__title {
-  color: rgba(137, 137, 137, 0.75);
+  color: rgba(0, 0, 0, 0.75);
   margin-bottom: 3rem;
 }
 

@@ -247,13 +247,13 @@ main.consultation-request section.consultation-request__content div.consultation
   border-radius: 4px;
   padding: 0;
   width: 120px;
-  color: rgba(244, 249, 249, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   margin: 2rem 0 2rem 1rem;
   font-size: 1.15rem;
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form button.consultation-request__form__button:hover, main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form button.consultation-request__form__button:focus {
-  color: #faf6fb;
+  color: black;
   border: 2px solid #ffc947;
 }
 /*# sourceMappingURL=consultation-request.css.map */

@@ -86,6 +86,7 @@ body .container-fluid {
 
 main.courses-content {
   width: 100%;
+  background-color: #faf6fb;
 }
 
 main.courses-content h1.courses-title {
@@ -168,13 +169,13 @@ main.courses-content section.courses-part div.course-part__detailes-courses div.
 
 main.courses-content section.courses-part div.course-part__detailes-courses div.course-part__button-box button.course-part__button:hover > a.course-part__link,
 main.courses-content section.courses-part div.course-part__detailes-courses div.course-part__button-box button.course-part__button:focus > a.course-part__link {
-  color: #f4f9f9;
+  color: black;
   border: 2px solid #ffc947;
 }
 
 main.courses-content section.courses-part div.course-part__detailes-courses div.course-part__button-box button.course-part__button a.course-part__link {
   text-decoration: none;
-  color: rgba(244, 249, 249, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   width: 100%;
 }
 /*# sourceMappingURL=courses.css.map */

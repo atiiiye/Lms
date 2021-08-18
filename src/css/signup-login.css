@@ -231,13 +231,13 @@ main.signup-login-page section.signup-login-content div.signup-login-content__fo
   border-radius: 4px;
   padding: 0;
   width: 120px;
-  color: rgba(244, 249, 249, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   margin: 2rem 0 2rem 1rem;
   font-size: 1.15rem;
 }
 
 main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form button.signup-login-content__button:hover, main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form button.signup-login-content__button:focus {
-  color: #f4f9f9;
+  color: black;
   border: 2px solid #ffc947;
 }
 

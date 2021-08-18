@@ -176,13 +176,13 @@ main.activation-code form.activation-code__form button.activation-code__button {
   border-radius: 4px;
   padding: 0;
   width: 120px;
-  color: rgba(244, 249, 249, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   margin: 2rem 0 2rem 1rem;
   font-size: 1.15rem;
 }
 
 main.activation-code form.activation-code__form button.activation-code__button:hover, main.activation-code form.activation-code__form button.activation-code__button:focus {
-  color: #f4f9f9;
+  color: black;
   border: 2px solid #ffc947;
 }
 /*# sourceMappingURL=activation-code.css.map */

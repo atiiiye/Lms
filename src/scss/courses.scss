@@ -2,6 +2,7 @@
 
 main.courses-content {
     width: 100%;
+    background-color: rgba($color: $color-background, $alpha: 1.0);
 
     h1.courses-title {
         color: rgba($color:$color-gray-2, $alpha: .85);
@@ -81,13 +82,13 @@ main.courses-content {
 
                     &:hover>a.course-part__link,
                     &:focus>a.course-part__link {
-                        color: rgba($color: $color-font, $alpha: 1.0);
+                        color: rgba($color: $color-btn-text, $alpha: 1.0);
                         border: 2px solid rgba($color: $color-button, $alpha: 1.0);
                     }
 
                     a.course-part__link {
                         text-decoration: none;
-                        color: rgba($color: $color-font, $alpha: .8);
+                        color: rgba($color: $color-btn-text, $alpha: .8);
                         width: 100%;
                     }
                 }

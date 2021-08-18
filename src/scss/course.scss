@@ -6,6 +6,7 @@ main.course-content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba($color: $color-background, $alpha: 1.0);
 
     section.single-course {
         background-color: rgba($color: $color-banner-box, $alpha: 1.0);
@@ -83,13 +84,13 @@ main.course-content {
 
                         &:hover>a.single-course__signup-link,
                         &:focus>a.single-course__signup-link {
-                            color: rgba($color: $color-light-2, $alpha: 1.0);
+                            color: rgba($color: $color-btn-text, $alpha: 1.0);
                             border: 2px solid rgba($color: $color-button, $alpha: 1.0);
                         }
 
                         a.single-course__signup-link {
                             text-decoration: none;
-                            color: rgba($color: $color-light-2, $alpha: .8);
+                            color: rgba($color: $color-btn-text, $alpha: .8);
                             width: 100%;
                             font-size: 1.15rem;
                         }
@@ -117,6 +118,7 @@ main.course-content {
     section.owl-carousel.owl-theme#courses-slider {
         width: 100%;
         padding: 1rem;
+        background-color: rgba($color: $color-background, $alpha: 1.0);
 
         div.owl-stage-outer {
             width: 100%;
