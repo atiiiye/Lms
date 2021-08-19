@@ -17,7 +17,7 @@ header {
         z-index: 11000;
 
         h1.main-banner__main-title {
-            color: $color-button;
+            color: $color-font;
             text-align: center;
             width: 320px;
             animation: typing 2.5s steps(18), blink .5s step-end infinite alternate;
@@ -38,12 +38,12 @@ header {
         }
 
         span.main-banner__description {
-            color: $color-button;
+            color: $color-font;
             margin-top: .5rem;
         }
 
         i {
-            color: $color-button;
+            color: $color-font;
             font-size: 36px;
             width: 44px;
             height: 44px;
@@ -169,7 +169,8 @@ main {
                     display: flex;
                     align-items: center;
                     text-align: justify;
-                    font-size: 90%;
+                    font-size: 95%;
+                    line-height: 2;
                     color: rgba($color: $color-font, $alpha: 1.0);
                 }
 
@@ -178,8 +179,8 @@ main {
                     display: flex;
                     direction: ltr;
                     transition: .2s all;
-                    width: 45%;
-                    height: 100%;
+                    width: 40%;
+                    height: 90%;
                     background: rgba($color: $color-gray-2, $alpha: 1.0);
                     border: 1px solid rgba($color: $color-gray-2, $alpha: .25);
 

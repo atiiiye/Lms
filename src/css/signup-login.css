@@ -63,11 +63,11 @@ body ::-webkit-scrollbar {
 }
 
 body ::-webkit-scrollbar-thumb {
-  background: rgba(27, 27, 27, 0.2);
+  background: rgba(244, 249, 249, 0.2);
 }
 
 body ::-webkit-scrollbar-thumb:hover {
-  background: rgba(27, 27, 27, 0.75);
+  background: rgba(244, 249, 249, 0.75);
 }
 
 body ::selection {
@@ -109,7 +109,7 @@ main.signup-login-page section.signup-login-content div.signup-login-content__fo
 }
 
 main.signup-login-page section.signup-login-content div.signup-login-content__form-box h2.signup-login-content__title {
-  color: rgba(27, 27, 27, 0.85);
+  color: #ffc947;
   font-weight: 600;
   text-align: right;
   padding: 2rem;

@@ -63,11 +63,11 @@ body ::-webkit-scrollbar {
 }
 
 body ::-webkit-scrollbar-thumb {
-  background: rgba(27, 27, 27, 0.2);
+  background: rgba(244, 249, 249, 0.2);
 }
 
 body ::-webkit-scrollbar-thumb:hover {
-  background: rgba(27, 27, 27, 0.75);
+  background: rgba(244, 249, 249, 0.75);
 }
 
 body ::selection {
@@ -92,19 +92,22 @@ body .container-fluid {
     height: max-content;
     padding: 2rem;
     flex-direction: column;
+    align-items: center;
     width: 75%;
   }
   main.course-content section.single-course div.single-course__image-video-course {
     width: 100%;
+    justify-content: center;
+    margin: 0 1rem 0 1rem;
   }
   main.course-content section.single-course div.single-course__image-video-course img.single-course__image-course {
     height: 250px;
     width: 350px;
-    margin: 2rem 2rem 1rem 1rem;
+    margin: 2rem 0 1rem 0;
   }
   main.course-content section.single-course div.single-course__image-video-course video.single-video-course {
     width: 350px;
-    margin: 1rem 2rem 1rem 1rem;
+    margin: 1rem 0 1rem 0;
   }
   main.course-content section.single-course div.single-course__details-course {
     width: 100%;

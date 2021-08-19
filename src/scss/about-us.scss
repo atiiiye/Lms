@@ -10,14 +10,16 @@ main.about-us {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: rgba($color: $color-light-2, $alpha: 1.0);
+        background-color: rgba($color: $color-background, $alpha: 1.0);
 
         h1.h3.about-us-content__title {
-            color: rgba($color:$color-gray-2, $alpha: .85);
+            color: rgba($color:$color-button, $alpha: 1.0);
             font-weight: 600;
             text-align: center;
-            padding: 2rem;
-            margin-bottom: 0;
+            padding: 2rem 2rem 1rem;
+            margin: 3rem 2rem 0;
+            background-color: rgba($color: $color-banner-box, $alpha: 1.0);
+            width: 950px;
         }
 
         div.about-us-content__main-box {
@@ -29,7 +31,7 @@ main.about-us {
             align-items: flex-start;
             background-color: rgba($color: $color-banner-box, $alpha: 1.0);
             margin: 0 2rem 4rem;
-            padding-top: 3rem;
+            padding-top: 1rem;
 
             div.about-us-content__image-placeholder {
                 width: 250px;

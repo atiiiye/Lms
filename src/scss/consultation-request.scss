@@ -8,11 +8,13 @@ main.consultation-request {
     align-items: center;
 
     h1.consultation-request__title {
-        color: rgba($color:$color-gray-2, $alpha: .85);
+        color: rgba($color:$color-button, $alpha: 1.0);
         font-weight: 600;
         text-align: center;
-        padding: 2rem;
-        margin-bottom: 0;
+        padding: 2rem 2rem 1rem;
+        margin: 3rem 2rem 0;
+        background-color: rgba($color: $color-banner-box, $alpha: 1.0);
+        width: 950px;
     }
 
     section.consultation-request__content {
@@ -21,12 +23,14 @@ main.consultation-request {
         justify-content: center;
         align-items: flex-start;
         padding: 2rem;
+        background-color: rgba($color: $color-banner-box, $alpha: 1.0);
+        margin-bottom: 2rem;
 
         div.consultation-request__image-placeholder {
             width: 250px;
             height: 220px;
             background-color: rgba($color: $color-gray, $alpha: .08);
-            margin: 0 1rem;
+            margin: 3rem 1rem 0 0rem;
 
             img.consultation-request__image {
                 width: 100%;

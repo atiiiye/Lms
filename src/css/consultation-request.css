@@ -63,11 +63,11 @@ body ::-webkit-scrollbar {
 }
 
 body ::-webkit-scrollbar-thumb {
-  background: rgba(27, 27, 27, 0.2);
+  background: rgba(244, 249, 249, 0.2);
 }
 
 body ::-webkit-scrollbar-thumb:hover {
-  background: rgba(27, 27, 27, 0.75);
+  background: rgba(244, 249, 249, 0.75);
 }
 
 body ::selection {
@@ -93,11 +93,13 @@ main.consultation-request {
 }
 
 main.consultation-request h1.consultation-request__title {
-  color: rgba(27, 27, 27, 0.85);
+  color: #ffc947;
   font-weight: 600;
   text-align: center;
-  padding: 2rem;
-  margin-bottom: 0;
+  padding: 2rem 2rem 1rem;
+  margin: 3rem 2rem 0;
+  background-color: #0a1931;
+  width: 950px;
 }
 
 main.consultation-request section.consultation-request__content {
@@ -106,13 +108,15 @@ main.consultation-request section.consultation-request__content {
   justify-content: center;
   align-items: flex-start;
   padding: 2rem;
+  background-color: #0a1931;
+  margin-bottom: 2rem;
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__image-placeholder {
   width: 250px;
   height: 220px;
   background-color: rgba(137, 137, 137, 0.08);
-  margin: 0 1rem;
+  margin: 3rem 1rem 0 0rem;
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__image-placeholder img.consultation-request__image {

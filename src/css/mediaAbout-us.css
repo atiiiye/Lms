@@ -63,11 +63,11 @@ body ::-webkit-scrollbar {
 }
 
 body ::-webkit-scrollbar-thumb {
-  background: rgba(27, 27, 27, 0.2);
+  background: rgba(244, 249, 249, 0.2);
 }
 
 body ::-webkit-scrollbar-thumb:hover {
-  background: rgba(27, 27, 27, 0.75);
+  background: rgba(244, 249, 249, 0.75);
 }
 
 body ::selection {
@@ -88,9 +88,13 @@ body .container-fluid {
   main.about-us section.about-us-content {
     height: 800px;
   }
+  main.about-us section.about-us-content h1.h3.about-us-content__title {
+    width: 90%;
+  }
   main.about-us section.about-us-content div.about-us-content__main-box {
     flex-direction: column;
     align-items: center;
+    width: 90%;
   }
   main.about-us section.about-us-content div.about-us-content__main-box div.about-us-content__image-placeholder {
     width: 250px;
@@ -109,6 +113,7 @@ body .container-fluid {
   }
   main.about-us section.about-us-content h1.h3.about-us-content__title {
     margin-bottom: 0;
+    width: 85%;
   }
   main.about-us section.about-us-content div.about-us-content__main-box {
     flex-direction: column;

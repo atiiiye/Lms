@@ -5,11 +5,14 @@
         section.about-us-content {
             height: 800px;
 
-            h1.h3.about-us-content__title {}
+            h1.h3.about-us-content__title {
+                width: 90%;
+            }
 
             div.about-us-content__main-box {
                 flex-direction: column;
                 align-items: center;
+                width: 90%;
 
                 div.about-us-content__image-placeholder {
                     width: 250px;
@@ -37,6 +40,7 @@
 
             h1.h3.about-us-content__title {
                 margin-bottom: 0;
+                width: 85%;
             }
 
             div.about-us-content__main-box {
