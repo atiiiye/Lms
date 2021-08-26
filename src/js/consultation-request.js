@@ -18,6 +18,7 @@ $(document).ready(function () {
     let ErrorSubject = $('.form__field__error.subject')
 
     let submitButton = $('.contact-us-content__form__button')
+    let form = $('.consultation-request__form')
 
     $('#submit').on('click', (event) => {
         event.preventDefault()
@@ -64,7 +65,23 @@ $(document).ready(function () {
             ErrorSubject.html("")
         }
 
-        // if (NameField.val() && PhoneNumberField.val() StatusField.is(":checked"))
+        if (NameField.val() &&
+            PhoneNumberField.val() &&
+            StatusField.is(":checked") &&
+            maritalStatusField.is(":checked") &&
+            genderStatusField.is(":checked") &&
+            SubjectField.val() &&
+            ErrorName.html() == "" &&
+            ErrorPhonenumber.html("") == "" &&
+            ErrorSubject.html("") == ""
+        ) {
+            submitFormMethode()
+        }
     })
+
+    const submitFormMethode = () => {
+        console.log('form called')
+        form.submit()
+    }
 
 })
