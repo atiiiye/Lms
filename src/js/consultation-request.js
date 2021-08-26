@@ -4,13 +4,17 @@ $(document).ready(function () {
     let NameField = $('.form__field#name')
     let PhoneNumberField = $('.form__field#phonenumber')
     let InstagramField = $('.form__field#instagram')
-    let StatusField = $('input[type=radio]')
+    let StatusField = $('input[name=status]')
+    let maritalStatusField = $('input[name=maritalStatus]')
+    let genderStatusField = $('input[name=gender]')
     let SubjectField = $('.form__field#subject')
 
     let ErrorName = $('.form__field__error.name')
     let ErrorPhonenumber = $('.form__field__error.phonenumber')
     let ErrorInstagram = $('.form__field__error.instagram')
     let ErrorStatus = $('.form__field__error.status')
+    let ErrorMaritalStatus = $('.form__field__error.marital-status')
+    let ErrorGenderStatus = $('.form__field__error.gender-status')
     let ErrorSubject = $('.form__field__error.subject')
 
     let submitButton = $('.contact-us-content__form__button')
@@ -40,6 +44,18 @@ $(document).ready(function () {
             ErrorStatus.html("")
         }
 
+        if (!maritalStatusField.is(":checked")) {
+            ErrorMaritalStatus.html("لطفا وضعیت تاهل را تعیین کنید")
+        } else {
+            ErrorMaritalStatus.html("")
+        }
+
+        if (!genderStatusField.is(":checked")) {
+            ErrorGenderStatus.html("لطفا جنسیت را تعیین کنید")
+        } else {
+            ErrorGenderStatus.html("")
+        }
+
         if (SubjectField.val().length === 0) {
             ErrorSubject.html("لطفا موضوع مشاوره را وارد کنید")
         } else if (!SubjectField.val().match(/^[آإأابپتثجچحخدذرزژسشصضطظعغفقکگلمنهۀةوؤیيئءًٌٍَُِّ\s]+$/)) {
@@ -47,6 +63,8 @@ $(document).ready(function () {
         } else {
             ErrorSubject.html("")
         }
+
+        // if (NameField.val() && PhoneNumberField.val() StatusField.is(":checked"))
     })
 
 })
