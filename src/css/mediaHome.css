@@ -117,6 +117,10 @@ body .container-fluid {
   main section.slider-courses {
     height: 450px;
     max-height: 500px;
+    padding: 2rem 2rem;
+  }
+  main section.slider-courses div.swiper-container.mySwiper {
+    margin-right: 1rem;
   }
   main section.slider-courses div.swiper-container.mySwiper img.swiper-slide {
     width: calc(100% / 6);

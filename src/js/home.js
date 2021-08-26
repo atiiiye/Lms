@@ -20,16 +20,15 @@ $(document).ready(function () {
         owl.trigger('stop.owl.autoplay')
     })
 
-    let swiper = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
-        slidesPerColumn: 2,
+        grid: {
+            rows: 2,
+        },
         spaceBetween: 30,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
-        },
-        // responsive: {
-        //     slidesPerView: 1,
-        // }
+        }
     });
 });
