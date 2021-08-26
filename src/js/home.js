@@ -29,6 +29,25 @@ $(document).ready(function () {
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
+        },
+        breakpoints: {
+            576:
+            {
+                slidesPerView: 3,
+                grid: {
+                    rows: 2,
+                },
+                spaceBetween: 30,
+            },
+            300:
+            {
+                slidesPerView: 1,
+                grid: {
+                    rows: 2,
+                },
+                spaceBetween: 10,
+
+            }
         }
     });
 });

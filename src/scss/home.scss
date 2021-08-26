@@ -207,26 +207,36 @@ main {
             width: 100%;
             height: 100%;
             // margin-left: auto;
-            margin-right: 2rem;
+            // margin-right: 2rem;
             overflow-x: hidden;
 
             div.swipper-wrapper {
-                display: flex;
-            }
+          display: flex;
+          flex-direction: row;
+      }
 
-            img.swiper-slide {
-                width: calc(100% / 6) !important;
-                background: rgba($color: $color-gray-2, $alpha: 1.0);
+            a.swiper-slide-link.swiper-slide {
+                text-decoration: none;
+                // margin-top: 30px;
+                margin-left: 20px;
+                background: rgba($color: $color-background, $alpha: 1.0);
+                width: calc(100% / 6);
                 height: calc((100% - 30px) / 2);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                filter: grayscale(100%);
 
-                &:hover {
-                    filter: none;
+                img.swiper-slide-image {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    filter: grayscale(100%);
+
+                    &:hover {
+                        filter: none;
+                    }
                 }
             }
+
 
             div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
                 bottom: 4px;

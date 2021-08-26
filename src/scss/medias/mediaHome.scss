@@ -64,11 +64,12 @@
             div.swiper-container.mySwiper {
                 margin-right: 1rem;
 
-                img.swiper-slide {
-                    width: calc(100% / 6);
-                    height: calc((100% - 30px) / 2);
+                a.swiper-slide-link.swiper-slide {
                     max-height: 150px;
 
+                    img.swiper-slide-image {
+                        height: 100%;
+                    }
                 }
             }
         }
@@ -108,22 +109,20 @@
         section.slider-courses {
             height: 320px;
             max-height: 340px;
-            padding: 2rem;
+            padding: 1rem 4rem;
 
             div.swiper-container.mySwiper {
                 margin-right: 0;
 
-                img.swiper-slide {
-                    width: calc(100% / 6);
-                    height: calc((100% - 30px) / 2);
+                a.swiper-slide-link.swiper-slide {
                     max-height: 105px;
                     margin: auto 0 !important;
-
+                    width: 100%;
                 }
 
-                // div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
-                //     bottom: 4px !important;
-                // }
+                img.swiper-slide-image {
+                    height: 100%;
+                }
             }
         }
 
@@ -142,5 +141,4 @@
             }
         }
     }
-
 }
