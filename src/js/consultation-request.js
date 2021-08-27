@@ -20,8 +20,7 @@ $(document).ready(function () {
     let submitButton = $('.contact-us-content__form__button')
     let form = $('.consultation-request__form')
 
-    form.on('submit', (event) => {
-        event.preventDefault()
+    submitButton.on('click', (event) => {
 
         if (NameField.val().length === 0) {
             ErrorName.html("لطفا نام و نام خانوادگی خود را وارد کنید")
@@ -64,7 +63,9 @@ $(document).ready(function () {
         } else {
             ErrorSubject.html("")
         }
+    })
 
+    form.on('submit', (event) => {
         if (NameField.val() &&
             PhoneNumberField.val() &&
             StatusField.is(":checked") &&
@@ -72,16 +73,15 @@ $(document).ready(function () {
             genderStatusField.is(":checked") &&
             SubjectField.val() &&
             ErrorName.html() == "" &&
-            ErrorPhonenumber.html("") == "" &&
-            ErrorSubject.html("") == ""
+            ErrorPhonenumber.html() == "" &&
+            ErrorSubject.html() == ""
         ) {
-            submitFormMethode()
+            form.submit()
+            console.log('form called')
+        }
+        else {
+            event.preventDefault()
+            console.log('form not called!')
         }
     })
-
-    const submitFormMethode = () => {
-        form.submit()
-        console.log('form called')
-    }
-
 })

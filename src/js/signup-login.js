@@ -59,11 +59,31 @@ $(document).ready(function () {
         }
     })
 
-    loginButton.on('click', (event) => {
-        event.preventDefault()
+    // loginButton.on('click', (event) => {
+    // if (UsernameMobileField.val().length === 0) {
+    //     ErrorUsernameMobile.html("لطفا نام کاربری یا موبایل خود را وارد کنید")
+    // } else if (UsernameMobileField.val().length < 6) {
+    //     ErrorUsernameMobile.html("نام کاربری حداقل باید شامل شش کاراکتر باشد")
+    // } else if (UsernameMobileField.val().match(/^[آإأابپتثجچحخدذرزژسشصضطظعغفقکگلمنهۀةوؤیيئءًٌٍَُِّ\s]+$/)) {
+    //     ErrorUsernameMobile.html("نام کاربری باید انگلیسی باشد")
+    // } else {
+    //     ErrorUsernameMobile.html("")
+    // }
 
+    // if (PasswordField.val().length === 0) {
+    //     ErrorPassword.html("لطفا رمز عبور خود را وارد کنید")
+    // } else if (PasswordField.val().length < 8) {
+    //     ErrorPassword.html("رمز عبور حداقل باید شامل هشت کاراکتر باشد")
+    // } else {
+    //     ErrorPassword.html("")
+    // }
+    // })
+
+
+    UsernameMobileField.on('input', () => {
+        console.log('onchange usrname')
         if (UsernameMobileField.val().length === 0) {
-            ErrorUsernameMobile.html("لطفا نام کاربری یا ایمیل خود را وارد کنید")
+            ErrorUsernameMobile.html("لطفا نام کاربری یا موبایل خود را وارد کنید")
         } else if (UsernameMobileField.val().length < 6) {
             ErrorUsernameMobile.html("نام کاربری حداقل باید شامل شش کاراکتر باشد")
         } else if (UsernameMobileField.val().match(/^[آإأابپتثجچحخدذرزژسشصضطظعغفقکگلمنهۀةوؤیيئءًٌٍَُِّ\s]+$/)) {
@@ -71,6 +91,10 @@ $(document).ready(function () {
         } else {
             ErrorUsernameMobile.html("")
         }
+    })
+
+    PasswordField.on('input', () => {
+        console.log('onchange PasswordField')
 
         if (PasswordField.val().length === 0) {
             ErrorPassword.html("لطفا رمز عبور خود را وارد کنید")
@@ -81,5 +105,34 @@ $(document).ready(function () {
         }
     })
 
+    $('form#login').submit(function (event) {
+        // event.preventDefault()
+
+        if (UsernameMobileField.val() &&
+            ErrorUsernameMobile.text() == "" &&
+            PasswordField.val() &&
+            ErrorPassword.text() == ""
+        ) {
+            console.log('submit form')
+            // console.log($(this))
+            // test()
+            $(this).submit()
+            alert('submit form')
+            // return true
+        } else {
+            console.log('dont submit form')
+            console.log(UsernameMobileField.val())
+            console.log(ErrorUsernameMobile.html(""))
+            console.log(PasswordField.val())
+            console.log(ErrorPassword.html(""))
+            alert('dont submit form')
+            return false
+        }
+    })
+
+    const test = () => {
+        // debugger
+        // $('form#login').submit()
+    }
 
 })
