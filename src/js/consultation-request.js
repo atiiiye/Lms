@@ -121,8 +121,6 @@ $(document).ready(function () {
         }
     })
 
-
-
     form.submit(function (event) {
         if (NameField.val() &&
             PhoneNumberField.val() &&

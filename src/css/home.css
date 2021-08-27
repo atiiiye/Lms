@@ -95,7 +95,6 @@ header div.main-banner {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background: url("./../images/ava.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
   z-index: 11000;
@@ -346,25 +345,40 @@ main section.library-content div.library-content__parent {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 3rem;
 }
 
 main section.library-content div.library-content__parent div.library-content__box {
-  width: 23%;
+  width: 25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  cursor: default;
+}
+
+main section.library-content div.library-content__parent div.library-content__box:hover {
+  transform: scale(1.5);
+  transition: all .3s ease-in;
 }
 
 main section.library-content div.library-content__parent div.library-content__box img.library-content__image {
   width: 180px;
 }
 
+main section.library-content div.library-content__parent div.library-content__box i {
+  font-size: 48px;
+  color: #ffc947;
+  border: 3px solid #ffc947;
+  border-radius: 50%;
+  padding: .75rem;
+}
+
 main section.library-content div.library-content__parent div.library-content__box span.library-content__description {
-  font-size: 13px;
   text-align: center;
   color: rgba(137, 137, 137, 0.85);
   line-height: 22px;
   max-width: 95%;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=home.css.map */
