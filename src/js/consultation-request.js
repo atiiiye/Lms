@@ -20,7 +20,7 @@ $(document).ready(function () {
     let submitButton = $('.contact-us-content__form__button')
     let form = $('.consultation-request__form')
 
-    $('#submit').on('click', (event) => {
+    form.on('submit', (event) => {
         event.preventDefault()
 
         if (NameField.val().length === 0) {
@@ -80,8 +80,8 @@ $(document).ready(function () {
     })
 
     const submitFormMethode = () => {
-        console.log('form called')
         form.submit()
+        console.log('form called')
     }
 
 })

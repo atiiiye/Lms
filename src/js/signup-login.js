@@ -6,15 +6,15 @@ $(document).ready(function () {
     let FirstameField = $('.form__field#firstname')
     let LastnameField = $('.form__field#lastname')
     let PhoneNumberField = $('.form__field#phonenumber')
-    let UsernameSignupField = $('.form__field#username-signup')
-    let UsernameMobileField = $('.form__field#username-mobile')
+    let UsernameSignupField = $('.form__field#usernameSignup')
+    let UsernameMobileField = $('.form__field#usernameMobile')
     let PasswordField = $('.form__field#password')
 
     let ErrorFirstame = $('.form__field__error.firstname')
     let ErrorLastname = $('.form__field__error.lastname')
     let ErrorPhonenumber = $('.form__field__error.phonenumber')
-    let ErrorUsernameSignup = $('.form__field__error.username-signup')
-    let ErrorUsernameMobile = $('.form__field__error.username-mobile')
+    let ErrorUsernameSignup = $('.form__field__error.usernameSignup')
+    let ErrorUsernameMobile = $('.form__field__error.usernameMobile')
     let ErrorPassword = $('.form__field__error.password')
 
 

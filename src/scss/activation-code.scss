@@ -2,13 +2,14 @@
 
 main.activation-code {
     width: 100%;
-    height: 100vh;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     form.activation-code__form {
         width: 450px;
+        height: 200px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
