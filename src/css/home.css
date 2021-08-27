@@ -328,7 +328,7 @@ main section.slider-courses .swiper-pagination-bullet.swiper-pagination-bullet-a
 
 main section.library-content {
   width: 100%;
-  height: 100vh;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -342,10 +342,10 @@ main section.library-content h3.library-content__title {
 }
 
 main section.library-content div.library-content__parent {
-  width: 100%;
+  width: 950px;
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 main section.library-content div.library-content__parent div.library-content__box {

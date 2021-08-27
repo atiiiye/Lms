@@ -254,7 +254,7 @@ main {
 
     section.library-content {
         width: 100%;
-        height: 100vh;
+        height: 350px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -268,10 +268,10 @@ main {
 
 
         div.library-content__parent {
-            width: 100%;
+            width: 950px;
             display: flex;
             justify-content: center;
-            margin-top: 3rem;
+            margin-top: 1rem;
 
             div.library-content__box {
                 width: 25%;
