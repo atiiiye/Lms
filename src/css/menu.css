@@ -163,6 +163,21 @@ div.collapse.show#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu
   color: #f4f9f9;
 }
 
+div.collapse.show#coll-navbar ul.navbar-nav li.nav-item-signup {
+  background-color: #ffc947;
+  margin-left: 1rem;
+}
+
+div.collapse.show#coll-navbar ul.navbar-nav li.nav-item-signup a.nav-link.nav-link-menu.nav-link-signup {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+
+div.collapse.show#coll-navbar ul.navbar-nav li.nav-item-signup a.nav-link.nav-link-menu.nav-link-signup:hover {
+  color: #f4f9f9;
+}
+
 div.collapsing#coll-navbar {
   position: fixed;
   height: 100%;
@@ -192,6 +207,21 @@ div.collapsing#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu {
 }
 
 div.collapsing#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu:hover {
+  color: #f4f9f9;
+}
+
+div.collapsing#coll-navbar ul.navbar-nav li.nav-item-signup {
+  background-color: #ffc947;
+  margin-left: 1rem;
+}
+
+div.collapsing#coll-navbar ul.navbar-nav li.nav-item-signup a.nav-link.nav-link-menu.nav-link-signup {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+
+div.collapsing#coll-navbar ul.navbar-nav li.nav-item-signup a.nav-link.nav-link-menu.nav-link-signup:hover {
   color: #f4f9f9;
 }
 /*# sourceMappingURL=menu.css.map */

@@ -1,9 +1,13 @@
 window.addEventListener('DOMContentLoaded', (event) => {
+    particlesJS.load('particles-js', 'js/particle.json', function () {
+        console.log('che che che');
+
+    });
     particlesJS("particles-js",
         {
             "particles": {
                 // "number":
-                //     { "value": 80, "density": { "enable": true, "value_area": 800 }, },
+                //     { "value": 100, "density": { "enable": true, "value_area": 800 }, },
                 "color": { "value": "#ffffff" }, "shape": {
                     "type": "circle", "stroke":
                         { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 3 },

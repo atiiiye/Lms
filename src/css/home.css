@@ -342,7 +342,8 @@ main section.library-content h3.library-content__title {
 }
 
 main section.library-content div.library-content__parent {
-  width: 950px;
+  width: 880px;
+  max-width: 950px;
   display: flex;
   justify-content: center;
   margin-top: 1rem;

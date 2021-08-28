@@ -84,6 +84,13 @@ body .container-fluid {
   margin: 0;
 }
 
+@media (max-width: 991px) {
+  main section.library-content div.library-content__parent {
+    width: 700px;
+    max-width: 700px;
+  }
+}
+
 @media (max-width: 768px) {
   main section.slider-section {
     height: 100vh;
@@ -137,6 +144,8 @@ body .container-fluid {
   }
   main section.library-content div.library-content__parent {
     flex-direction: column;
+    width: 100%;
+    max-width: 100%;
   }
   main section.library-content div.library-content__parent div.library-content__box {
     width: 100%;

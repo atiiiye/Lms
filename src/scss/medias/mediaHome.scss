@@ -1,5 +1,18 @@
 @import './../base';
 
+@media(max-width : 991px) {
+    main {
+        section.library-content {
+
+            h3.library-content__title {}
+
+            div.library-content__parent {
+                width: 700px;
+                max-width: 700px;
+            }
+        }
+    }
+}
 
 @media(max-width : 768px) {
 
@@ -84,6 +97,8 @@
 
             div.library-content__parent {
                 flex-direction: column;
+                width: 100%;
+                max-width: 100%;
 
                 div.library-content__box {
                     width: 100%;
