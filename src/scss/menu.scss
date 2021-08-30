@@ -79,18 +79,11 @@ div.collapse.show#coll-navbar {
                     color: rgba($color: $color-font, $alpha: 1.0);
                 }
             }
-        }
-
-
-        li.nav-item-signup {
-            background-color: rgba($color: $color-button, $alpha: 1.0);
-            margin-left: 1rem;
-
             a.nav-link.nav-link-menu.nav-link-signup {
-                font-size: 18px;
-                font-weight: 500;
-                color: $color-btn-text;
-
+                font-size: 16px;
+                font-weight: 600;
+                color: $color-button;
+    
                 &:hover {
                     color: rgba($color: $color-font, $alpha: 1.0);
                 }
@@ -127,18 +120,11 @@ div.collapsing#coll-navbar {
                     color: rgba($color: $color-font, $alpha: 1.0);
                 }
             }
-        }
-
-        li.nav-item-signup {
-            background-color: rgba($color: $color-button, $alpha: 1.0);
-            margin-left: 1rem;
-
             a.nav-link.nav-link-menu.nav-link-signup {
-                font-size: 18px;
-                font-weight: 500;
-                color: $color-btn-text;
-
-
+                font-size: 16px;
+                font-weight: 600;
+                color: $color-button;
+    
                 &:hover {
                     color: rgba($color: $color-font, $alpha: 1.0);
                 }
