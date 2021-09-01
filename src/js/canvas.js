@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    
-    particlesJS.load('particles-js', 'js/particle.json', function () {
-        require("particles.js");
+
+    particlesJS.load('particles-js', './particle.json', function () {
+        require("./particles.js-master/particles.js");
         console.log('che che che');
 
     });

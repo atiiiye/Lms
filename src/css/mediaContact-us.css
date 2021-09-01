@@ -127,10 +127,10 @@ body .container-fluid {
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group .form__field {
     width: 100%;
     border: 0;
-    border-bottom: 2px solid rgba(137, 137, 137, 0.75);
+    border-bottom: 2px solid rgba(244, 249, 249, 0.75);
     outline: 0;
     font-size: 90%;
-    color: rgba(27, 27, 27, 0.75);
+    color: rgba(244, 249, 249, 0.75);
     padding: 8px 0;
     background: transparent;
     transition: border-color 0.2s;
@@ -147,7 +147,7 @@ body .container-fluid {
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group .form__field:focus {
     padding-bottom: 6px;
     border-width: 3px;
-    border-image: linear-gradient(to left, rgba(27, 27, 27, 0.85), rgba(27, 27, 27, 0.5));
+    border-image: linear-gradient(to left, rgba(244, 249, 249, 0.85), rgba(244, 249, 249, 0.5));
     border-image-slice: 1;
   }
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form button.contact-us-content__form__button {

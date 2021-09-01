@@ -54,10 +54,10 @@
                         .form__field {
                             width: 100%;
                             border: 0;
-                            border-bottom: 2px solid rgba($color: $color-gray, $alpha: .75);
+                            border-bottom: 2px solid rgba($color: $color-font, $alpha: .75);
                             outline: 0;
                             font-size: 90%;
-                            color: rgba($color: $color-gray-2, $alpha: .75);
+                            color: rgba($color: $color-font, $alpha: .75);
                             padding: 8px 0;
                             background: transparent;
                             transition: border-color 0.2s;
@@ -79,7 +79,7 @@
 
                             padding-bottom: 6px;
                             border-width: 3px;
-                            border-image: linear-gradient(to left, rgba($color: $color-gray-2, $alpha: .85), rgba($color: $color-gray-2, $alpha: .5));
+                            border-image: linear-gradient(to left, rgba($color: $color-font, $alpha: .85), rgba($color: $color-font, $alpha: .5));
                             border-image-slice: 1;
                         }
 
