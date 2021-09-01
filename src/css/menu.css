@@ -126,16 +126,15 @@ nav.main-navbar img.main-navbar__logo {
 
 div#coll-navbar {
   z-index: 12000;
-}
-
-div.collapse#coll-navbar {
   position: fixed;
-  transform: translate(100%, 0);
   transition: transform .4s ease-in-out;
 }
 
+div.collapse#coll-navbar {
+  transform: translate(100%, 0);
+}
+
 div.collapse.show#coll-navbar {
-  position: fixed;
   height: 100%;
   right: 0;
   padding-right: 1rem;
@@ -143,7 +142,6 @@ div.collapse.show#coll-navbar {
   background-color: #0a1931;
   width: 250px;
   transform: translate(0, 0);
-  transition: transform .4s ease-in-out;
   overflow-y: auto;
 }
 
@@ -178,7 +176,6 @@ div.collapse.show#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu
 }
 
 div.collapsing#coll-navbar {
-  position: fixed;
   height: 100%;
   right: 0;
   top: 0;
@@ -186,7 +183,6 @@ div.collapsing#coll-navbar {
   background-color: #0a1931;
   width: 250px;
   transform: translate(100%, 0);
-  transition: transform .4s ease-in-out;
 }
 
 div.collapsing#coll-navbar ul.navbar-nav {

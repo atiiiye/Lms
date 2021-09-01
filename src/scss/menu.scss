@@ -44,16 +44,15 @@ nav.main-navbar {
 
 div#coll-navbar {
     z-index: 12000;
-}
-
-div.collapse#coll-navbar {
     position: fixed;
-    transform: translate(100%, 0);
     transition: transform .4s ease-in-out;
 }
 
+div.collapse#coll-navbar {
+    transform: translate(100%, 0);
+}
+
 div.collapse.show#coll-navbar {
-    position: fixed;
     height: 100%;
     right: 0;
     padding-right: 1rem;
@@ -61,13 +60,10 @@ div.collapse.show#coll-navbar {
     background-color: rgba($color:$color-banner-box, $alpha: 1.0);
     width: 250px;
     transform: translate(0, 0);
-    transition: transform .4s ease-in-out;
     overflow-y: auto;
-    // z-index: 10;
 
     ul.navbar-nav {
         padding-top: 4rem;
-        // z-index: 1000;
         background-color: rgba($color: $color-banner-box, $alpha: 1.0);
 
         li.nav-item {
@@ -97,7 +93,6 @@ div.collapse.show#coll-navbar {
 }
 
 div.collapsing#coll-navbar {
-    position: fixed;
     height: 100%;
     right: 0;
     top: 0;
@@ -105,7 +100,6 @@ div.collapsing#coll-navbar {
     background-color: rgba($color: $color-banner-box, $alpha: 1.0);
     width: 250px;
     transform: translate(100%, 0);
-    transition: transform .4s ease-in-out;
 
     ul.navbar-nav {
         overflow-y: auto;
