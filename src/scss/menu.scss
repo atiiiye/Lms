@@ -19,7 +19,7 @@ nav.main-navbar {
         position: fixed;
         top: 1rem;
         right: 1rem;
-        z-index: 10001;
+        z-index: 12001;
 
         span.ti-menu {
             color: rgba($color: $color-font, $alpha: .75);
@@ -40,6 +40,10 @@ nav.main-navbar {
         top: .5rem;
         left: 2rem;
     }
+}
+
+div#coll-navbar {
+    z-index: 12000;
 }
 
 div.collapse#coll-navbar {
