@@ -1,5 +1,7 @@
 window.addEventListener('DOMContentLoaded', (event) => {
+    
     particlesJS.load('particles-js', 'js/particle.json', function () {
+        require("particles.js");
         console.log('che che che');
 
     });

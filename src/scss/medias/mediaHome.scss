@@ -56,7 +56,9 @@
                         width: 85%;
                         height: 45%;
                         order: 2;
-                        // overflow: hidden;
+                        max-height: 45%;
+                        overflow: auto;
+                        padding-left: .5rem;
                     }
 
                     div.image-gallery__box {

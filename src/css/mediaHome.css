@@ -116,6 +116,9 @@ body .container-fluid {
     width: 85%;
     height: 45%;
     order: 2;
+    max-height: 45%;
+    overflow: auto;
+    padding-left: .5rem;
   }
   main section.slider-section div.image-gallery.owl-carousel.owl-theme div.item-slide div.image-gallery__box {
     width: 85%;
