@@ -54,7 +54,8 @@ body {
   background-color: #faf6fb;
   font-size: 100%;
   direction: rtl;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body ::-webkit-scrollbar {
@@ -68,6 +69,11 @@ body ::-webkit-scrollbar-thumb {
 
 body ::-webkit-scrollbar-thumb:hover {
   background: rgba(244, 249, 249, 0.75);
+}
+
+body ::-moz-selection {
+  background-color: #FFC947;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 body ::selection {
@@ -86,26 +92,47 @@ body .container-fluid {
 
 main.signup-login-page {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main.signup-login-page section.signup-login-content {
   width: 950px;
   margin: 2rem;
   background-color: #f4f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main.signup-login-page section.signup-login-content div.signup-login-content__form-box {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main.signup-login-page section.signup-login-content div.signup-login-content__form-box h2.signup-login-content__title {
@@ -119,10 +146,19 @@ main.signup-login-page section.signup-login-content div.signup-login-content__fo
 
 main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form {
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #0a1931;
   padding: 1rem;
 }
@@ -132,7 +168,12 @@ main.signup-login-page section.signup-login-content div.signup-login-content__fo
   position: relative;
   padding: 1rem 1rem 0;
   margin-top: 1rem;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -145,9 +186,22 @@ main.signup-login-page section.signup-login-content div.signup-login-content__fo
   color: rgba(244, 249, 249, 0.75);
   padding: 8px 0;
   background: transparent;
+  -webkit-transition: border-color 0.2s;
   transition: border-color 0.2s;
   margin: .5rem 0;
   font-weight: 500;
+}
+
+main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.form__group .form__field::-webkit-input-placeholder {
+  color: transparent;
+}
+
+main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.form__group .form__field:-ms-input-placeholder {
+  color: transparent;
+}
+
+main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.form__group .form__field::-ms-input-placeholder {
+  color: transparent;
 }
 
 main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.form__group .form__field::placeholder {
@@ -163,6 +217,7 @@ main.signup-login-page section.signup-login-content div.signup-login-content__fo
   position: absolute;
   top: 0;
   display: block;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   font-size: 95%;
   color: rgba(244, 249, 249, 0.85);
@@ -172,7 +227,9 @@ main.signup-login-page section.signup-login-content div.signup-login-content__fo
   padding-bottom: 6px;
   font-weight: 600;
   border-width: 3px;
-  border-image: linear-gradient(to left, rgba(244, 249, 249, 0.85), rgba(244, 249, 249, 0.5));
+  -o-border-image: linear-gradient(to left, rgba(244, 249, 249, 0.85), rgba(244, 249, 249, 0.5));
+     border-image: -webkit-gradient(linear, right top, left top, from(rgba(244, 249, 249, 0.85)), to(rgba(244, 249, 249, 0.5)));
+     border-image: linear-gradient(to left, rgba(244, 249, 249, 0.85), rgba(244, 249, 249, 0.5));
   border-image-slice: 1;
 }
 
@@ -180,13 +237,15 @@ main.signup-login-page section.signup-login-content div.signup-login-content__fo
   position: absolute;
   top: 0;
   display: block;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   color: rgba(244, 249, 249, 0.95);
   font-weight: 600;
 }
 
 main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.form__group .form__field:required, main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.form__group .form__field:invalid {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.form__group span.form__field__error {
@@ -256,9 +315,15 @@ main.signup-login-page section.signup-login-content div.signup-login-content__fo
 }
 
 main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.signup-login-content__form-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 /*# sourceMappingURL=signup-login.css.map */
