@@ -154,7 +154,7 @@ header div.main-banner span.main-banner__description {
   margin-top: .5rem;
 }
 
-header div.main-banner i {
+header div.main-banner i.material-icons {
   color: #F4F9F9;
   font-size: 36px;
   width: 44px;
@@ -393,6 +393,10 @@ main section.slider-courses div.swiper-container.mySwiper a.swiper-slide-link.sw
 main section.slider-courses div.swiper-container.mySwiper a.swiper-slide-link.swiper-slide img.swiper-slide-image:hover {
   -webkit-filter: none;
           filter: none;
+  -webkit-transition: -webkit-filter 2s linear;
+  transition: -webkit-filter 2s linear;
+  transition: filter 2s linear;
+  transition: filter 2s linear, -webkit-filter 2s linear;
 }
 
 main section.slider-courses div.swiper-container.mySwiper div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {

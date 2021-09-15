@@ -31,7 +31,7 @@ $(document).ready(function () {
             clickable: true,
         },
         breakpoints: {
-            576:
+            577:
             {
                 slidesPerView: 3,
                 grid: {
@@ -39,14 +39,21 @@ $(document).ready(function () {
                 },
                 spaceBetween: 30,
             },
+            576:
+            {
+                slidesPerView: 1,
+                grid: {
+                    rows: 1,
+                },
+                spaceBetween: 0,
+            },
             300:
             {
                 slidesPerView: 1,
                 grid: {
-                    rows: 2,
+                    rows: 1,
                 },
-                spaceBetween: 10,
-
+                spaceBetween: 0,
             }
         }
     });

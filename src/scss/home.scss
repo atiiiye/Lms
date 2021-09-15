@@ -233,6 +233,7 @@ main {
 
                     &:hover {
                         filter: none;
+                        transition: filter 2s linear ;
                     }
                 }
             }

@@ -99,6 +99,7 @@ div.collapse.show#coll-navbar {
         margin-left: auto;
         width: max-content;
         height: max-content;
+        color: rgba($color: $color-font, $alpha: 0.75);
       }
     }
 
@@ -171,6 +172,7 @@ div.collapsing#coll-navbar {
         margin-left: auto;
         width: max-content;
         height: max-content;
+        color: rgba($color: $color-font, $alpha: 0.75);
       }
     }
 

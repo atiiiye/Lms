@@ -213,6 +213,7 @@ div.collapse.show#coll-navbar ul.navbar-nav li.nav-item i.arrow-left {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  color: rgba(244, 249, 249, 0.75);
 }
 
 div.collapse.show#coll-navbar ul.navbar-nav div#sub-menu-item {
@@ -290,6 +291,7 @@ div.collapsing#coll-navbar ul.navbar-nav li.nav-item i.arrow-left {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  color: rgba(244, 249, 249, 0.75);
 }
 
 div.collapsing#coll-navbar ul.navbar-nav div#sub-menu-item {

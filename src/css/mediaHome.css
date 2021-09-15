@@ -189,14 +189,17 @@ body .container-fluid {
   }
   main section.slider-courses div.swiper-container.mySwiper {
     margin-right: 0;
+    height: 100%;
   }
   main section.slider-courses div.swiper-container.mySwiper a.swiper-slide-link.swiper-slide {
-    max-height: 105px;
     margin: auto 0 !important;
-    width: 100%;
+    width: 100% !important;
+    height: 250px;
+    max-height: 280px;
   }
   main section.slider-courses div.swiper-container.mySwiper img.swiper-slide-image {
     height: 100%;
+    width: 100%;
   }
   main section.library-content h3.library-content__title {
     margin-top: 2rem;
