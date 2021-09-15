@@ -54,7 +54,8 @@ body {
   background-color: #faf6fb;
   font-size: 100%;
   direction: rtl;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body ::-webkit-scrollbar {
@@ -68,6 +69,11 @@ body ::-webkit-scrollbar-thumb {
 
 body ::-webkit-scrollbar-thumb:hover {
   background: rgba(244, 249, 249, 0.75);
+}
+
+body ::-moz-selection {
+  background-color: #FFC947;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 body ::selection {
@@ -86,10 +92,19 @@ body .container-fluid {
 
 main.course-content {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #faf6fb;
 }
 
@@ -97,21 +112,37 @@ main.course-content section.single-course {
   background-color: #0a1931;
   width: 950px;
   height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 2rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: 4rem;
 }
 
 main.course-content section.single-course div.single-course__image-video-course {
   width: 300px;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 2rem 2rem 0 1rem;
 }
 
@@ -128,17 +159,32 @@ main.course-content section.single-course div.single-course__image-video-course 
 main.course-content section.single-course div.single-course__details-course {
   width: calc(100% - 300px);
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 main.course-content section.single-course div.single-course__details-course div.single-course__title-buton-part {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 main.course-content section.single-course div.single-course__details-course div.single-course__title-buton-part h1.single-course__title-course {
@@ -150,9 +196,16 @@ main.course-content section.single-course div.single-course__details-course div.
 }
 
 main.course-content section.single-course div.single-course__details-course div.single-course__title-buton-part div.single-course__price-signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main.course-content section.single-course div.single-course__details-course div.single-course__title-buton-part div.single-course__price-signup span.single-course__price {
@@ -194,7 +247,8 @@ main.course-content section.single-course div.single-course__details-course span
   max-height: 600px;
   overflow-y: auto;
   padding-bottom: 1rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 main.course-content section.owl-carousel.owl-theme#courses-slider {
@@ -214,7 +268,9 @@ main.course-content section.owl-carousel.owl-theme#courses-slider div.owl-stage-
 }
 
 main.course-content section.owl-carousel.owl-theme#courses-slider div.owl-stage-outer div.owl-stage div.owl-item {
-  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -274,9 +330,14 @@ main.course-content section.owl-carousel.owl-theme#courses-slider div.owl-nav bu
 }
 
 main.course-content section.owl-carousel.owl-theme#courses-slider div.item-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 60vh;
   max-height: 60vh;
   width: 100%;
@@ -285,8 +346,11 @@ main.course-content section.owl-carousel.owl-theme#courses-slider div.item-slide
 
 main.course-content section.owl-carousel.owl-theme#courses-slider div.item-slide div.image-gallery__box {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   direction: ltr;
+  -webkit-transition: .2s all;
   transition: .2s all;
   width: 45%;
   height: 100%;

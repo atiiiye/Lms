@@ -54,7 +54,8 @@ body {
   background-color: #faf6fb;
   font-size: 100%;
   direction: rtl;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body ::-webkit-scrollbar {
@@ -68,6 +69,11 @@ body ::-webkit-scrollbar-thumb {
 
 body ::-webkit-scrollbar-thumb:hover {
   background: rgba(244, 249, 249, 0.75);
+}
+
+body ::-moz-selection {
+  background-color: #FFC947;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 body ::selection {
@@ -87,16 +93,28 @@ body .container-fluid {
 nav.main-navbar {
   width: 100%;
   height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: auto 1rem;
 }
 
 nav.main-navbar div.main-navbar__hamburger-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 45px;
   width: 45px;
   position: fixed;
@@ -120,18 +138,22 @@ nav.main-navbar img.main-navbar__logo {
   height: 45px;
   width: 45px;
   position: fixed;
-  top: .5rem;
+  top: 0.5rem;
   left: 2rem;
 }
 
 div#coll-navbar {
   z-index: 12000;
   position: fixed;
-  transition: transform .4s ease-in-out;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
 div.collapse#coll-navbar {
-  transform: translate(100%, 0);
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
 }
 
 div.collapse.show#coll-navbar {
@@ -141,7 +163,8 @@ div.collapse.show#coll-navbar {
   top: 0;
   background-color: #0a1931;
   width: 250px;
-  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
   overflow-y: auto;
 }
 
@@ -152,6 +175,7 @@ div.collapse.show#coll-navbar ul.navbar-nav {
 
 div.collapse.show#coll-navbar ul.navbar-nav li.nav-item {
   padding: 1rem 1rem;
+  position: relative;
 }
 
 div.collapse.show#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu {
@@ -175,6 +199,41 @@ div.collapse.show#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu
   color: #f4f9f9;
 }
 
+div.collapse.show#coll-navbar ul.navbar-nav li.nav-item i.arrow-left {
+  position: absolute;
+  left: 1rem;
+  top: 1.5rem;
+  -webkit-animation: none;
+          animation: none;
+  font-size: 14px;
+  margin-left: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+div.collapse.show#coll-navbar ul.navbar-nav div#sub-menu-item {
+  padding-right: 3rem;
+  width: 100%;
+}
+
+div.collapse.show#coll-navbar ul.navbar-nav div#sub-menu-item ul.menu-collapse {
+  width: 100%;
+}
+
+div.collapse.show#coll-navbar ul.navbar-nav div#sub-menu-item ul.menu-collapse li.nav-item-menu-collapse a.nav-link-menu-collapse-link {
+  width: 100%;
+  height: 100%;
+  color: rgba(244, 249, 249, 0.75);
+}
+
+div.collapse.show#coll-navbar ul.navbar-nav div#sub-menu-item ul.menu-collapse li.nav-item-menu-collapse a.nav-link-menu-collapse-link:hover {
+  color: #f4f9f9;
+}
+
 div.collapsing#coll-navbar {
   height: 100%;
   right: 0;
@@ -182,7 +241,8 @@ div.collapsing#coll-navbar {
   padding-right: 1rem;
   background-color: #0a1931;
   width: 250px;
-  transform: translate(100%, 0);
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
 }
 
 div.collapsing#coll-navbar ul.navbar-nav {
@@ -192,6 +252,7 @@ div.collapsing#coll-navbar ul.navbar-nav {
 
 div.collapsing#coll-navbar ul.navbar-nav li.nav-item {
   padding: 1rem 1rem;
+  position: relative;
 }
 
 div.collapsing#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu {
@@ -212,6 +273,41 @@ div.collapsing#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu.na
 }
 
 div.collapsing#coll-navbar ul.navbar-nav li.nav-item a.nav-link.nav-link-menu.nav-link-signup:hover {
+  color: #f4f9f9;
+}
+
+div.collapsing#coll-navbar ul.navbar-nav li.nav-item i.arrow-left {
+  position: absolute;
+  left: 1rem;
+  top: 1.5rem;
+  -webkit-animation: none;
+          animation: none;
+  font-size: 14px;
+  margin-left: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+div.collapsing#coll-navbar ul.navbar-nav div#sub-menu-item {
+  padding-right: 3rem;
+  width: 100%;
+}
+
+div.collapsing#coll-navbar ul.navbar-nav div#sub-menu-item ul.menu-collapse {
+  width: 100%;
+}
+
+div.collapsing#coll-navbar ul.navbar-nav div#sub-menu-item ul.menu-collapse li.nav-item-menu-collapse a.nav-link-menu-collapse-link {
+  width: 100%;
+  height: 100%;
+  color: rgba(244, 249, 249, 0.75);
+}
+
+div.collapsing#coll-navbar ul.navbar-nav div#sub-menu-item ul.menu-collapse li.nav-item-menu-collapse a.nav-link-menu-collapse-link:hover {
   color: #f4f9f9;
 }
 /*# sourceMappingURL=menu.css.map */
