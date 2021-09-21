@@ -229,10 +229,9 @@ main {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    filter: grayscale(100%);
-
+                    
                     &:hover {
-                        filter: none;
+                        filter: grayscale(100%);
                         transition: filter 2s linear ;
                     }
                 }
