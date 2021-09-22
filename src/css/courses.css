@@ -54,8 +54,7 @@ body {
   background-color: #faf6fb;
   font-size: 100%;
   direction: rtl;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body ::-webkit-scrollbar {
@@ -69,11 +68,6 @@ body ::-webkit-scrollbar-thumb {
 
 body ::-webkit-scrollbar-thumb:hover {
   background: rgba(244, 249, 249, 0.75);
-}
-
-body ::-moz-selection {
-  background-color: #FFC947;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 body ::selection {
@@ -104,15 +98,9 @@ main.courses-content h1.courses-title {
 
 main.courses-content section.courses-part {
   background-color: #0a1931;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 260px;
   margin-bottom: 2rem;
   padding: 0;
@@ -122,15 +110,9 @@ main.courses-content section.courses-part {
 main.courses-content section.courses-part div.courses-part__image-side {
   width: 250px;
   height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 main.courses-content section.courses-part div.courses-part__image-side img.courses-part__image {
@@ -141,16 +123,9 @@ main.courses-content section.courses-part div.courses-part__image-side img.cours
 main.courses-content section.courses-part div.course-part__detailes-courses {
   height: 100%;
   width: calc(100% - 300px);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
 
@@ -175,15 +150,9 @@ main.courses-content section.courses-part div.course-part__detailes-courses span
 }
 
 main.courses-content section.courses-part div.course-part__detailes-courses div.course-part__button-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
   position: absolute;
   bottom: .75rem;
   left: 4rem;

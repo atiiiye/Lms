@@ -54,8 +54,7 @@ body {
   background-color: #faf6fb;
   font-size: 100%;
   direction: rtl;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body ::-webkit-scrollbar {
@@ -69,11 +68,6 @@ body ::-webkit-scrollbar-thumb {
 
 body ::-webkit-scrollbar-thumb:hover {
   background: rgba(244, 249, 249, 0.75);
-}
-
-body ::-moz-selection {
-  background-color: #FFC947;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 body ::selection {
@@ -92,19 +86,10 @@ body .container-fluid {
 
 main.consultation-request {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 main.consultation-request h1.consultation-request__title {
@@ -119,15 +104,9 @@ main.consultation-request h1.consultation-request__title {
 
 main.consultation-request section.consultation-request__content {
   width: 950px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: center;
+  align-items: flex-start;
   padding: 2rem;
   background-color: #0a1931;
   margin-bottom: 2rem;
@@ -152,19 +131,10 @@ main.consultation-request section.consultation-request__content div.consultation
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form {
   width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group {
@@ -172,12 +142,7 @@ main.consultation-request section.consultation-request__content div.consultation
   position: relative;
   padding: 1rem 1rem 0;
   margin-top: 1rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: column;
   display: flex;
 }
 
@@ -190,22 +155,9 @@ main.consultation-request section.consultation-request__content div.consultation
   color: rgba(244, 249, 249, 0.75);
   padding: 8px 0;
   background: transparent;
-  -webkit-transition: border-color 0.2s;
   transition: border-color 0.2s;
   margin: .5rem 0;
   font-weight: 500;
-}
-
-main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group .form__field::-webkit-input-placeholder {
-  color: transparent;
-}
-
-main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group .form__field:-ms-input-placeholder {
-  color: transparent;
-}
-
-main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group .form__field::-ms-input-placeholder {
-  color: transparent;
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group .form__field::placeholder {
@@ -221,7 +173,6 @@ main.consultation-request section.consultation-request__content div.consultation
   position: absolute;
   top: 0;
   display: block;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   font-size: 95%;
   color: rgba(244, 249, 249, 0.75);
@@ -231,9 +182,7 @@ main.consultation-request section.consultation-request__content div.consultation
   padding-bottom: 6px;
   font-weight: 600;
   border-width: 3px;
-  -o-border-image: linear-gradient(to left, rgba(244, 249, 249, 0.85), rgba(244, 249, 249, 0.5));
-     border-image: -webkit-gradient(linear, right top, left top, from(rgba(244, 249, 249, 0.85)), to(rgba(244, 249, 249, 0.5)));
-     border-image: linear-gradient(to left, rgba(244, 249, 249, 0.85), rgba(244, 249, 249, 0.5));
+  border-image: linear-gradient(to left, rgba(244, 249, 249, 0.85), rgba(244, 249, 249, 0.5));
   border-image-slice: 1;
 }
 
@@ -241,15 +190,13 @@ main.consultation-request section.consultation-request__content div.consultation
   position: absolute;
   top: 0;
   display: block;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   color: rgba(244, 249, 249, 0.8);
   font-weight: 600;
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group .form__field:required, main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group .form__field:invalid {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.form__group span.form__field__error {
@@ -259,30 +206,19 @@ main.consultation-request section.consultation-request__content div.consultation
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.status-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
   padding: 1rem 1rem 0;
   margin-top: 1rem;
   width: 90%;
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.status-group div.status-group-fields {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 main.consultation-request section.consultation-request__content div.consultation-request__form-placeholder form.consultation-request__form div.status-group div.status-group-fields div.form__group.status_field {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 120px;
   padding: 0;

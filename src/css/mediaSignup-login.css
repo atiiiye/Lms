@@ -54,8 +54,7 @@ body {
   background-color: #faf6fb;
   font-size: 100%;
   direction: rtl;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body ::-webkit-scrollbar {
@@ -69,11 +68,6 @@ body ::-webkit-scrollbar-thumb {
 
 body ::-webkit-scrollbar-thumb:hover {
   background: rgba(244, 249, 249, 0.75);
-}
-
-body ::-moz-selection {
-  background-color: #FFC947;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 body ::selection {
@@ -93,10 +87,7 @@ body .container-fluid {
 @media (max-width: 991px) {
   main.signup-login-page section.signup-login-content {
     width: 70%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   main.signup-login-page section.signup-login-content div.signup-login-content__form-box {
     width: 100%;
@@ -129,10 +120,7 @@ body .container-fluid {
     font-size: 90%;
   }
   main.signup-login-page section.signup-login-content div.signup-login-content__form-box form.signup-login-content__form div.signup-login-content__form-fields {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 

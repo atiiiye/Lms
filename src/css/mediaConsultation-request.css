@@ -54,8 +54,7 @@ body {
   background-color: #faf6fb;
   font-size: 100%;
   direction: rtl;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body ::-webkit-scrollbar {
@@ -69,11 +68,6 @@ body ::-webkit-scrollbar-thumb {
 
 body ::-webkit-scrollbar-thumb:hover {
   background: rgba(244, 249, 249, 0.75);
-}
-
-body ::-moz-selection {
-  background-color: #FFC947;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 body ::selection {
@@ -95,13 +89,8 @@ body .container-fluid {
     width: 80%;
   }
   main.consultation-request section.consultation-request__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
   }
   main.consultation-request section.consultation-request__content div.consultation-request__image-placeholder {

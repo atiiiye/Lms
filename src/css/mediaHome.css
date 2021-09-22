@@ -54,8 +54,7 @@ body {
   background-color: #faf6fb;
   font-size: 100%;
   direction: rtl;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body ::-webkit-scrollbar {
@@ -69,11 +68,6 @@ body ::-webkit-scrollbar-thumb {
 
 body ::-webkit-scrollbar-thumb:hover {
   background: rgba(244, 249, 249, 0.75);
-}
-
-body ::-moz-selection {
-  background-color: #FFC947;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 body ::selection {
@@ -98,42 +92,42 @@ body .container-fluid {
 }
 
 @media (max-width: 768px) {
-  main section.slider-section {
-    height: 100vh;
-  }
   main section.slider-section div.image-gallery.owl-carousel.owl-theme {
-    width: 90%;
-    height: 90%;
+    height: 60%;
+  }
+  main section.slider-section div.image-gallery.owl-carousel.owl-theme div.owl-stage-outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   main section.slider-section div.image-gallery.owl-carousel.owl-theme div.owl-nav button.owl-prev,
   main section.slider-section div.image-gallery.owl-carousel.owl-theme div.owl-nav button.owl-next {
-    top: calc(35% - 15px);
+    top: calc(50% - 15px);
   }
   main section.slider-section div.image-gallery.owl-carousel.owl-theme div.owl-nav button.owl-prev i.fa.fa-angle-left,
   main section.slider-section div.image-gallery.owl-carousel.owl-theme div.owl-nav button.owl-next i.fa.fa-angle-left {
     font-size: 30px;
   }
   main section.slider-section div.image-gallery.owl-carousel.owl-theme div.item-slide {
-    height: 100vh;
-    min-height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    height: 250px;
+    min-height: 100%;
+    flex-direction: column;
   }
   main section.slider-section div.image-gallery.owl-carousel.owl-theme div.item-slide span.item-slide__text {
     width: 85%;
     height: 45%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
     max-height: 45%;
     overflow: auto;
     padding-left: .5rem;
   }
   main section.slider-section div.image-gallery.owl-carousel.owl-theme div.item-slide div.image-gallery__box {
-    width: 85%;
-    height: 40%;
+    width: 100%;
+    height: 100%;
+  }
+  main section.slider-section div.image-gallery.owl-carousel.owl-theme div.item-slide div.image-gallery__box img.image-gallery__slide {
+    width: 100%;
+    height: 100%;
   }
   main section.slider-courses {
     height: 450px;
@@ -150,8 +144,6 @@ body .container-fluid {
     height: 100%;
   }
   main section.library-content {
-    height: -webkit-max-content;
-    height: -moz-max-content;
     height: max-content;
   }
   main section.library-content h3.library-content__title {
@@ -159,19 +151,14 @@ body .container-fluid {
     margin-top: 3rem;
   }
   main section.library-content div.library-content__parent {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
     max-width: 100%;
   }
   main section.library-content div.library-content__parent div.library-content__box {
     width: 100%;
     height: 50vh;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   main section.library-content div.library-content__parent div.library-content__box img.library-content__image {
     width: 180px;

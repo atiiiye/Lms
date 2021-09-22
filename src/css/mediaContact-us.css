@@ -54,8 +54,7 @@ body {
   background-color: #faf6fb;
   font-size: 100%;
   direction: rtl;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body ::-webkit-scrollbar {
@@ -69,11 +68,6 @@ body ::-webkit-scrollbar-thumb {
 
 body ::-webkit-scrollbar-thumb:hover {
   background: rgba(244, 249, 249, 0.75);
-}
-
-body ::-moz-selection {
-  background-color: #FFC947;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 body ::selection {
@@ -99,34 +93,22 @@ body .container-fluid {
   }
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box {
     padding: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 70%;
   }
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box aside.contact-us-content__social-media {
     width: 100%;
     position: relative;
     top: auto;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    flex-direction: row;
+    order: 2;
     padding-right: 1rem;
     padding-bottom: 1rem;
   }
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box aside.contact-us-content__social-media div.contact-us-content__social-media-box {
     padding: .2rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    align-items: center;
+    justify-content: flex-start;
   }
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box aside.contact-us-content__social-media div.contact-us-content__social-media-box i.contact-us-content__social-media-icon {
     font-size: 20px;
@@ -151,7 +133,6 @@ body .container-fluid {
     color: rgba(244, 249, 249, 0.75);
     padding: 8px 0;
     background: transparent;
-    -webkit-transition: border-color 0.2s;
     transition: border-color 0.2s;
     margin-bottom: .5rem;
   }
@@ -159,7 +140,6 @@ body .container-fluid {
     position: absolute;
     top: 0;
     display: block;
-    -webkit-transition: 0.2s;
     transition: 0.2s;
     font-size: 95%;
     color: rgba(137, 137, 137, 0.75);
@@ -167,9 +147,7 @@ body .container-fluid {
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form div.form__group .form__field:focus {
     padding-bottom: 6px;
     border-width: 3px;
-    -o-border-image: linear-gradient(to left, rgba(244, 249, 249, 0.85), rgba(244, 249, 249, 0.5));
-       border-image: -webkit-gradient(linear, right top, left top, from(rgba(244, 249, 249, 0.85)), to(rgba(244, 249, 249, 0.5)));
-       border-image: linear-gradient(to left, rgba(244, 249, 249, 0.85), rgba(244, 249, 249, 0.5));
+    border-image: linear-gradient(to left, rgba(244, 249, 249, 0.85), rgba(244, 249, 249, 0.5));
     border-image-slice: 1;
   }
   main.container-fluid.contact-us section.contact-us-content div.contact-us-content__contact-box form.contact-us-content__form button.contact-us-content__form__button {
