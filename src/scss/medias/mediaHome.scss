@@ -18,11 +18,11 @@
 
     main {
         section.slider-section {
-            // height: 100vh;
+            height: 75vh;
 
             div.image-gallery.owl-carousel.owl-theme {
                 // width: 90%;
-                height: 60%;
+                height: 300px;
 
                 div.owl-stage-outer {
                     display: flex;

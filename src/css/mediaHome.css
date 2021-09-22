@@ -92,8 +92,11 @@ body .container-fluid {
 }
 
 @media (max-width: 768px) {
+  main section.slider-section {
+    height: 75vh;
+  }
   main section.slider-section div.image-gallery.owl-carousel.owl-theme {
-    height: 60%;
+    height: 300px;
   }
   main section.slider-section div.image-gallery.owl-carousel.owl-theme div.owl-stage-outer {
     display: flex;
