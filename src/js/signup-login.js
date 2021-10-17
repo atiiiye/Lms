@@ -18,46 +18,45 @@ $(document).ready(function () {
     let ErrorPassword = $('.form__field__error.password')
 
 
-    FirstameField.on('input', () => {
-        if (FirstameField.val().length === 0) {
-            ErrorFirstame.html("لطفا نام خود را وارد کنید")
-        } else if (!FirstameField.val().match(/^[آإأابپتثجچحخدذرزژسشصضطظعغفقکگلمنهۀةوؤیيئءًٌٍَُِّ\s]+$/)) {
-            ErrorFirstame.html("نام صحیح نمی باشد")
-        } else {
-            ErrorFirstame.html("")
-        }
-    })
-
-    LastnameField.on('input', () => {
-        if (LastnameField.val().length === 0) {
-            ErrorLastname.html("لطفا نام خانوادگی خود را وارد کنید")
-        } else if (!LastnameField.val().match(/^[آإأابپتثجچحخدذرزژسشصضطظعغفقکگلمنهۀةوؤیيئءًٌٍَُِّ\s]+$/)) {
-            ErrorLastname.html("نام خانوادگی صحیح نمی باشد")
-        } else {
-            ErrorLastname.html("")
-        }
-    })
+    // FirstameField.on('input', () => {
+    //     if (FirstameField.val().length === 0) {
+    //         ErrorFirstame.html("لطفا نام خود را وارد کنید")
+    //     } else if (!FirstameField.val().match(/^[آإأابپتثجچحخدذرزژسشصضطظعغفقکگلمنهۀةوؤیيئءًٌٍَُِّ\s]+$/)) {
+    //         ErrorFirstame.html("نام صحیح نمی باشد")
+    //     } else {
+    //         ErrorFirstame.html("")
+    //     }
+    // })
+    //
+    // LastnameField.on('input', () => {
+    //     if (LastnameField.val().length === 0) {
+    //         ErrorLastname.html("لطفا نام خانوادگی خود را وارد کنید")
+    //     } else if (!LastnameField.val().match(/^[آإأابپتثجچحخدذرزژسشصضطظعغفقکگلمنهۀةوؤیيئءًٌٍَُِّ\s]+$/)) {
+    //         ErrorLastname.html("نام خانوادگی صحیح نمی باشد")
+    //     } else {
+    //         ErrorLastname.html("")
+    //     }
+    // })
 
     PhoneNumberField.on('input', () => {
         if (PhoneNumberField.val().length === 0) {
             ErrorPhonenumber.html("لطفا شماره تلفن خود را وارد کنید")
-        } else if (!PhoneNumberField.val().match(/^[0-9]+$/) || PhoneNumberField.val().length < 8) {
+        } else if (!PhoneNumberField.val().match(/^[0-9]+$/) || !PhoneNumberField.val().match(/[^\u0600-\u06FF]+$/)) {
             ErrorPhonenumber.html("شماره تلفن صحیح نمی باشد")
-        } else {
+        } else if (PhoneNumberField.val().length < 8){
+            ErrorPhonenumber.html("شماره تلفن حداقل باید 8 رقم باشد")
+        }
+        else {
             ErrorPhonenumber.html("")
         }
     })
 
     UsernameSignupField.on('input', () => {
         if (UsernameSignupField.val().length === 0) {
-            ErrorUsernameSignup.html("لطفا نام کاربری خود را وارد کنید")
-        } else if (UsernameSignupField.val().match(/^[آإأابپتثجچحخدذرزژسشصضطظعغفقکگلمنهۀةوؤیيئءًٌٍَُِّ\s]+$/)) {
-            ErrorUsernameSignup.html("نام کاربری باید انگلیسی باشد")
-        } else if (UsernameSignupField.val().match(/[0-9]+$/) && !UsernameSignupField.val().match(/[a-zA-Z]+$/)) {
-            ErrorUsernameSignup.html("نام کاربری معتبر نمی باشد")
-        } else if (UsernameSignupField.val().length < 6) {
-            ErrorUsernameSignup.html("نام کاربری حداقل باید شامل شش کاراکتر باشد")
-        } else {
+            ErrorUsernameSignup.html("لطفا کد ملی خود را وارد کنید")
+        } else if (!UsernameSignupField.val().match(/^[0-9]+$/)) {
+            ErrorUsernameSignup.html("کدملی معتبر نمی باشد")
+        }  else {
             ErrorUsernameSignup.html("")
         }
     })
@@ -79,24 +78,6 @@ $(document).ready(function () {
             })
             // alert('submit form')
         } else {
-            if (FirstameField.val().length === 0) {
-                ErrorFirstame.html("لطفا نام خود را وارد کنید")
-            } else if (!FirstameField.val().match(/^[آإأابپتثجچحخدذرزژسشصضطظعغفقکگلمنهۀةوؤیيئءًٌٍَُِّ\s]+$/)) {
-                event.preventDefault()
-                ErrorFirstame.html("نام صحیح نمی باشد")
-            } else {
-                ErrorFirstame.html("")
-            }
-
-            if (LastnameField.val().length === 0) {
-                event.preventDefault()
-                ErrorLastname.html("لطفا نام خانوادگی خود را وارد کنید")
-            } else if (!LastnameField.val().match(/^[آإأابپتثجچحخدذرزژسشصضطظعغفقکگلمنهۀةوؤیيئءًٌٍَُِّ\s]+$/)) {
-                event.preventDefault()
-                ErrorLastname.html("نام خانوادگی صحیح نمی باشد")
-            } else {
-                ErrorLastname.html("")
-            }
 
             if (PhoneNumberField.val().length === 0) {
                 event.preventDefault()
@@ -109,18 +90,10 @@ $(document).ready(function () {
             }
 
             if (UsernameSignupField.val().length === 0) {
-                event.preventDefault()
-                ErrorUsernameSignup.html("لطفا نام کاربری خود را وارد کنید")
-            } else if (UsernameSignupField.val().match(/^[آإأابپتثجچحخدذرزژسشصضطظعغفقکگلمنهۀةوؤیيئءًٌٍَُِّ\s]+$/)) {
-                event.preventDefault()
-                ErrorUsernameSignup.html("نام کاربری باید انگلیسی باشد")
-            } else if (UsernameSignupField.val().match(/[0-9]+$/) && !UsernameSignupField.val().match(/[a-zA-Z]+$/)) {
-                event.preventDefault()
-                ErrorUsernameSignup.html("نام کاربری معتبر نمی باشد")
-            } else if (UsernameSignupField.val().length < 6) {
-                event.preventDefault()
-                ErrorUsernameSignup.html("نام کاربری حداقل باید شامل شش کاراکتر باشد")
-            } else {
+                ErrorUsernameSignup.html("لطفا کد ملی خود را وارد کنید")
+            } else if (!UsernameSignupField.val().match(/^[0-9]+$/)) {
+                ErrorUsernameSignup.html("کدملی معتبر نمی باشد")
+            }  else {
                 ErrorUsernameSignup.html("")
             }
         }
@@ -195,24 +168,18 @@ $(document).ready(function () {
     UsernameMobileField.on('input', () => {
         console.log('onchange usrname')
         if (UsernameMobileField.val().length === 0) {
-            ErrorUsernameMobile.html("لطفا نام کاربری یا موبایل خود را وارد کنید")
-        } else if (UsernameMobileField.val().length < 6) {
-            ErrorUsernameMobile.html("نام کاربری حداقل باید شامل شش کاراکتر باشد")
-        } else if (UsernameMobileField.val().match(/^[آإأابپتثجچحخدذرزژسشصضطظعغفقکگلمنهۀةوؤیيئءًٌٍَُِّ\s]+$/)) {
-            ErrorUsernameMobile.html("نام کاربری باید انگلیسی باشد")
+            ErrorUsernameMobile.html("لطفا کدملی خود را وارد کنید")
         } else {
             ErrorUsernameMobile.html("")
         }
     })
 
     PasswordField.on('input', () => {
-        console.log('onchange PasswordField')
+        // console.log('onchange PasswordField')
 
         if (PasswordField.val().length === 0) {
-            ErrorPassword.html("لطفا رمز عبور خود را وارد کنید")
-        } else if (PasswordField.val().length < 8) {
-            ErrorPassword.html("رمز عبور حداقل باید شامل هشت کاراکتر باشد")
-        } else {
+            ErrorPassword.html("لطفا شماره تلفن همراه خود را وارد کنید")
+        }  else {
             ErrorPassword.html("")
         }
     })
@@ -225,7 +192,7 @@ $(document).ready(function () {
             PasswordField.val() &&
             ErrorPassword.text() == ""
         ) {
-            console.log('submit form')
+            // console.log('submit form login')
             // debugger
             $(this).submit(function () {
                 return true
@@ -234,23 +201,14 @@ $(document).ready(function () {
         } else {
             if (UsernameMobileField.val().length === 0) {
                 event.preventDefault()
-                ErrorUsernameMobile.html("لطفا نام کاربری یا موبایل خود را وارد کنید")
-            } else if (UsernameMobileField.val().length < 6) {
-                event.preventDefault()
-                ErrorUsernameMobile.html("نام کاربری حداقل باید شامل شش کاراکتر باشد")
-            } else if (UsernameMobileField.val().match(/^[آإأابپتثجچحخدذرزژسشصضطظعغفقکگلمنهۀةوؤیيئءًٌٍَُِّ\s]+$/)) {
-                event.preventDefault()
-                ErrorUsernameMobile.html("نام کاربری باید انگلیسی باشد")
-            } else {
+                ErrorUsernameMobile.html("لطفا کدملی خود را وارد کنید")
+            }  else {
                 ErrorUsernameMobile.html("")
             }
 
             if (PasswordField.val().length === 0) {
                 event.preventDefault()
-                ErrorPassword.html("لطفا رمز عبور خود را وارد کنید")
-            } else if (PasswordField.val().length < 8) {
-                event.preventDefault()
-                ErrorPassword.html("رمز عبور حداقل باید شامل هشت کاراکتر باشد")
+                ErrorPassword.html("لطفا شماره تلفن همراه خود را وارد کنید")
             } else {
                 ErrorPassword.html("")
                 console.log('dont submit form')
